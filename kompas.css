@@ -53,7 +53,7 @@ button > svg, a > svg { display: inline-block; width: 1.4em; height: 1.4em; flex
 }
 .kicker { display: flex; align-items: center; gap: 1em; margin: 0; line-height: 1.2 }
 .kicker::after { content: ""; width: 7.3vw; height: 1px; background: currentColor; opacity: .43 }
-h1 { margin: 2.6vw 0 3.7vw -.42vw; font-size: 9.1vw; font-weight: 700; line-height: .85; letter-spacing: -.077em }
+h1 { margin: 2.6vw 0 1.8vw -.42vw; font-size: 9.1vw; font-weight: 700; line-height: .85; letter-spacing: -.077em }
 h1 span, h1 em { display: block; width: max-content }
 h1 em { font-family: var(--serif); font-weight: 400; font-size: 1.07em; letter-spacing: -.065em; position: relative; line-height: .9 }
 h1 em::after { width: 34%; height: .23em; right: 3%; bottom: -.19em }
@@ -97,12 +97,12 @@ h1 em::after { width: 34%; height: .23em; right: 3%; bottom: -.19em }
 #checklist { padding-left: 1.4em; font-size: clamp(14px,1.4vw,20px) }
 #checklist li { padding: .32em 0 }
 .chapter { isolation: isolate; position: relative; overflow: hidden; min-height: 25.2vw; display: flex; align-items: center; padding: 2.9vw var(--pad) 2.6vw; border-top: 1px solid #eee6d9 }
-.chapter img { position: absolute; z-index: -1; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.025) translateY(var(--drift,0px)) }
+.chapter img { position: absolute; z-index: -1; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.055) translateY(var(--drift,0px)) }
 .chapter-copy { width: 48%; transform: translateY(var(--lift,0px)) }
 .number { font-size: clamp(13px,1.64vw,24px); letter-spacing: .08em }
 .chapter h2 { font-size: 6.62vw; line-height: .94; letter-spacing: -.065em; margin: .65vw 0 .1vw }
 .chapter em { display: block; font-family: var(--serif); font-size: 3.25vw; line-height: 1.07; letter-spacing: -.042em }
-.chapter p { font-size: clamp(14px,1.59vw,23px); line-height: 1.26; letter-spacing: -.02em; max-width: 34vw; margin: 1.34vw 0 0 }
+.chapter p { font-size: clamp(14px,1.63vw,24px); line-height: 1.26; letter-spacing: -.02em; max-width: 33.5vw; margin: 1.34vw 0 0 }
 .chapter.data { background: #102019; color: #f4eee4; padding-block: 2.3vw; min-height: 22.2vw }
 .chapter.responsibility { min-height: 29.6vw }
 .band-link { display: flex; align-items: center; gap: 3.2vw; padding-top: 1vw; margin-top: 2.4vw; border-top: 1px solid var(--line); text-decoration: none }
@@ -130,8 +130,14 @@ dialog::backdrop { background: #1720199e }
 .model-controls { border-top: 1px solid var(--line); padding-top: .7em }
 .model-controls label { display: grid; text-align: center; gap: 4px; font-size: 13px }
 .model-controls input { width: min(42vw,260px); accent-color: #546338 }
-@media (min-width: 1800px) {
-  body { max-width: 1800px; margin-inline: auto }
+.short-label { display: none }
+@media (min-width: 721px) {
+  h1 span { transform: scaleX(1.055); transform-origin: left }
+  h1 em { transform: scaleX(1.12); transform-origin: left }
+  .chapter h2 { transform: scaleX(1.05); transform-origin: left }
+  .chapter-copy { width: 50% }
+  .lead { font-size: 1.64vw; width: 34.5vw }
+  .lead-line { display: block }
 }
 @media (max-width: 720px) {
   :root { --pad: 5vw; scroll-padding-top: 68px }
@@ -142,6 +148,8 @@ dialog::backdrop { background: #1720199e }
   .mast nav a { padding: 13px 0; font-size: 14px }
   #menu { display: grid; place-content: center; padding: 6px 0; min-height: 44px }
   #menu svg { width: 23px; height: 23px }
+  .long-label { display: none }
+  .short-label { display: inline }
   #language { font-size: 11px; max-width: 44px }
   .nav-cta { font-size: 11px; padding: 10px; gap: 5px }
   .hero { padding: 0 0 34px; min-height: 0; display: grid; grid-template: auto auto / 100%; background: #e8ddce }
@@ -164,7 +172,9 @@ dialog::backdrop { background: #1720199e }
   .controls { margin-top: 20px }
   .controls .primary { min-height: 44px; padding-inline: 20px }
   .chapter, .chapter.data, .chapter.responsibility { padding: 27px var(--pad); min-height: clamp(190px,42vw,295px); }
-  .chapter img { object-position: center; object-fit: fill }
+  .chapter.material, .chapter.responsibility { background: #eee7db url(assets/paper.webp) repeat }
+  .chapter img { left: auto; right: 0; width: 53%; object-position: 80% center; object-fit: cover; mask-image: linear-gradient(to right, transparent, black 18%) }
+  .chapter.data img { object-position: 78% center }
   .chapter-copy { width: 56% }
   .number { font-size: 13px }
   .chapter h2 { font-size: clamp(32px,7.8vw,55px); margin: 4px 0 }
