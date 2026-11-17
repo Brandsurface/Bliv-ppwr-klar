@@ -142,8 +142,6 @@
 const tabs=[...document.querySelectorAll('.tab')], concepts=[...document.querySelectorAll('.concept')];
 tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===t));concepts.forEach(x=>x.classList.toggle('active',x.id===t.dataset.id));window.scrollTo({top:0,behavior:'smooth'})}));
 // PPWR Kompas — guided questionnaire and scroll cues
-const tabs=[...document.querySelectorAll('.tab')], concepts=[...document.querySelectorAll('.concept')];
-tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===t));concepts.forEach(x=>x.classList.toggle('active',x.id===t.dataset.id));window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}));
 const questions=[
  {key:'role',title:'Hvilken rolle beskriver jeres virksomhed bedst?',sub:'Vælg det nærmeste udgangspunkt. Flere roller kan være relevante.',items:[['brand','Vi sælger produkter under eget brand'],['import','Vi importerer produkter eller emballage'],['retail','Vi sælger eller distribuerer andres produkter'],['pack','Vi fylder, pakker eller sender produkter'],['other','En anden rolle eller jeg er ikke sikker']]},
  {key:'market',title:'På hvilke markeder sælger I?',sub:'Vælg det, der bedst beskriver jeres aktiviteter.',items:[['dk','Kun i Danmark'],['eu','Danmark og andre EU-lande'],['global','EU og markeder uden for EU'],['unknown','Det skal vi have kortlagt']]},
