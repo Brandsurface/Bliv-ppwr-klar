@@ -193,8 +193,8 @@ function updateScroll() {
   for (const section of chapters) {
     const box = section.getBoundingClientRect();
     const offset = Math.min(1, Math.max(-1, (box.top + box.height / 2 - innerHeight / 2) / innerHeight));
-    section.style.setProperty('--drift', (reduced.matches ? 0 : -offset * box.height * .011) + 'px');
-    section.style.setProperty('--lift', (reduced.matches ? 0 : offset * 5) + 'px');
+    section.style.setProperty('--drift', (reduced.matches ? 0 : -offset * box.height * .024) + 'px');
+    section.style.setProperty('--lift', (reduced.matches ? 0 : offset * 10) + 'px');
   }
 }
 function scheduleScroll() {
