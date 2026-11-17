@@ -56,6 +56,19 @@ const questions = [
     options: [['Roles and responsibilities','Roller og ansvar'],['Markets and reporting','Markeder og indberetning'],['Materials and pack design','Materialer og design'],['Supplier data and evidence','Leverandørdata og dokumentation']]
   }
 ];
+// The design discussion follows the team's priority. The sample follows the pack.
+const designHelp = [
+  ['Bring your current artwork. Brandsurface can help you agree who briefs, updates and approves the next design version.', 'Tag jeres nuværende artwork med. Brandsurface kan hjælpe jer med at aftale, hvem der briefer, retter og godkender næste designversion.'],
+  ['Bring the artwork used in two markets. Ask Brandsurface for a quote on a shared pack layout with space for local text.', 'Tag artwork fra to markeder med, hvis I har det. Bed Brandsurface om et tilbud på et fælles emballagelayout med plads til lokale tekster.'],
+  ['Show Brandsurface the pack and the part you want to change. Ask for design options and a price for taking one through to artwork.', 'Vis Brandsurface emballagen og den del, I vil ændre. Få sparring om designmulighederne og en pris på at gøre den valgte løsning trykklar.'],
+  ['Bring the supplier specifications you have. Brandsurface can turn dimensions, print requirements and open questions into a brief for the artwork.', 'Tag de specifikationer med, I har. Brandsurface kan samle mål, trykkrav og åbne spørgsmål i en brief til den, der skal lave artwork.']
+];
+const sampleHelp = [
+  ['Ask Exemplar for a 1:1 sample to compare shape, label placement or finish. Include the dimensions and how many versions you want to see.', 'Bed Exemplar om en 1:1-prøve, så I kan vurdere form, etiketplacering eller finish. Oplys mål og antal varianter.'],
+  ['Ask Exemplar to make a folding carton in two board weights. Compare the fold, closure and print in your hands before choosing.', 'Få eksempelvis en foldeæske i to kartonkvaliteter fra Exemplar. Mærk forskellen, prøv lukningen, og se trykket, før I vælger.'],
+  ['Ask Exemplar for a mockup of the assembled pack. Use it to review how the parts fit and how the customer separates them.', 'Bed Exemplar om en prøve af den samlede emballage. Se, hvordan delene passer sammen, og prøv, hvordan kunden skiller dem ad.'],
+  ['Send Exemplar the product dimensions and desired quantity. Ask for a sample of the shipping pack to review fit, insert and opening.', 'Send Exemplar varens mål og det ønskede antal prøver. Bed om en prøve af forsendelsesemballagen, så I kan vurdere pasform, indlæg og åbning.']
+];
 let language = new URLSearchParams(location.search).get('lang') === 'da' ? 'da' : 'en';
 let step = 0;
 let answers = Array(questions.length).fill(null);
@@ -67,7 +80,7 @@ const copyNodes = [...document.querySelectorAll('[data-da]')].map(node => ({node
 function renderQuiz(focus = false) {
   const question = questions[step];
   const showStep = completed ? 5 : step + 1;
-  el('step').textContent = completed ? words('YOUR CHECKLIST','DIN TJEKLISTE') : (step === 0 ? 'START' : words('STEP','TRIN')) + ' · ' + showStep + words(' OF 5',' AF 5');
+  el('step').textContent = completed ? words('YOUR ACTION PLAN','JERES HANDLINGSPLAN') : (step === 0 ? 'START' : words('STEP','TRIN')) + ' · ' + showStep + words(' OF 5',' AF 5');
   document.querySelector('.quiz').style.setProperty('--progress', completed ? '100%' : (10 + step * 20) + '%');
   const dots = document.querySelector('.dots');
   dots.replaceChildren(...questions.map((_, n) => {
@@ -77,15 +90,26 @@ function renderQuiz(focus = false) {
   }));
   el('quiz-form').hidden = completed;
   el('result').hidden = !completed;
+  el('readiness').classList.toggle('is-complete', completed);
   el('feedback').replaceChildren();
   el('copied').textContent = '';
+  el('brief-status').textContent = '';
   if (completed) {
-    el('checklist').replaceChildren(...tasks().map(task => {
+    const plan = tasks();
+    el('result-title').textContent = localized(questions[4].options[answers[4]]);
+    el('first-action').textContent = plan[0];
+    el('design-advice').textContent = localized(designHelp[answers[4]]);
+    el('sample-advice').textContent = localized(sampleHelp[answers[2]]);
+    el('project-brief').value = projectBrief();
+    el('checklist').replaceChildren(...plan.map(task => {
       const item = document.createElement('li');
       item.textContent = task;
       return item;
     }));
-    if (focus) el('result-title').focus();
+    if (focus) {
+      el('result-title').focus({preventScroll: true});
+      el('readiness').scrollIntoView({block: 'start', behavior: 'instant'});
+    }
     return;
   }
   el('question').textContent = localized(question.title);
@@ -113,6 +137,23 @@ function tasks() {
   const order = [priority, ...[0,1,2,3].filter(i => i !== priority)];
   return order.map(i => localized(questions[i].tasks[answers[i]]));
 }
+function projectBrief() {
+  const labels = [
+    ['Role', 'Rolle'], ['Markets', 'Markeder'], ['Pack', 'Emballage'],
+    ['Available data', 'Datagrundlag'], ['Priority', 'Prioritet']
+  ];
+  const summary = questions.map((question, i) => {
+    const option = question.options[answers[i]] ?? ['Role to clarify', 'Rolle skal afklares'];
+    return localized(labels[i]) + ': ' + localized(option);
+  });
+  return [
+    words('We would like help with a packaging project. Our starting point is', 'Vi vil gerne have hjælp til en emballageopgave. Her er vores udgangspunkt'),
+    ...summary,
+    '',
+    words('Product, dimensions and desired timing: [add details]', 'Produkt, mål og ønsket tidspunkt: [udfyld]'),
+    words('Can you suggest a next step and quote for the work?', 'Vil I foreslå et næste skridt og give et tilbud på opgaven?')
+  ].join('\n');
+}
 function advance() {
   if (step === questions.length - 1) completed = true;
   else step++;
@@ -136,6 +177,8 @@ el('restart').onclick = () => {
   completed = false;
   step = 0;
   answers.fill(null);
+  el('plan-details').open = false;
+  el('brief-details').open = false;
   renderQuiz(true);
 };
 el('copy').onclick = async () => {
@@ -149,6 +192,17 @@ el('copy').onclick = async () => {
     selection.removeAllRanges();
     selection.addRange(range);
     el('copied').textContent = words('The checklist is selected. Use your device’s copy command.', 'Tjeklisten er markeret. Brug enhedens kopifunktion.');
+  }
+};
+el('copy-brief').onclick = async () => {
+  const brief = el('project-brief');
+  try {
+    await navigator.clipboard.writeText(brief.value);
+    el('brief-status').textContent = words('Project brief copied.', 'Opgavebriefen er kopieret.');
+  } catch {
+    brief.focus();
+    brief.select();
+    el('brief-status').textContent = words('Brief selected. Use your device’s copy command.', 'Briefen er markeret. Brug enhedens kopifunktion.');
   }
 };
 function applyLanguage() {

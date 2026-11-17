@@ -50,11 +50,40 @@
         <div class="controls"><button type="submit" class="primary"><span id="next-text">Map your readiness</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></button><button type="button" class="text-btn" id="back" hidden data-da="Tilbage">Back</button></div>
       </form>
       <div id="result" hidden>
-        <h2 tabindex="-1" id="result-title" data-da="Din første handlingsplan">Your first action plan</h2>
-        <ol id="checklist"></ol>
-        <div class="controls"><button type="button" class="primary" id="copy" data-da="Kopiér tjeklisten">Copy checklist</button><button class="text-btn" id="restart" data-da="Start forfra">Start again</button></div>
-        <p role="status" id="copied"></p>
-        <a class="result-source" href="#resources" data-da="Find de officielle kilder">Find the official sources</a>
+        <h2 tabindex="-1" id="result-title"></h2>
+        <p class="first-action"><strong data-da="Jeres første skridt">Your first step</strong> <span id="first-action"></span></p>
+        <section class="result-help" aria-labelledby="help-title">
+          <h3 id="help-title" data-da="Hvem kan hjælpe jer videre?">Who can help you take it further?</h3>
+          <div class="partner-options">
+            <article>
+              <h4>Brandsurface</h4>
+              <p id="design-advice"></p>
+              <a class="partner-cta" href="https://brandsurface.dk/kontakt/" target="_blank" rel="noopener noreferrer"><span data-da="Tal med Brandsurface om opgaven">Discuss your project with Brandsurface</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg></a>
+            </article>
+            <article>
+              <h4>Exemplar</h4>
+              <p id="sample-advice"></p>
+              <a class="partner-cta" href="https://exemplar.dk/formular/" target="_blank" rel="noopener noreferrer"><span data-da="Få tilbud på en emballageprøve">Request a packaging sample quote</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg></a>
+            </article>
+          </div>
+        </section>
+        <details id="brief-details" class="result-detail">
+          <summary data-da="Jeres opgavebrief">Your project brief</summary>
+          <label for="project-brief" data-da="Brug teksten i en mail til Brandsurface eller i bemærkningsfeltet hos Exemplar.">Use this text in an email to Brandsurface or in the notes field on Exemplar’s quote form.</label>
+          <textarea id="project-brief" rows="7" readonly></textarea>
+          <button type="button" class="result-tool" id="copy-brief" data-da="Kopiér opgavebrief">Copy project brief</button>
+          <span role="status" id="brief-status"></span>
+        </details>
+        <details id="plan-details" class="result-detail">
+          <summary data-da="Se hele jeres tjekliste">View your full checklist</summary>
+          <ol id="checklist"></ol>
+          <button type="button" class="result-tool" id="copy" data-da="Kopiér tjeklisten">Copy checklist</button>
+          <span role="status" id="copied"></span>
+        </details>
+        <div class="result-footer">
+          <a href="#resources" data-da="Find de officielle kilder">Find the official sources</a>
+          <button type="button" class="text-btn" id="restart" data-da="Start forfra">Start again</button>
+        </div>
       </div>
       <noscript>Enable JavaScript to take the five-step readiness test, or read the guide below.</noscript>
     </section>
