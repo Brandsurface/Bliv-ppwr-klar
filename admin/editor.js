@@ -1,6 +1,7 @@
 'use strict';
 const el = id => document.getElementById(id);
-const endpoint = 'https://api.github.com/repos/Brandsurface/Bliv-ppwr-klar/contents/content.json';
+let credential = '';
+let expiry;
 const storageKey = 'ppwr-editor-draft-v1';
 let content, draft = {}, busy = false;
 const status = message => { el('status').textContent = message; };
@@ -44,39 +45,66 @@ function draw() {
   el('rows').replaceChildren(...cards);
   el('count').textContent = cards.length + ' tekster';
 }
-async function publish() {
-  const token = el('token').value.trim();
-  if (!token) { status('Indtast et GitHub-token for at udgive.'); return; }
-  busy = true; el('save').disabled = true; el('rows').inert = true;
-  const headers = {Authorization:'Bearer ' + token, Accept:'application/vnd.github+json'};
-  try {
-    const response = await fetch(endpoint + '?ref=main',{headers,cache:'no-store'});
-    if (!response.ok) throw Error('GitHub kunne ikke læse filen. Kontrollér token og adgang.');
-    const file = await response.json();
-    const next = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(file.content), c => c.charCodeAt(0))));
-    for (const [key, changes] of Object.entries(draft)) {
-      for (const [lang, change] of Object.entries(changes)) {
-        if (!next[key] || ![change.from,change.to].includes(next[key][lang])) throw Error('Teksten er ændret i GitHub. Genindlæs og gennemgå feltet: ' + key);
-        if (!change.to.trim()) throw Error('Udfyld det tomme felt: ' + key);
-        next[key][lang] = change.to;
-      }
-    }
-    const bytes = new TextEncoder().encode(JSON.stringify(next,null,2) + '\n');
-    const encoded = btoa(Array.from(bytes, b => String.fromCharCode(b)).join(''));
-    const saved = await fetch(endpoint,{method:'PUT',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({message:'Update PPWR editorial content',branch:'main',sha:file.sha,content:encoded})});
-    if (!saved.ok) throw Error('GitHub afviste udgivelsen (' + saved.status + '). Kontrollér skriveadgang og eventuelle samtidige ændringer.');
-    content = next; draft = {}; draw(); status('Gemt i GitHub. Vercel udgiver ændringerne.');
-  } catch (error) { status(error.message); }
-  finally { el('token').value = ''; busy = false; el('rows').inert = false; persist(); }
+async function request(token, payload) {
+  const response = await fetch('/api/admin', {method:'POST', credentials:'omit', cache:'no-store',
+    headers:{Authorization:'Bearer ' + token, 'Content-Type':'application/json'}, body:JSON.stringify(payload)});
+  const result = await response.json();
+  if (!response.ok) {
+    if (response.status === 401 || response.status === 403) lock();
+    throw Error(result.message || 'Adgang afvist.');
+  }
+  return result;
 }
-async function start() {
-  const response = await fetch('/content.json',{cache:'no-store'});
-  if (!response.ok) throw Error('Teksterne kunne ikke hentes.');
-  content = await response.json();
-  try { draft = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch { draft = {}; }
+function lock() {
+  clearTimeout(expiry);
+  credential = '';
+  content = undefined;
+  draft = {};
+  el('editor').replaceChildren();
+  el('login').hidden = false;
+  el('token').value = '';
+  status('');
+}
+function openEditor(markup) {
+  const editor = el('editor');
+  editor.innerHTML = markup;
+  el('logout').onclick = () => { lock(); el('token').focus(); };
   for (const group of new Set(Object.values(content).map(row => row.group))) el('group').add(new Option(group,group));
   el('search').oninput = draw; el('group').onchange = draw; el('save').onclick = publish;
-  if (Object.keys(draft).length) status('Din tidligere kladde er hentet.');
   draw(); persist();
 }
-start().catch(error => status(error.message));
+el('login-form').onsubmit = async event => {
+  event.preventDefault();
+  const token = el('token').value.trim();
+  el('token').value = '';
+  el('sign-in').disabled = true;
+  status('Kontrollerer adgang …');
+  try {
+    const result = await request(token, {action:'login'});
+    credential = token;
+    content = result.content;
+    try { draft = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch { draft = {}; }
+    el('login').hidden = true;
+    openEditor(result.editorMarkup);
+    status(Object.keys(draft).length ? 'Din tidligere kladde er hentet.' : '');
+    expiry = setTimeout(() => { lock(); status('Log ind igen for at fortsætte.'); }, 30 * 60 * 1000);
+  } catch (error) { status(error.message); }
+  finally { el('sign-in').disabled = false; }
+};
+async function publish() {
+  if (busy || !credential) return;
+  busy = true;
+  el('save').disabled = true; el('rows').inert = true;
+  el('logout').disabled = true;
+  try {
+    const result = await request(credential, {action:'publish', changes:draft});
+    if (!credential) return;
+    content = result.content; draft = {}; draw();
+    status('Gemt i GitHub. Vercel udgiver ændringerne.');
+  } catch (error) { status(error.message); }
+  finally {
+    busy = false;
+    if (credential) { el('rows').inert = false; el('logout').disabled = false; persist(); }
+  }
+}
+window.addEventListener('pagehide', lock);
