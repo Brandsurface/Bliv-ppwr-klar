@@ -33,8 +33,8 @@ const questions = [
     hint: ['Choose one format for your first review.', 'Vælg ét format til jeres første gennemgang.'],
     options: [['Plastic or food-contact pack','Plast eller fødevarekontakt'],['Paper, board or fibre','Papir, karton eller fiber'],['Mixed-material pack','Flere materialer i én emballage'],['Transport or shipping pack','Transport- eller forsendelsesemballage']],
     tasks: [
-      ['Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use.', 'Bed om polymertyper, dokumentation for genanvendt indhold og eventuelle relevante fødevarekontaktdata.'],
-      ['List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream.', 'Registrér fibre, belægning, trykfarve og lim. Spørg leverandøren, hvordan de påvirker genanvendelsen.'],
+      ['Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).', 'Bed om polymertyper, dokumentation for genanvendt indhold og eventuelle relevante fødevarekontaktdata. Bed leverandøren om dokumentation for, at emballage til fødevarekontakt overholder PFAS-grænserne i artikel 5, stk. 5 (gælder fra 12. august 2026).'],
+      ['List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).', 'Registrér fibre, belægning, trykfarve og lim. Spørg leverandøren, hvordan de påvirker genanvendelsen. Bed leverandøren om dokumentation for, at emballage til fødevarekontakt overholder PFAS-grænserne i artikel 5, stk. 5 (gælder fra 12. august 2026).'],
       ['Separate each layer and closure on paper. Ask suppliers which components users can separate in practice.', 'Opdel emballagen i lag og lukninger på papir. Spørg, hvilke dele brugerne faktisk kan skille ad.'],
       ['Measure the packed product, outer dimensions and void fill. Document the protection the shipping pack provides.', 'Mål varen, ydermål og fyld. Dokumentér den beskyttelse, transportemballagen skal levere.']
     ]
@@ -61,7 +61,7 @@ const guides = [
   {
     title: ['Map your role', 'Afklar jeres rolle'],
     record: ['A sketch of the supply chain with the company and contact at each step.', 'En skitse af varekæden med virksomhed og kontaktperson ved hvert led.'],
-    source: ['PPWR · Chapter IV, roles and obligations', 'PPWR · kapitel IV, roller og pligter'], anchor: 'chp_IV'
+    source: ['PPWR · Article 3 and Chapter IV, roles and obligations', 'PPWR · artikel 3 og kapitel IV, roller og forpligtelser'], anchor: 'chp_IV'
   },
   {
     title: ['Check your sales markets', 'Tjek jeres salgslande'],
@@ -76,7 +76,7 @@ const guides = [
   {
     title: ['Gather the evidence', 'Saml dokumentationen'],
     record: ['An index of file names, dates and owners. Give each missing document a follow-up date.', 'En oversigt med filnavn, dato og ansvarlig. Sæt en opfølgningsdato ved de dokumenter, der mangler.'],
-    source: ['PPWR · Annex VII, technical documentation', 'PPWR · bilag VII, teknisk dokumentation'], anchor: 'anx_VII'
+    source: ['PPWR · Article 15 and Annex VII, conformity assessment and technical documentation', 'PPWR · artikel 15 og bilag VII, overensstemmelsesvurdering og teknisk dokumentation'], anchor: 'anx_VII'
   }
 ];
 const savedPlanKey = 'ppwr-kompas.checklist.v1';
