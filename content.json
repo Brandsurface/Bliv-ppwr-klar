@@ -5,9 +5,9 @@
     "da": "Kortlæg din emballage, find hullerne i dine leverandørdata, og lav en konkret tjekliste, så du bliver klar til PPWR."
   },
   "PPWR Kompas — Packaging, ready for what’s next.": {
-    "group": "Forside og navigation",
-    "en": "PPWR Kompas — Packaging, ready for what’s next.",
-    "da": "PPWR Kompas — Packaging, ready for what’s next."
+    "group": "Sidetitel og beskrivelse",
+    "en": "PPWR readiness test | EU packaging rules | PPWR Kompas",
+    "da": "PPWR-test og EU’s emballagekrav | Bliv PPWR klar"
   },
   "Skip to readiness test": {
     "group": "Forside og navigation",
@@ -833,5 +833,120 @@
     "group": "Parathedstest",
     "en": "START",
     "da": "START"
+  },
+  "PPWR Kompas sharing card": {
+    "group": "Billed- og hjælpetekster",
+    "en": "PPWR Kompas sharing card",
+    "da": "Delingskort med PPWR Kompas og en foldeæske, en fiberindsats og klar folie"
+  },
+  "Link copied.": {
+    "group": "Deling",
+    "en": "Link copied.",
+    "da": "Link kopieret."
+  },
+  "Copy this link to share the site.": {
+    "group": "Deling",
+    "en": "Copy this link to share the site.",
+    "da": "Kopiér linket for at dele siden."
+  },
+  "Disclaimer": {
+    "group": "Ansvarsfraskrivelse",
+    "en": "Disclaimer",
+    "da": "Ansvarsfraskrivelse"
+  },
+  "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, Bliv PPWR klar accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.": {
+    "group": "Ansvarsfraskrivelse",
+    "en": "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, Bliv PPWR klar accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.",
+    "da": "Siden og testresultatet er vejledende. De udgør ikke juridisk rådgivning eller dokumentation for, at emballagen overholder reglerne. I det omfang loven tillader det, fraskriver Bliv PPWR klar sig ansvar for ukorrekte, ufuldstændige eller forældede oplysninger samt for beslutninger eller tab, der følger af brugen. Kontrollér de gældende krav i de officielle kilder."
+  },
+  "See the official sources.": {
+    "group": "Ansvarsfraskrivelse",
+    "en": "See the official sources.",
+    "da": "Se de officielle kilder."
+  },
+  "Share the site": {
+    "group": "Deling",
+    "en": "Share the site",
+    "da": "Del siden"
+  },
+  "Questions about PPWR": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Questions about PPWR",
+    "da": "Spørgsmål om PPWR"
+  },
+  "What is PPWR?": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "What is PPWR?",
+    "da": "Hvad er PPWR?"
+  },
+  "PPWR stands for Packaging and Packaging Waste Regulation. Regulation (EU) 2025/40 sets rules for packaging placed on the EU market and covers topics such as packaging design, recyclability and producer responsibility.": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "PPWR stands for Packaging and Packaging Waste Regulation. Regulation (EU) 2025/40 sets rules for packaging placed on the EU market and covers topics such as packaging design, recyclability and producer responsibility.",
+    "da": "PPWR står for Packaging and Packaging Waste Regulation. EU-forordning 2025/40 fastsætter regler for emballage på EU-markedet og omfatter blandt andet emballagedesign, genanvendelighed og producentansvar."
+  },
+  "Read Regulation (EU) 2025/40": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Read Regulation (EU) 2025/40",
+    "da": "Læs forordning (EU) 2025/40"
+  },
+  "When do the new packaging rules apply?": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "When do the new packaging rules apply?",
+    "da": "Hvornår gælder de nye emballagekrav?"
+  },
+  "The PPWR generally applies from 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "The PPWR generally applies from 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.",
+    "da": "PPWR finder som udgangspunkt anvendelse fra 12. august 2026. Nogle bestemmelser og konkrete krav har andre datoer. Tjek fristen for det krav og den emballage, I arbejder med."
+  },
+  "Read the European Commission implementation guidance": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Read the European Commission implementation guidance",
+    "da": "Læs Europa-Kommissionens vejledning"
+  },
+  "What is the difference between PPWR and Danish producer responsibility?": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "What is the difference between PPWR and Danish producer responsibility?",
+    "da": "Hvad er forskellen på PPWR og dansk producentansvar?"
+  },
+  "PPWR is the EU regulation on packaging and packaging waste. Danish producer responsibility is the system under which responsible businesses contribute to the management of packaging waste in Denmark. Check both the requirements for your packaging and your obligations as a producer.": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "PPWR is the EU regulation on packaging and packaging waste. Danish producer responsibility is the system under which responsible businesses contribute to the management of packaging waste in Denmark. Check both the requirements for your packaging and your obligations as a producer.",
+    "da": "PPWR er EU’s forordning om emballage og emballageaffald. Dansk producentansvar er den ordning, hvor de ansvarlige virksomheder bidrager til håndteringen af emballageaffald i Danmark. Undersøg både kravene til emballagen og jeres forpligtelser som producent."
+  },
+  "Read about Danish producer responsibility": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Read about Danish producer responsibility",
+    "da": "Læs om dansk producentansvar"
+  },
+  "What do I get from the PPWR readiness test?": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "What do I get from the PPWR readiness test?",
+    "da": "Hvad får jeg ud af PPWR-testen?"
+  },
+  "Answer five questions about your business and packaging. You get a prioritised checklist with practical steps for roles, sales markets, packaging materials and documentation.": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Answer five questions about your business and packaging. You get a prioritised checklist with practical steps for roles, sales markets, packaging materials and documentation.",
+    "da": "Svar på fem spørgsmål om jeres virksomhed og emballage. I får en prioriteret tjekliste med konkrete opgaver om roller, salgslande, materialer og dokumentation."
+  },
+  "Start the PPWR readiness test": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Start the PPWR readiness test",
+    "da": "Start PPWR-testen"
+  },
+  "Bliv": {
+    "group": "Forside og navigation",
+    "da": "Bliv",
+    "en": "Bliv"
+  },
+  "klar": {
+    "group": "Forside og navigation",
+    "da": "klar",
+    "en": "klar"
+  },
+  "Bliv PPWR klar": {
+    "group": "Forside og navigation",
+    "da": "Bliv PPWR klar",
+    "en": "Bliv PPWR klar"
   }
 }

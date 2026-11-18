@@ -80,7 +80,7 @@ const guides = [
   }
 ];
 const savedPlanKey = 'ppwr-kompas.checklist.v1';
-let language = new URLSearchParams(location.search).get('lang') === 'da' ? 'da' : 'en';
+const language = document.documentElement.lang;
 let step = 0;
 let answers = Array(questions.length).fill(null);
 let completed = false;
@@ -102,22 +102,19 @@ function savePlan() {
     else localStorage.removeItem(savedPlanKey);
   } catch { /* Keep progress in memory when storage is unavailable. */ }
 }
-let editorial = {};
+const editorial = JSON.parse(el('editorial-data')?.textContent || '{}');
 const words = (en, da) => editorial[en]?.[language] ?? (language === 'da' ? da : en);
-const plainText = [];
-const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
-while (walker.nextNode()) {
-  const node = walker.currentNode;
-  if (node.data.trim() && !node.parentElement.closest('[data-da], script, style')) {
-    plainText.push({node, original: node.data});
-  }
-}
-const attributes = [...document.querySelectorAll('[aria-label], meta[name="description"]')].map(node => {
-  const attr = node.hasAttribute('aria-label') ? 'aria-label' : 'content';
-  return {node, attr, original: node.getAttribute(attr)};
-});
 const localized = pair => words(...pair);
-const copyNodes = [...document.querySelectorAll('[data-da]')].map(node => ({node, en: node.textContent}));
+
+const languageTransfer = 'ppwr-language-transfer';
+try {
+  const transfer = JSON.parse(sessionStorage.getItem(languageTransfer));
+  sessionStorage.removeItem(languageTransfer);
+  if (!completed && transfer?.language === language) {
+    answers = transfer.answers;
+    step = transfer.step;
+  }
+} catch { /* The quiz also works when session storage is disabled. */ }
 
 function renderQuiz(focus = false) {
   const question = questions[step];
@@ -287,35 +284,38 @@ el('copy-brief').onclick = async () => {
     el('brief-status').textContent = words('Brief selected. Use your device’s copy command.', 'Briefen er markeret. Brug enhedens kopifunktion.');
   }
 };
-function applyLanguage() {
-  document.documentElement.lang = language;
-  el('language').value = language;
-  for (const {node, en} of copyNodes) node.textContent = words(en, node.dataset.da);
-  const photo = document.querySelector('.hero-photo');
-  photo.dataset.altEn ??= photo.alt;
-  photo.alt = words(photo.dataset.altEn, photo.dataset.altDa);
-  for (const {node, original} of plainText) {
-    const key = original.trim();
-    if (node.isConnected && editorial[key]) node.data = original.replace(key, () => words(key, key));
-  }
-  for (const {node, attr, original} of attributes) node.setAttribute(attr, words(original, original));
-  renderQuiz();
+renderQuiz();
+for (const link of el('language').querySelectorAll('a')) {
+  link.addEventListener('click', () => {
+    link.hash = location.hash;
+    try {
+      if (!completed) sessionStorage.setItem(languageTransfer, JSON.stringify({language: link.lang, answers, step}));
+    } catch { /* Navigation still works without session storage. */ }
+  });
 }
-el('language').addEventListener('change', event => {
-  language = event.target.value;
-  const url = new URL(location.href);
-  if (language === 'da') url.searchParams.set('lang', language);
-  else url.searchParams.delete('lang');
-  history.replaceState(null, '', url);
-  applyLanguage();
-});
-applyLanguage();
-fetch('content.json').then(response => {
-  if (!response.ok) throw new Error('Content unavailable');
-  return response.json();
-}).then(content => { editorial = content; applyLanguage(); }).catch(() => {
-  // Bundled copy keeps the quiz usable if the content file is unavailable.
-});
+
+for (const button of document.querySelectorAll('[data-share]')) {
+  button.hidden = false;
+  button.addEventListener('click', async () => {
+    const url = document.querySelector('link[rel="canonical"]').href;
+    const feedback = el('share-feedback');
+    feedback.textContent = '';
+    if (navigator.share) {
+      try {
+        await navigator.share({title: document.title, url});
+        return;
+      } catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      feedback.textContent = words('Link copied.', 'Link kopieret.');
+    } catch {
+      window.prompt(words('Copy this link to share the site.', 'Kopiér linket for at dele siden.'), url);
+    }
+  });
+}
 
 function setMenu(open) {
   el('navigation').classList.toggle('open', open);
@@ -361,7 +361,7 @@ el('open-study').onclick = async () => {
     studyModule.showModel();
   } catch {
     const canvas = el('model');
-    canvas.style.background = 'url(assets/hero.webp) 95% 40% / 155% auto';
+    canvas.style.background = 'url(/assets/hero.webp) 95% 40% / 155% auto';
     el('study-title').textContent = words('Packaging material study','Emballagens materialer');
   }
 };
