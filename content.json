@@ -79,6 +79,21 @@
     "en": "Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film.",
     "da": "Klar folie, en formstøbt fiberindsats og en åben foldeæske svæver over et ark folie."
   },
+  "Clear film": {
+    "group": "Forside og navigation",
+    "en": "Clear film",
+    "da": "Klar folie"
+  },
+  "Moulded fibre": {
+    "group": "Forside og navigation",
+    "en": "Moulded fibre",
+    "da": "Formstøbt fiber"
+  },
+  "Folding carton": {
+    "group": "Forside og navigation",
+    "en": "Folding carton",
+    "da": "Foldet karton"
+  },
   "Rotate in 3D": {
     "group": "Forside og navigation",
     "en": "Rotate in 3D",
@@ -684,10 +699,20 @@
     "da": "Bliv PPWR klar",
     "en": "Bliv PPWR klar"
   },
-  "Explore EU packaging rules. Get four tasks for one packaging item, based on your answers.": {
+  "Explore EU packaging rules.": {
     "group": "Forside og navigation",
-    "en": "Explore EU packaging rules. Get four tasks for one packaging item, based on your answers.",
-    "da": "Få overblik over EU’s emballagekrav og fire arbejdsopgaver for én emballage ud fra jeres svar."
+    "en": "Explore EU packaging rules.",
+    "da": "Få overblik over EU’s emballagekrav."
+  },
+  "Get four work tasks for one packaging item": {
+    "group": "Forside og navigation",
+    "en": "Get four work tasks for one packaging item",
+    "da": "Få fire arbejdsopgaver for én emballage"
+  },
+  "based on your answers and chosen priority.": {
+    "group": "Forside og navigation",
+    "en": "based on your answers and chosen priority.",
+    "da": "ud fra jeres svar og valgte prioritet."
   },
   "Work through five steps about one packaging item, including its material and use for food contact. Your answers generate four tasks. You choose which task comes first.": {
     "group": "PPWR-spørgsmål og svar",

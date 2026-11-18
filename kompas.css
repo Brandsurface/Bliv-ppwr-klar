@@ -44,11 +44,11 @@ button > svg, a > svg { display: inline-block; width: 1.4em; height: 1.4em; flex
 .nav-cta { padding: .85em 1.5em; line-height: 1 }
 #language { background: transparent; border: 0; padding: 6px 0 }
 #menu { display: none }
-.hero { position: relative; isolation: isolate; overflow: clip }
+.hero { position: relative; isolation: isolate; min-height: 92vw; padding: 4.55vw 0 6.55vw; overflow: clip; background: #e6d9c9 }
 .hero-scene { position: absolute; inset: 0; z-index: -1; overflow: hidden }
 .hero-photo { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: center top;  transform-origin: center top }
 .intro { position: relative; width: 46.5%; margin-left: var(--pad) }
-.kicker, .quiz-status, .inspect, .band-link {
+.kicker, .quiz-status, .note, .inspect, .band-link {
   text-transform: uppercase; font-weight: 650; letter-spacing: .17em; font-size: clamp(10px,1.04vw,14px)
 }
 .kicker { display: flex; align-items: center; gap: 1em; margin: 0; line-height: 1.2 }
@@ -58,6 +58,12 @@ h1 span, h1 em { display: block; width: max-content }
 h1 em { font-family: var(--serif); font-weight: 400; font-size: 1.07em; letter-spacing: -.065em; position: relative; line-height: .9 }
 h1 em::after { width: 34%; height: .23em; right: 3%; bottom: -.19em }
 .lead { width: 33.4vw; max-width: 100%; margin: 0; font-size: clamp(15px,1.61vw,24px); line-height: 1.25; letter-spacing: -.025em }
+.note { position: absolute; width: 10%; font-size: clamp(9px,1vw,14px); line-height: 1.4; letter-spacing: .12em }
+.note::before { content: ""; position: absolute; width: 7vw; height: 1px; right: calc(100% + .8vw); top: 1.5em; background: var(--ink); opacity: .58; transform: rotate(-42deg); transform-origin: right }
+.note::after { content: ""; position: absolute; width: .52vw; height: .52vw; border-radius: 50%; background: var(--ink); right: calc(100% + 5.9vw); top: calc(1.5em + 4.4vw) }
+.film { top: 5.3%; right: 2.3%; max-width: 6.8em }
+.fibre { top: 30.2%; right: .95%; max-width: 10em }
+.board { top: 53.5%; right: 1.1%; max-width: 10em }
 .inspect { display: flex; align-items: center; justify-content: center; gap: 1em; position: absolute; left: 58%; top: 77%; width: 29%; min-height: 44px; font-size: clamp(10px, .96vw,14px); letter-spacing: .13em }
 .inspect::before, .inspect::after { content: ""; height: 1px; background: currentColor; opacity: .45; flex: 1 }
 .inspect svg { width: 1.6em; height: 1.6em }
@@ -121,48 +127,13 @@ dialog::backdrop { background: #1720199e }
 .model-controls label { display: grid; text-align: center; gap: 4px; font-size: 13px }
 .model-controls input { width: min(42vw,260px); accent-color: #546338 }
 .short-label { display: none }
-@media (width > 720px) {
-  .hero {
-    display: grid; grid-template: "intro scene" auto "quiz scene" 1fr / minmax(0, 1.04fr) minmax(0, .96fr);
-    align-items: start; gap: 24px clamp(24px,4vw,64px);
-    padding: clamp(28px,3.7vw,54px) max(var(--pad), (100% - 78rem) / 2) clamp(36px,4vw,64px);
-  }
-  .hero-scene {
-    grid-area: scene; position: relative; inset: auto; z-index: auto;
-    border: 1px solid var(--line); background: #e8ddce; border-radius: 6px;
-  }
-  .hero-image { position: relative; display: block; aspect-ratio: 1.14; overflow: hidden; border-bottom: 1px solid var(--line) }
-  .hero-photo {
-    inset: 0 0 0 auto; width: 127%; object-position: right top; transform-origin: right top;
-    --pack-entry-scale: 1.045;
-  }
-  .inspect { position: static; width: 100%; padding: 8px 12px; font-size: 11px }
-  .inspect::before, .inspect::after { display: none }
-  .intro { grid-area: intro; width: auto; margin: 0 }
-  .intro h1 { font-size: clamp(32px,4.4vw,64px); line-height: .97; margin: .36em 0 .5em; text-wrap: balance }
-  .intro h1 span { display: inline }
-  .intro h1 em { font-size: 1.04em; width: auto; max-width: max-content; margin-top: .08em }
-  .lead { font-size: clamp(15px,1.32vw,19px); line-height: 1.42; width: auto; max-width: 40ch }
-  .quiz {
-    grid-area: quiz; width: auto; margin: 0; padding: clamp(16px,2.1vw,30px);
-    box-shadow: 0 10px 24px rgb(55 40 24 / 12%), inset 0 1px 1px #fff; border-radius: 8px;
-  }
-  .quiz-status { padding-bottom: 10px }
-  .dots { gap: 9px }
-  .dots i { width: 9px; height: 9px }
-  .quiz h2 { font-size: clamp(23px,2.32vw,36px); margin: 14px 0 8px; line-height: 1.08 }
-  .quiz p { font-size: clamp(14px,1.12vw,17px) }
-  .options { margin-top: 16px; gap: 8px }
-  .choice { padding: 10px; gap: 8px; font-size: clamp(13px,1.05vw,16px); min-height: 48px }
-  .controls { margin-top: 16px }
-  .controls .primary { min-height: 44px; padding-inline: 18px; font-size: clamp(14px,1.15vw,17px) }
-  .chapter, .chapter.data, .chapter.responsibility {
-    min-height: clamp(210px,21vw,340px); padding: 30px max(var(--pad), (100% - 78rem) / 2);
-  }
-  .chapter h2 { font-size: clamp(36px,4.8vw,70px) }
-  .chapter em { font-size: clamp(22px,2.65vw,38px) }
-  .chapter p { font-size: clamp(14px,1.28vw,19px) }
+@media (min-width: 721px) {
+  h1 span { transform: scaleX(1.055); transform-origin: left }
+  h1 em { transform: scaleX(1.12); transform-origin: left }
+  .chapter h2 { transform: scaleX(1.05); transform-origin: left }
   .chapter-copy { width: 50% }
+  .lead { font-size: 1.64vw; width: 34.5vw }
+  .lead-line { display: block }
 }
 @media (max-width: 720px) {
   :root { --pad: 5vw; scroll-padding-top: 68px }
@@ -184,6 +155,7 @@ dialog::backdrop { background: #1720199e }
   .kicker { font-size: 9px; letter-spacing: .11em }
   h1 { font-size: 9.7vw; margin: 5vw 0 4.8vw; line-height: .91 }
   .lead { width: 43vw; font-size: clamp(14px,2.8vw,18px); line-height: 1.29 }
+  .notes { display: none }
   .inspect { top: auto; bottom: 14%; left: 56%; width: 40%; min-height: 40px; font-size: 9px; padding: 0; gap: 5px }
   .quiz { margin: -7vw var(--pad) 0; width: auto; border-radius: 7px; padding: clamp(18px,5vw,32px) }
   .quiz-status { padding-bottom: 12px }
@@ -255,9 +227,8 @@ dialog::backdrop { background: #1720199e }
 #optional-help details p { font-size: .95rem; line-height: 1.5; max-width: 58ch; margin: 0 }
 #page-help-slot:not(:empty) { padding: 0 var(--pad) }
 #page-help-slot #optional-help { padding-block: 1.1rem }
-@media (width > 720px) {
-  .quiz.is-complete { grid-column: 1 / -1; width: min(100%, 780px); padding: clamp(20px,3.1vw,44px) }
-  .hero:has(.is-complete) .hero-scene { grid-row: 1; }
+@media(min-width:721px) {
+  .hero:has(.is-complete) .hero-scene { height: 92vw }
 }
 @media(max-width:720px) {
   .quiz.is-complete { width: auto }
@@ -269,7 +240,7 @@ dialog::backdrop { background: #1720199e }
   to { opacity: 1; translate: 0 0; clip-path: inset(-18% -8% -48% -8%) }
 }
 @keyframes pack-settle {
-  from { scale: var(--pack-entry-scale, 1.18) }
+  from { scale: 1.18; translate: 0 2.5% }
   to { scale: 1; translate: 0 0 }
 }
 @keyframes hero-depth {
@@ -297,12 +268,14 @@ dialog::backdrop { background: #1720199e }
   to { scale: 1 1 }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .intro h1 > *, .intro .lead {
+  .intro h1 > *, .intro .lead, .notes .note {
     animation: type-enter .95s cubic-bezier(.16,.72,.18,1) backwards;
   }
   .intro h1 > :nth-child(2) { animation-delay: 135ms }
   .intro h1 em { animation-delay: 260ms }
-  .intro .lead { animation-delay: 330ms }
+  .intro .lead, .notes .film { animation-delay: 330ms }
+  .notes .fibre { animation-delay: 460ms }
+  .notes .board { animation-delay: 590ms }
   .hero-photo { animation: pack-settle 1.65s cubic-bezier(.17,.7,.24,1) backwards }
   .chapter .number { display: inline-flex; align-items: center; gap: .7em }
   .chapter .number::after {
@@ -322,13 +295,11 @@ dialog::backdrop { background: #1720199e }
   .chapter.data { --detail-motion: detail-cross }
   .chapter.responsibility { --detail-motion: detail-pullback }
   @supports (animation-timeline: view()) {
-    @media (max-width: 720px) {
-      .hero { view-timeline-name: --hero }
-      .hero-photo {
-        animation: pack-settle 1.65s cubic-bezier(.17,.7,.24,1) backwards, hero-depth 1s linear both;
-        animation-timeline: auto, --hero;
-        animation-range: normal, exit 0% exit 85%;
-      }
+    .hero { view-timeline-name: --hero }
+    .hero-photo {
+      animation: pack-settle 1.65s cubic-bezier(.17,.7,.24,1) backwards, hero-depth 1s linear both;
+      animation-timeline: auto, --hero;
+      animation-range: normal, exit 0% exit 85%;
     }
     .chapter { view-timeline-name: --chapter }
     .chapter img {
