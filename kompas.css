@@ -44,7 +44,13 @@ button > svg, a > svg { display: inline-block; width: 1.4em; height: 1.4em; flex
 .nav-cta { padding: .85em 1.5em; line-height: 1 }
 #language { background: transparent; border: 0; padding: 6px 0 }
 #menu { display: none }
-.hero { position: relative; isolation: isolate; min-height: 92vw; padding: 4.55vw 0 6.55vw; overflow: clip; background: #e6d9c9 }
+.hero {
+  --hero-unit: 1vw;
+  --hero-scene-height: calc(92 * var(--hero-unit));
+  position: relative; isolation: isolate; min-height: var(--hero-scene-height);
+  padding: calc(4.55 * var(--hero-unit)) 0 calc(6.55 * var(--hero-unit));
+  overflow: clip; background: #e6d9c9;
+}
 .hero-scene { position: absolute; inset: 0; z-index: -1; overflow: hidden }
 .hero-photo { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: center top;  transform-origin: center top }
 .intro { position: relative; width: 46.5%; margin-left: var(--pad) }
@@ -53,7 +59,7 @@ button > svg, a > svg { display: inline-block; width: 1.4em; height: 1.4em; flex
 }
 .kicker { display: flex; align-items: center; gap: 1em; margin: 0; line-height: 1.2 }
 .kicker::after { content: ""; width: 7.3vw; height: 1px; background: currentColor; opacity: .43 }
-h1 { margin: 2.6vw 0 1.8vw -.42vw; font-size: 9.1vw; font-weight: 700; line-height: .85; letter-spacing: -.077em }
+h1 { margin: 2.6vw 0 1.8vw -.42vw; font-size: calc(9.1 * var(--hero-unit)); font-weight: 700; line-height: .85; letter-spacing: -.077em }
 h1 span, h1 em { display: block; width: max-content }
 h1 em { font-family: var(--serif); font-weight: 400; font-size: 1.07em; letter-spacing: -.065em; position: relative; line-height: .9 }
 h1 em::after { width: 34%; height: .23em; right: 3%; bottom: -.19em }
@@ -69,7 +75,8 @@ h1 em::after { width: 34%; height: .23em; right: 3%; bottom: -.19em }
 .inspect svg { width: 1.6em; height: 1.6em }
 .inspect:hover span { text-decoration: underline; text-underline-offset: 4px }
 .quiz {
-  width: 43.1%; margin: 3vw 0 0 3.85vw; padding: 2.65vw 2.76vw 2.8vw;
+  width: 43.1%; margin: calc(3 * var(--hero-unit)) 0 0 3.85vw;
+  padding: calc(2.65 * var(--hero-unit)) 2.76vw calc(2.8 * var(--hero-unit));
   color: var(--ink); background: #eee7dc url(assets/paper.webp) repeat; position: relative;
   box-shadow: 0 1.6vw 2.85vw rgb(55 40 24 / 25%), inset 0 1px 1px #fff;
   border: 1px solid rgb(255 255 255 / 42%); border-radius: .8vw;
@@ -80,11 +87,11 @@ h1 em::after { width: 34%; height: .23em; right: 3%; bottom: -.19em }
 .dots i { display: grid; place-items: center; width: .95vw; height: .95vw; border-radius: 100%; background: #c9c3b9 }
 .dots i.active { background: var(--lime); box-shadow: 0 0 0 1px #c6cf70 }
 .dots i.active::after { content: ""; width: 38%; height: 38%; border-radius: 50%; background: var(--ink) }
-.quiz h2 { font-size: clamp(23px,3.22vw,51px); line-height: 1.02; letter-spacing: -.058em; margin: 1.65vw 0 1.18vw; font-weight: 700 }
+.quiz h2 { font-size: clamp(23px,calc(3.22 * var(--hero-unit)),51px); line-height: 1.02; letter-spacing: -.058em; margin: 1.65vw 0 1.18vw; font-weight: 700 }
 .quiz h2:focus { outline: none }
-.quiz p { margin: 0; font-size: clamp(13px,1.39vw,21px); line-height: 1.34; letter-spacing: -.02em }
+.quiz p { margin: 0; font-size: clamp(13px,calc(1.39 * var(--hero-unit)),21px); line-height: 1.34; letter-spacing: -.02em }
 .options { display: grid; grid-template-columns: 1fr 1fr; gap: .82vw 1.1vw; margin-top: 2.1vw }
-.choice { display: flex; align-items: flex-start; gap: 1vw; padding: 1.13vw 1.12vw; cursor: pointer; line-height: 1.36; font-size: clamp(12px,1.34vw,20px); letter-spacing: -.022em; min-height: 6.1vw; border: 1px solid rgb(28 32 24 / 32%); border-radius: 4px; transition: background .18s,border-color .18s }
+.choice { display: flex; align-items: flex-start; gap: 1vw; padding: calc(1.13 * var(--hero-unit)) 1.12vw; cursor: pointer; line-height: 1.36; font-size: clamp(12px,calc(1.34 * var(--hero-unit)),20px); letter-spacing: -.022em; min-height: calc(6.1 * var(--hero-unit)); border: 1px solid rgb(28 32 24 / 32%); border-radius: 4px; transition: background .18s,border-color .18s }
 .choice input { accent-color: #445300; width: 1.15em; height: 1.15em; flex-shrink: 0; margin: .12em 0 0 }
 .choice:hover, .choice:has(input:focus-visible) { border-color: var(--ink); background: #ffffff40 }
 .choice:has(input:checked) { border-color: #707d30; background: #e5ecbf }
@@ -128,11 +135,12 @@ dialog::backdrop { background: #1720199e }
 .model-controls input { width: min(42vw,260px); accent-color: #546338 }
 .short-label { display: none }
 @media (min-width: 721px) {
+  .hero { --hero-unit: .95vw }
   h1 span { transform: scaleX(1.055); transform-origin: left }
   h1 em { transform: scaleX(1.12); transform-origin: left }
   .chapter h2 { transform: scaleX(1.05); transform-origin: left }
   .chapter-copy { width: 50% }
-  .lead { font-size: 1.64vw; width: 34.5vw }
+  .lead { font-size: calc(1.64 * var(--hero-unit)); width: 34.5vw }
   .lead-line { display: block }
 }
 @media (max-width: 720px) {
@@ -228,7 +236,7 @@ dialog::backdrop { background: #1720199e }
 #page-help-slot:not(:empty) { padding: 0 var(--pad) }
 #page-help-slot #optional-help { padding-block: 1.1rem }
 @media(min-width:721px) {
-  .hero:has(.is-complete) .hero-scene { height: 92vw }
+  .hero:has(.is-complete) .hero-scene { height: var(--hero-scene-height) }
 }
 @media(max-width:720px) {
   .quiz.is-complete { width: auto }
