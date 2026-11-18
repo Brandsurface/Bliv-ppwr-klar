@@ -37,28 +37,41 @@
     <div class="intro">
       <p class="kicker" data-da="EU’S NYE EMBALLAGEREGLER">EU PACKAGING READINESS</p>
       <h1 id="headline"><span data-da="Emballage,">Packaging,</span><span data-da="klar til">ready for</span><em data-da="det næste.">what’s next.</em></h1>
-      <p class="lead"><span class="lead-line" data-da="Få overblik over EU’s emballagekrav.">A clear path through EU packaging</span> <span class="lead-line" data-da="Se, hvad du skal afklare, og tag næste">requirements — so you can make confident</span> <span class="lead-line" data-da="skridt med din emballage.">decisions, adapt, and stay ahead with PPWR.</span></p>
+      <p class="lead"><span class="lead-line" data-da="Få overblik over EU’s emballagekrav.">Explore EU packaging rules.</span> <span class="lead-line" data-da="Få fire arbejdsopgaver for én emballage">Get four work tasks for one packaging item</span> <span class="lead-line" data-da="ud fra jeres svar og valgte prioritet.">based on your answers and chosen priority.</span></p>
     </div>
     <section class="quiz" id="readiness" aria-label="PPWR readiness test">
       <div class="quiz-status"><span id="step"></span><span class="dots" aria-hidden="true"></span></div>
+      <p id="legacy-notice" class="feedback" hidden>An older saved checklist was removed because this version uses different questions.</p>
       <form id="quiz-form" novalidate>
-        <h2 id="question" tabindex="-1">Where do you sit in the packaging chain?</h2>
-        <p id="hint">Choose the role that best describes your business.</p>
+        <h2 id="question" tabindex="-1">What do you do with this packaging?</h2>
+        <p id="hint">Choose one activity to investigate first. You may have several roles. Assess manufacturer duties and extended producer responsibility for packaging waste separately.</p>
         <div class="options" role="group" aria-labelledby="question" id="answers"></div>
+        <div id="food-contact" class="feedback" hidden>
+          <p id="food-question"></p>
+          <div id="food-answers" class="options" role="group" aria-labelledby="food-question"></div>
+        </div>
         <div class="feedback" id="feedback" role="status"></div>
         <div class="controls"><button type="submit" class="primary"><span id="next-text">Map your readiness</span><svg aria-hidden="true"><use href="/assets/icons.svg#arrow-right"/></svg></button><button type="button" class="text-btn" id="back" hidden data-da="Tilbage">Back</button></div>
       </form>
       <div id="result" hidden>
         <h2 tabindex="-1" id="result-title" data-da="Jeres PPWR-tjekliste">Your PPWR checklist</h2>
-        <p class="plan-intro" data-da="Tag én emballage frem. Begynd med det punkt, I valgte i testen, og sæt kryds, når opgaven er løst.">Pick one pack. Start with the priority you chose and tick each task as you finish it.</p>
+        <p class="plan-intro" data-da="Her er fire arbejdsopgaver for én emballage. Jeres valgte prioritet står først. Sæt kryds, når I har gennemført en opgave.">Here are four work tasks for one packaging item. Your chosen priority comes first. Tick each task as you finish it.</p>
+        <p class="feedback">Working note for one packaging item, based on your own answers. Assessing whether the packaging meets the requirements calls for a separate review of the packaging and its documentation.</p>
         <div class="plan-progress"><span id="task-count" role="status"></span><progress id="task-progress" max="4" value="0" aria-label="Checklist progress / Tjeklistens fremdrift"></progress></div>
         <ol id="checklist"></ol>
-        <p id="plan-finish" hidden data-da="I har gennemgået den første emballage. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage.">You’ve reviewed your first pack. Follow up on open questions with their owners, then use the checklist for the next pack.</p>
+        <p id="plan-finish" hidden data-da="I har gennemført de fire arbejdsopgaver. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage.">You’ve completed the four work tasks. Follow up on open questions with their owners, then use the checklist for the next pack.</p>
         <div class="plan-controls">
           <button type="button" class="result-tool" id="copy" data-da="Kopiér tjeklisten">Copy checklist</button>
           <button type="button" class="text-btn" id="restart" data-da="Start en ny test">Start a new test</button>
         </div>
         <span role="status" id="copied"></span>
+        <textarea id="checklist-copy-field" class="feedback" rows="6" aria-label="Checklist text" readonly hidden></textarea>
+        <p class="feedback">You can use the test without saving a checklist. If you opt in, your answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them whenever you like. Expired results are removed the next time you open the site.</p>
+        <div class="plan-controls">
+          <button id="save-plan" type="button" class="text-btn">Save on this device</button>
+          <button id="delete-plan" type="button" class="text-btn" hidden>Delete saved checklist</button>
+        </div>
+        <p id="storage-status" class="feedback" role="status"></p>
         <details id="brief-details" class="result-detail">
           <summary data-da="Tag jeres svar med på arbejde">Take your answers back to the team</summary>
           <label for="project-brief" data-da="Kopiér arbejdsnotatet, og tilføj produkt, ansvarlig og frist i jeres eget dokument.">Copy the working note and add the product, owner and due date in your own document.</label>
@@ -66,7 +79,7 @@
           <button type="button" class="text-btn" id="copy-brief" data-da="Kopiér arbejdsnotat">Copy working note</button>
           <span role="status" id="brief-status"></span>
         </details>
-        <p class="site-disclaimer"><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS (Exemplar) accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button>
+        <p class="site-disclaimer"><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button>
         <div id="result-help-slot"></div>
       </div>
       <noscript>Enable JavaScript to take the five-step readiness test, or read the guide below.</noscript>
@@ -92,24 +105,27 @@
     <div class="guide-list">
       <details open><summary data-da="Hvad består den af?">What is it made of?</summary><p data-da="Skil emballagen ad. Notér vægt, materiale og funktion for hver del, også etiketter, belægninger og lukninger. Brug artikel 6 som udgangspunkt, når I undersøger genanvendelighed.">Take the pack apart. Record the weight, material and function of each part, including labels, coatings and closures. Start with Article 6 when reviewing recyclability.</p></details>
       <details><summary data-da="Hvad kan I dokumentere?">What can you document?</summary><p data-da="Bed om gældende specifikationer og tegninger. Notér dato og leverandør for hver fil. Artikel 15 og bilag VII beskriver fabrikantens tekniske dokumentation.">Request current specifications and drawings. Record the date and supplier for each file. Article 15 and Annex VII describe the manufacturer’s technical documentation.</p></details>
-      <details><summary data-da="Hvem har ansvaret?">Who owns the next step?</summary><p data-da="Notér, hvem der fremstiller, importerer og distribuerer produktet i hvert marked. Tjek definitionerne i artikel 3 og jeres forpligtelser i kapitel IV (artikel 15–23) samt producentregistrering i artikel 44. Indtil de harmoniserede registre efter artikel 44 er på plads, gælder de nationale registre, i Danmark Dansk Producentansvar. Giv hvert åbent spørgsmål en ansvarlig.">List who makes, imports and distributes the product in each market. Check the definitions in Article 3, your obligations in Chapter IV (Articles 15–23) and producer registration in Article 44. Until the harmonised registers under Article 44 are in place, national registers apply – in Denmark, Dansk Producentansvar. Give each open question an owner.</p></details>
+      <details><summary data-da="Hvem har ansvaret?">Who owns the next step?</summary><p data-da="Kortlæg, hvem der fremstiller, importerer, distribuerer eller udpakker emballagen på hvert marked. Brug artikel 3 og kapitel IV (artikel 15–23) til at afklare roller og pligter. Tjek producentregistrering efter artikel 44 og de nationale regler, herunder emballagebekendtgørelsen i Danmark.">Map who makes, imports, distributes or unpacks the packaging in each market. Use Article 3 and Chapter IV (Articles 15–23) for roles and duties. Check producer registration under Article 44 and the national rules, including the Danish Packaging Order for Denmark.</p></details>
     </div>
   </section>
   <section class="resources spread" id="resources" aria-labelledby="source-title">
     <div><p class="kicker" data-da="Kilder">Resources</p><h2 id="source-title" data-da="Læs reglerne.">Read the rules.</h2><p data-da="PPWR har generelt gældet siden 12. august 2026. Flere krav har deres egne frister. Tjek den relevante artikel for den konkrete emballage.">The PPWR has generally applied since 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.</p></div>
-    <div class="resource-links"><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" data-da="Forordning (EU) 2025/40 ↗">Regulation (EU) 2025/40 ↗</a><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en" data-da="Europa-Kommissionens overblik ↗">European Commission overview ↗</a><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage" data-da="Dansk producentansvar ↗">Danish producer responsibility ↗</a></div>
+    <div class="resource-links"><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" data-da="Forordning (EU) 2025/40 ↗">Regulation (EU) 2025/40 ↗</a><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en" data-da="Europa-Kommissionens overblik ↗">European Commission overview ↗</a><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage" data-da="Dansk producentansvar ↗">Danish producer responsibility ↗</a>
+      <a href="https://eur-lex.europa.eu/eli/C/2026/3084/oj">European Commission guidance C/2026/3084</a>
+      <a href="https://www.retsinformation.dk/eli/lta/2026/851">Danish Packaging Order (Danish)</a>
+    </div>
   </section>
 
   <section class="spread ppwr-questions" aria-labelledby="faq-title"><div><h2 id="faq-title">Questions about PPWR</h2></div><div>
 <article><h3>What is PPWR?</h3><p>PPWR stands for Packaging and Packaging Waste Regulation. Regulation (EU) 2025/40 sets rules for packaging placed on the EU market and covers topics such as packaging design, recyclability and producer responsibility.</p><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj"><span>Read Regulation (EU) 2025/40</span></a></article>
 <article><h3>When do the new packaging rules apply?</h3><p>The PPWR has generally applied since 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.</p><a href="https://green-forum.ec.europa.eu/green-business/packaging-and-packaging-waste-regulation-implementation_en"><span>Read the European Commission implementation guidance</span></a></article>
-<article><h3>What is the difference between PPWR and Danish producer responsibility?</h3><p>PPWR is the EU regulation on packaging and packaging waste. Under Danish producer responsibility, the business that first makes packaging or a packaged product available in Denmark generally has to register with Dansk Producentansvar and pay for the management of packaging waste. Check both the requirements for your packaging and your obligations as a producer.</p><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage"><span>Read about Danish producer responsibility</span></a></article>
-<article><h3>What do I get from the PPWR readiness test?</h3><p>Answer five questions about your business and packaging. You get a prioritised checklist with practical steps for roles, sales markets, packaging materials and documentation.</p><a href="#readiness"><span>Start the PPWR readiness test</span></a></article>
+<article><h3>What is the difference between PPWR and Danish producer responsibility?</h3><p>PPWR is the EU regulation on packaging and packaging waste. In Denmark, the responsible producer generally first makes the packaging available on the Danish market. Rules vary with packaging type and role, including certain cases of unpacking. Check who must register with Dansk Producentansvar and finance waste management.</p><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage"><span>Read about Danish producer responsibility</span></a></article>
+<article><h3>What do I get from the PPWR readiness test?</h3><p>Answer five questions about one packaging item. You get four work tasks based on your own answers, with your chosen priority first. The test helps you identify what to investigate.</p><a href="#readiness"><span>Start the PPWR readiness test</span></a></article>
 </div></section>
   <div id="page-help-slot">
     <aside id="optional-help" aria-labelledby="help-title">
       <h3 id="help-title" data-da="Har I brug for praktisk hjælp?">Need practical help?</h3>
-      <p>Exemplar is part of BRAND SURFACE ApS, which operates this site.</p>
+      <p>BRAND SURFACE ApS operates this site. The links below are commercial offers for design from Brandsurface and packaging samples from Exemplar.</p>
       <details name="packaging-help">
         <summary data-da="Emballagedesign · Brandsurface">Packaging design · Brandsurface</summary>
         <p data-da="Vil I ændre emballagens udtryk eller layout? Tag jeres nuværende design og de ønskede ændringer med, og få et tilbud på design og trykklart artwork.">Looking to change the look or layout of your pack? Bring the current design and your proposed changes for a quote on design and print-ready artwork.</p>
@@ -123,7 +139,7 @@
     </aside>
   </div>
 </main>
-<footer><a class="brand" href="#overview">Bliv <strong>PPWR</strong> klar</a><p class="site-disclaimer"><span>Bliv PPWR klar is operated by BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · ja@brandsurface.dk</span><br><br><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS (Exemplar) accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button></footer>
+<footer><a class="brand" href="#overview">Bliv <strong>PPWR</strong> klar</a><p class="site-disclaimer"><span>Bliv PPWR klar is operated by BRAND SURFACE ApS, Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · info@brandsurface.dk</span><br><br><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button></footer>
 <p class="share-feedback" id="share-feedback" role="status"></p>
 
 <dialog id="study" aria-labelledby="study-title"><div class="study-head"><div><p class="kicker" data-da="Materialestudie">Material study</p><h2 id="study-title" data-da="Emballagens tre lag">Anatomy of a pack</h2></div><button type="button" id="close-study" aria-label="Close / Luk"><svg aria-hidden="true"><use href="/assets/icons.svg#x"/></svg></button></div>
