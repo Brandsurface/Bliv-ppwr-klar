@@ -324,20 +324,20 @@
     "en": "Who owns the next step?",
     "da": "Hvem har ansvaret?"
   },
-  "List who makes, imports and distributes the product in each market. Check your role in Chapter IV and producer registration in Article 44. Give each open question an owner.": {
+  "List who makes, imports and distributes the product in each market. Check the definitions in Article 3, your obligations in Chapter IV (Articles 15–23) and producer registration in Article 44. Until the harmonised registers under Article 44 are in place, national registers apply – in Denmark, Dansk Producentansvar. Give each open question an owner.": {
     "group": "Vejledning",
-    "en": "List who makes, imports and distributes the product in each market. Check your role in Chapter IV and producer registration in Article 44. Give each open question an owner.",
-    "da": "Notér, hvem der fremstiller, importerer og distribuerer produktet i hvert marked. Tjek jeres rolle i kapitel IV og producentregistrering i artikel 44, og giv hvert åbent spørgsmål en ansvarlig."
+    "en": "List who makes, imports and distributes the product in each market. Check the definitions in Article 3, your obligations in Chapter IV (Articles 15–23) and producer registration in Article 44. Until the harmonised registers under Article 44 are in place, national registers apply – in Denmark, Dansk Producentansvar. Give each open question an owner.",
+    "da": "Notér, hvem der fremstiller, importerer og distribuerer produktet i hvert marked. Tjek definitionerne i artikel 3 og jeres forpligtelser i kapitel IV (artikel 15–23) samt producentregistrering i artikel 44. Indtil de harmoniserede registre efter artikel 44 er på plads, gælder de nationale registre, i Danmark Dansk Producentansvar. Giv hvert åbent spørgsmål en ansvarlig."
   },
   "Read the rules.": {
     "group": "Kilder",
     "en": "Read the rules.",
     "da": "Læs reglerne."
   },
-  "The PPWR generally applies from 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.": {
+  "The PPWR has generally applied since 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.": {
     "group": "Kilder",
-    "en": "The PPWR generally applies from 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.",
-    "da": "PPWR finder generelt anvendelse fra 12. august 2026. Flere krav har deres egne frister. Tjek den relevante artikel for den konkrete emballage."
+    "en": "The PPWR has generally applied since 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.",
+    "da": "PPWR har generelt gældet siden 12. august 2026. Flere krav har deres egne frister. Tjek den relevante artikel for den konkrete emballage."
   },
   "Regulation (EU) 2025/40 ↗": {
     "group": "Kilder",
@@ -554,15 +554,15 @@
     "en": "Transport or shipping pack",
     "da": "Transport- eller forsendelsesemballage"
   },
-  "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use.": {
+  "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).": {
     "group": "Parathedstest",
-    "en": "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use.",
-    "da": "Bed om polymertyper, dokumentation for genanvendt indhold og eventuelle relevante fødevarekontaktdata."
+    "en": "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).",
+    "da": "Bed om polymertyper, dokumentation for genanvendt indhold og eventuelle relevante fødevarekontaktdata. Bed leverandøren om dokumentation for, at emballage til fødevarekontakt overholder PFAS-grænserne i artikel 5, stk. 5 (gælder fra 12. august 2026)."
   },
-  "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream.": {
+  "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).": {
     "group": "Parathedstest",
-    "en": "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream.",
-    "da": "Registrér fibre, belægning, trykfarve og lim. Spørg leverandøren, hvordan de påvirker genanvendelsen."
+    "en": "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).",
+    "da": "Registrér fibre, belægning, trykfarve og lim. Spørg leverandøren, hvordan de påvirker genanvendelsen. Bed leverandøren om dokumentation for, at emballage til fødevarekontakt overholder PFAS-grænserne i artikel 5, stk. 5 (gælder fra 12. august 2026)."
   },
   "Separate each layer and closure on paper. Ask suppliers which components users can separate in practice.": {
     "group": "Parathedstest",
@@ -664,10 +664,10 @@
     "en": "A sketch of the supply chain with the company and contact at each step.",
     "da": "En skitse af varekæden med virksomhed og kontaktperson ved hvert led."
   },
-  "PPWR · Chapter IV, roles and obligations": {
+  "PPWR · Article 3 and Chapter IV, roles and obligations": {
     "group": "Tjekliste og funktioner",
-    "en": "PPWR · Chapter IV, roles and obligations",
-    "da": "PPWR · kapitel IV, roller og pligter"
+    "en": "PPWR · Article 3 and Chapter IV, roles and obligations",
+    "da": "PPWR · artikel 3 og kapitel IV, roller og forpligtelser"
   },
   "Check your sales markets": {
     "group": "Tjekliste og funktioner",
@@ -709,10 +709,10 @@
     "en": "An index of file names, dates and owners. Give each missing document a follow-up date.",
     "da": "En oversigt med filnavn, dato og ansvarlig. Sæt en opfølgningsdato ved de dokumenter, der mangler."
   },
-  "PPWR · Annex VII, technical documentation": {
+  "PPWR · Article 15 and Annex VII, conformity assessment and technical documentation": {
     "group": "Tjekliste og funktioner",
-    "en": "PPWR · Annex VII, technical documentation",
-    "da": "PPWR · bilag VII, teknisk dokumentation"
+    "en": "PPWR · Article 15 and Annex VII, conformity assessment and technical documentation",
+    "da": "PPWR · artikel 15 og bilag VII, overensstemmelsesvurdering og teknisk dokumentation"
   },
   "TEST COMPLETE": {
     "group": "Tjekliste og funktioner",
@@ -854,10 +854,10 @@
     "en": "Disclaimer",
     "da": "Ansvarsfraskrivelse"
   },
-  "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, Bliv PPWR klar accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.": {
+  "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS (Exemplar) accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.": {
     "group": "Ansvarsfraskrivelse",
-    "en": "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, Bliv PPWR klar accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.",
-    "da": "Siden og testresultatet er vejledende. De udgør ikke juridisk rådgivning eller dokumentation for, at emballagen overholder reglerne. I det omfang loven tillader det, fraskriver Bliv PPWR klar sig ansvar for ukorrekte, ufuldstændige eller forældede oplysninger samt for beslutninger eller tab, der følger af brugen. Kontrollér de gældende krav i de officielle kilder."
+    "en": "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS (Exemplar) accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.",
+    "da": "Siden og testresultatet er vejledende. De udgør ikke juridisk rådgivning eller dokumentation for, at emballagen overholder reglerne. I det omfang loven tillader det, fraskriver BRAND SURFACE ApS (Exemplar) sig ansvar for ukorrekte, ufuldstændige eller forældede oplysninger samt for beslutninger eller tab, der følger af brugen. Kontrollér de gældende krav i de officielle kilder."
   },
   "See the official sources.": {
     "group": "Ansvarsfraskrivelse",
@@ -894,10 +894,10 @@
     "en": "When do the new packaging rules apply?",
     "da": "Hvornår gælder de nye emballagekrav?"
   },
-  "The PPWR generally applies from 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.": {
+  "The PPWR has generally applied since 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.": {
     "group": "PPWR-spørgsmål og svar",
-    "en": "The PPWR generally applies from 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.",
-    "da": "PPWR finder som udgangspunkt anvendelse fra 12. august 2026. Nogle bestemmelser og konkrete krav har andre datoer. Tjek fristen for det krav og den emballage, I arbejder med."
+    "en": "The PPWR has generally applied since 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.",
+    "da": "PPWR har som udgangspunkt gældet siden 12. august 2026. Nogle bestemmelser og konkrete krav har andre datoer. Tjek fristen for det krav og den emballage, I arbejder med."
   },
   "Read the European Commission implementation guidance": {
     "group": "PPWR-spørgsmål og svar",
@@ -909,10 +909,10 @@
     "en": "What is the difference between PPWR and Danish producer responsibility?",
     "da": "Hvad er forskellen på PPWR og dansk producentansvar?"
   },
-  "PPWR is the EU regulation on packaging and packaging waste. Danish producer responsibility is the system under which responsible businesses contribute to the management of packaging waste in Denmark. Check both the requirements for your packaging and your obligations as a producer.": {
+  "PPWR is the EU regulation on packaging and packaging waste. Under Danish producer responsibility, the business that first makes packaging or a packaged product available in Denmark generally has to register with Dansk Producentansvar and pay for the management of packaging waste. Check both the requirements for your packaging and your obligations as a producer.": {
     "group": "PPWR-spørgsmål og svar",
-    "en": "PPWR is the EU regulation on packaging and packaging waste. Danish producer responsibility is the system under which responsible businesses contribute to the management of packaging waste in Denmark. Check both the requirements for your packaging and your obligations as a producer.",
-    "da": "PPWR er EU’s forordning om emballage og emballageaffald. Dansk producentansvar er den ordning, hvor de ansvarlige virksomheder bidrager til håndteringen af emballageaffald i Danmark. Undersøg både kravene til emballagen og jeres forpligtelser som producent."
+    "en": "PPWR is the EU regulation on packaging and packaging waste. Under Danish producer responsibility, the business that first makes packaging or a packaged product available in Denmark generally has to register with Dansk Producentansvar and pay for the management of packaging waste. Check both the requirements for your packaging and your obligations as a producer.",
+    "da": "PPWR er EU's forordning om emballage og emballageaffald. Dansk producentansvar er den ordning, hvor den virksomhed, der først gør en emballage eller et emballeret produkt tilgængeligt i Danmark, som hovedregel registrerer sig hos Dansk Producentansvar og betaler for håndteringen af emballageaffaldet. Undersøg både kravene til emballagen og jeres forpligtelser som producent."
   },
   "Read about Danish producer responsibility": {
     "group": "PPWR-spørgsmål og svar",
@@ -948,5 +948,15 @@
     "group": "Forside og navigation",
     "da": "Bliv PPWR klar",
     "en": "Bliv PPWR klar"
+  },
+  "Bliv PPWR klar is operated by BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · ja@brandsurface.dk": {
+    "group": "Ansvarsfraskrivelse",
+    "en": "Bliv PPWR klar is operated by BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · ja@brandsurface.dk",
+    "da": "Bliv PPWR klar drives af BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., 2500 Valby · CVR 32442277 · ls@brandsurface.dk"
+  },
+  "Exemplar is part of BRAND SURFACE ApS, which operates this site.": {
+    "group": "Partnerhjælp",
+    "en": "Exemplar is part of BRAND SURFACE ApS, which operates this site.",
+    "da": "Exemplar er en del af BRAND SURFACE ApS, som driver sitet."
   }
 }
