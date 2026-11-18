@@ -6,13 +6,13 @@
   },
   "PPWR Kompas — Packaging, ready for what’s next.": {
     "group": "Sidetitel og beskrivelse",
-    "en": "PPWR readiness test | EU packaging rules | PPWR Kompas",
-    "da": "PPWR-test og EU’s emballagekrav | Bliv PPWR klar"
+    "en": "PPWR checklist for packaging | Bliv PPWR klar",
+    "da": "PPWR-tjekliste til emballage | Bliv PPWR klar"
   },
   "Skip to readiness test": {
     "group": "Forside og navigation",
-    "en": "Skip to readiness test",
-    "da": "Gå til parathedstesten"
+    "en": "Go to the checklist",
+    "da": "Gå til tjeklisten"
   },
   "PPWR": {
     "group": "Forside og navigation",
@@ -46,8 +46,8 @@
   },
   "Map your readiness": {
     "group": "Forside og navigation",
-    "en": "Map your readiness",
-    "da": "Tjek din parathed"
+    "en": "Start my checklist",
+    "da": "Start min tjekliste"
   },
   "Take the test": {
     "group": "Forside og navigation",
@@ -121,8 +121,8 @@
   },
   "PPWR readiness test": {
     "group": "Billed- og hjælpetekster",
-    "en": "PPWR readiness test",
-    "da": "PPWR readiness test"
+    "en": "PPWR checklist",
+    "da": "PPWR-tjekliste"
   },
   "Back": {
     "group": "Forside og navigation",
@@ -166,8 +166,8 @@
   },
   "Enable JavaScript to take the five-step readiness test, or read the guide below.": {
     "group": "Testresultat",
-    "en": "Enable JavaScript to take the five-step readiness test, or read the guide below.",
-    "da": "Enable JavaScript to take the five-step readiness test, or read the guide below."
+    "en": "Enable JavaScript to start the checklist or read the guide below.",
+    "da": "Slå JavaScript til for at starte tjeklisten, eller læs guiden nedenfor."
   },
   "01 /": {
     "group": "Billedkapitler",
@@ -206,8 +206,8 @@
   },
   "Get clarity on what applies to you, what to prepare, and where to focus next.": {
     "group": "Billedkapitler",
-    "en": "Get clarity on what applies to you, what to prepare, and where to focus next.",
-    "da": "Find ud af, hvilke spørgsmål der gælder din emballage, hvilke data du mangler, og hvem der kan hjælpe."
+    "en": "List the packaging data you have and the questions you need to take to your suppliers.",
+    "da": "Få overblik over jeres emballagedata og de spørgsmål, I skal tage med til leverandørerne."
   },
   "03 /": {
     "group": "Billedkapitler",
@@ -251,8 +251,8 @@
   },
   "Take the readiness test →": {
     "group": "Vejledning",
-    "en": "Take the readiness test →",
-    "da": "Tag parathedstesten →"
+    "en": "Start the checklist →",
+    "da": "Start tjeklisten →"
   },
   "What is it made of?": {
     "group": "Vejledning",
@@ -269,10 +269,10 @@
     "en": "What can you document?",
     "da": "Hvad kan I dokumentere?"
   },
-  "Request current specifications and drawings. Record the date and supplier for each file. Article 15 and Annex VII describe the manufacturer’s technical documentation.": {
+  "Request dated specifications for the packaging type. Identify the manufacturer, then check which documentation and EU declaration requirements apply under Articles 15, 38 and 39 and Annexes VII and VIII. The pack must be traceable to its documentation.": {
     "group": "Vejledning",
-    "en": "Request current specifications and drawings. Record the date and supplier for each file. Article 15 and Annex VII describe the manufacturer’s technical documentation.",
-    "da": "Bed om gældende specifikationer og tegninger. Notér dato og leverandør for hver fil. Artikel 15 og bilag VII beskriver fabrikantens tekniske dokumentation."
+    "en": "Request dated specifications for the packaging type. Identify the manufacturer, then check which documentation and EU declaration requirements apply under Articles 15, 38 and 39 and Annexes VII and VIII. The pack must be traceable to its documentation.",
+    "da": "Bed om daterede specifikationer for emballagetypen. Afklar, hvem der er fabrikant, og undersøg, hvilke krav til teknisk dokumentation og EU-overensstemmelseserklæring der gælder efter artikel 15, 38 og 39 samt bilag VII og VIII. Emballagen skal kunne knyttes til dokumentationen."
   },
   "Who owns the next step?": {
     "group": "Vejledning",
@@ -516,8 +516,8 @@
   },
   " of 4 tasks done": {
     "group": "Tjekliste og funktioner",
-    "en": " of 4 tasks done",
-    "da": " af 4 opgaver løst"
+    "en": " of 4 tasks marked as done",
+    "da": " af 4 opgaver markeret som løst"
   },
   "Keep: ": {
     "group": "Tjekliste og funktioner",
@@ -714,10 +714,10 @@
     "en": "based on your answers and chosen priority.",
     "da": "ud fra jeres svar og valgte prioritet."
   },
-  "Answer five questions about one packaging item. You get four work tasks based on your own answers, with your chosen priority first. The test helps you identify what to investigate.": {
+  "Work through five steps about one packaging item, including its material and use for food contact. Your answers generate four tasks. You choose which task comes first.": {
     "group": "PPWR-spørgsmål og svar",
-    "en": "Answer five questions about one packaging item. You get four work tasks based on your own answers, with your chosen priority first. The test helps you identify what to investigate.",
-    "da": "Svar på fem spørgsmål om én emballage. I får fire arbejdsopgaver baseret på jeres egne svar, med jeres valgte prioritet først. Testen hjælper jer med at afklare, hvad I skal undersøge."
+    "en": "Work through five steps about one packaging item, including its material and use for food contact. Your answers generate four tasks. You choose which task comes first.",
+    "da": "Gennemgå fem trin om én emballage, herunder materiale og fødevarekontakt. Jeres svar giver fire arbejdsopgaver. I vælger selv, hvilken opgave der står først."
   },
   "PPWR is the EU regulation on packaging and packaging waste. In Denmark, the responsible producer generally first makes the packaging available on the Danish market. Rules vary with packaging type and role, including certain cases of unpacking. Check who must register with Dansk Producentansvar and finance waste management.": {
     "group": "PPWR-spørgsmål og svar",
@@ -754,15 +754,15 @@
     "en": "Here are four work tasks for one packaging item. Your chosen priority comes first. Tick each task as you finish it.",
     "da": "Her er fire arbejdsopgaver for én emballage. Jeres valgte prioritet står først. Sæt kryds, når I har gennemført en opgave."
   },
-  "Working note for one packaging item, based on your own answers. Assessing whether the packaging meets the requirements calls for a separate review of the packaging and its documentation.": {
+  "This working note covers selected topics for one packaging item and uses only your answers. It is general information. An assessment of compliance requires a separate review of the pack, its use, the markets and the documentation.": {
     "group": "Testresultat",
-    "en": "Working note for one packaging item, based on your own answers. Assessing whether the packaging meets the requirements calls for a separate review of the packaging and its documentation.",
-    "da": "Arbejdsnotat for én emballage, baseret på jeres egne svar. En vurdering af, om emballagen opfylder kravene, kræver en særskilt gennemgang af emballagen og dokumentationen."
+    "en": "This working note covers selected topics for one packaging item and uses only your answers. It is general information. An assessment of compliance requires a separate review of the pack, its use, the markets and the documentation.",
+    "da": "Arbejdsnotatet dækker udvalgte emner for én emballage ud fra jeres egne svar. Det er generel information. En vurdering af, om emballagen overholder reglerne, kræver særskilt gennemgang af emballagen, dens anvendelse, markederne og dokumentationen."
   },
-  "You can use the test without saving a checklist. If you opt in, your answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them whenever you like. Expired results are removed the next time you open the site.": {
+  "Saving is optional. Saved answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them sooner. Expired results are cleared on the next visit. When you switch languages, the test temporarily passes your progress to the other language in the same tab.": {
     "group": "Lagring",
-    "en": "You can use the test without saving a checklist. If you opt in, your answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them whenever you like. Expired results are removed the next time you open the site.",
-    "da": "I kan bruge testen uden at gemme en tjekliste. Vælger I at gemme, kan jeres svar og afkrydsninger gendannes i denne browser i 30 dage fra lagringen. I kan slette dem, når I vil. Udløbne resultater fjernes, næste gang I åbner sitet."
+    "en": "Saving is optional. Saved answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them sooner. Expired results are cleared on the next visit. When you switch languages, the test temporarily passes your progress to the other language in the same tab.",
+    "da": "Det er frivilligt at gemme. Gemte svar og afkrydsninger kan gendannes i denne browser i 30 dage fra lagringen. I kan selv slette dem før. Udløbne resultater fjernes ved næste besøg. Skifter I sprog, overføres jeres fremskridt midlertidigt til det andet sprog i samme fane."
   },
   "Save on this device": {
     "group": "Lagring",
@@ -869,10 +869,10 @@
     "en": "What is the packaging made of?",
     "da": "Hvad er emballagen lavet af?"
   },
-  "Choose the material and indicate whether the packaging is intended to come into contact with food.": {
+  "Choose the material. For food contact, consider intended use, actual contact in normal use, and foreseeable contact or transfer of constituents to food.": {
     "group": "Testspørgsmål",
-    "en": "Choose the material and indicate whether the packaging is intended to come into contact with food.",
-    "da": "Vælg materiale, og angiv, om emballagen er beregnet til at komme i kontakt med fødevarer."
+    "en": "Choose the material. For food contact, consider intended use, actual contact in normal use, and foreseeable contact or transfer of constituents to food.",
+    "da": "Vælg materiale. Ved fødevarekontakt skal I medregne tilsigtet og faktisk kontakt ved normal brug samt kontakt eller afgivelse af stoffer til fødevarer, som med rimelighed kan forventes."
   },
   "Paper or board": {
     "group": "Testspørgsmål",
@@ -904,10 +904,10 @@
     "en": "Other material",
     "da": "Andet materiale"
   },
-  "Is it intended for food contact?": {
+  "Is the packaging intended for food contact, or can contact or transfer of substances to food reasonably be expected?": {
     "group": "Testspørgsmål",
-    "en": "Is it intended for food contact?",
-    "da": "Er emballagen beregnet til fødevarekontakt?"
+    "en": "Is the packaging intended for food contact, or can contact or transfer of substances to food reasonably be expected?",
+    "da": "Er emballagen beregnet til fødevarekontakt, eller kan kontakt eller afgivelse af stoffer til fødevarer med rimelighed forventes?"
   },
   "Yes": {
     "group": "Testspørgsmål",
@@ -934,10 +934,10 @@
     "en": "A country list with the first supply, the responsible business and any registration deadline.",
     "da": "En landeliste med første tilgængeliggørelse, ansvarlig virksomhed og eventuel registreringsfrist."
   },
-  "Identify who makes the packaging or packed product for the EU market. Agree who holds the technical file and signs the EU declaration of conformity.": {
+  "Identify the legal manufacturer under Article 3. Record who holds the technical file and who is authorised to sign the EU declaration on the manufacturer’s behalf. An agreement on who does the work does not transfer the manufacturer’s legal responsibility.": {
     "group": "Tjekliste",
-    "en": "Identify who makes the packaging or packed product for the EU market. Agree who holds the technical file and signs the EU declaration of conformity.",
-    "da": "Afklar, hvem der fremstiller emballagen eller den emballerede vare til EU-markedet. Aftal, hvem der har den tekniske dokumentation og underskriver EU-overensstemmelseserklæringen."
+    "en": "Identify the legal manufacturer under Article 3. Record who holds the technical file and who is authorised to sign the EU declaration on the manufacturer’s behalf. An agreement on who does the work does not transfer the manufacturer’s legal responsibility.",
+    "da": "Afklar, hvem der er fabrikant efter artikel 3. Notér, hvem der har den tekniske dokumentation, og hvem der må underskrive EU-overensstemmelseserklæringen på fabrikantens vegne. En aftale om arbejdsfordeling overfører ikke fabrikantens retlige ansvar."
   },
   "PPWR, Article 3": {
     "group": "Tjekliste",
@@ -949,10 +949,10 @@
     "en": "PPWR, Article 15",
     "da": "PPWR, artikel 15"
   },
-  "If you commission packaging or a packed product under your own brand, you are normally the manufacturer. For a microenterprise using a packaging supplier in the same Member State, the supplier is the manufacturer under Article 3(1)(13)(b). Check producer responsibility separately.": {
+  "If you have packaging or packed goods made under your own name or trademark, you are generally the manufacturer. For qualifying micro-enterprises, Article 3(1)(13)(b) refers to a supplier in the same Member State. Under Article 15(12), a qualifying micro-enterprise’s packaging supplier in the EU bears the manufacturer’s duties under that article, even across a Member State border. Identify the supplier and assess extended producer responsibility separately.": {
     "group": "Tjekliste",
-    "en": "If you commission packaging or a packed product under your own brand, you are normally the manufacturer. For a microenterprise using a packaging supplier in the same Member State, the supplier is the manufacturer under Article 3(1)(13)(b). Check producer responsibility separately.",
-    "da": "Får I emballage eller en emballeret vare fremstillet under eget mærke, er I normalt fabrikant. For en mikrovirksomhed med en emballageleverandør i samme medlemsstat er leverandøren fabrikant efter artikel 3, stk. 1, nr. 13, litra b. Undersøg producentansvaret særskilt."
+    "en": "If you have packaging or packed goods made under your own name or trademark, you are generally the manufacturer. For qualifying micro-enterprises, Article 3(1)(13)(b) refers to a supplier in the same Member State. Under Article 15(12), a qualifying micro-enterprise’s packaging supplier in the EU bears the manufacturer’s duties under that article, even across a Member State border. Identify the supplier and assess extended producer responsibility separately.",
+    "da": "Får I emballage eller emballerede varer fremstillet under eget navn eller varemærke, er I som hovedregel fabrikant. For mikrovirksomheder, der opfylder betingelserne, henviser artikel 3, stk. 1, nr. 13, litra b, til en leverandør i samme medlemsstat. Efter artikel 15, stk. 12, påhviler pligterne i den artikel emballageleverandøren i EU, når betingelserne er opfyldt. Det gælder også ved levering fra et andet EU-land. Afklar, hvem leverandøren er, og vurdér producentansvaret for affald særskilt."
   },
   "PPWR, Article 21": {
     "group": "Tjekliste",
@@ -964,10 +964,10 @@
     "en": "Commission guidance C/2026/3084",
     "da": "Kommissionens vejledning C/2026/3084"
   },
-  "Record the supplier and where the packaging first entered the EU market. Buying from Sweden does not in itself make a Danish buyer a PPWR importer. If you resupply the packaging, assess distributor duties and whether you are the producer in Denmark.": {
+  "Record where the packaging first entered the EU market. Buying in another EU country does not by itself make you an importer under PPWR. If you supply the packaging onward, check distributor duties and who has producer responsibility in each relevant country.": {
     "group": "Tjekliste",
-    "en": "Record the supplier and where the packaging first entered the EU market. Buying from Sweden does not in itself make a Danish buyer a PPWR importer. If you resupply the packaging, assess distributor duties and whether you are the producer in Denmark.",
-    "da": "Notér leverandøren, og hvor emballagen først kom på EU-markedet. Indkøb fra Sverige gør ikke i sig selv en dansk køber til importør efter PPWR. Hvis I leverer emballagen videre, skal I undersøge distributørpligterne og jeres eventuelle producentansvar i Danmark."
+    "en": "Record where the packaging first entered the EU market. Buying in another EU country does not by itself make you an importer under PPWR. If you supply the packaging onward, check distributor duties and who has producer responsibility in each relevant country.",
+    "da": "Notér, hvor emballagen først blev bragt i omsætning i EU. Køb i et andet EU-land gør jer ikke i sig selv til importør efter PPWR. Leverer I emballagen videre, så afklar distributørpligterne og producentansvaret i hvert relevant land."
   },
   "PPWR, Article 19": {
     "group": "Tjekliste",
@@ -1004,10 +1004,10 @@
     "en": "PPWR, Article 24",
     "da": "PPWR, artikel 24"
   },
-  "Identify who makes, buys, imports, fills, supplies or unpacks this packaging. Check all relevant roles and the same-Member-State supplier rule for microenterprises using their own brand.": {
+  "Map who makes, buys, imports, fills, supplies or unpacks the packaging. If a micro-enterprise commissions own-brand packaging, check the supplier’s country against Articles 3 and 15(12).": {
     "group": "Tjekliste",
-    "en": "Identify who makes, buys, imports, fills, supplies or unpacks this packaging. Check all relevant roles and the same-Member-State supplier rule for microenterprises using their own brand.",
-    "da": "Afklar, hvem der fremstiller, køber, importerer, fylder, leverer eller udpakker emballagen. Undersøg alle relevante roller og særreglen for mikrovirksomheder med eget mærke og emballageleverandør i samme medlemsstat."
+    "en": "Map who makes, buys, imports, fills, supplies or unpacks the packaging. If a micro-enterprise commissions own-brand packaging, check the supplier’s country against Articles 3 and 15(12).",
+    "da": "Kortlæg, hvem der fremstiller, køber, importerer, fylder, leverer eller udpakker emballagen. Bestiller en mikrovirksomhed emballage under eget mærke, skal leverandørens land vurderes efter artikel 3 og artikel 15, stk. 12."
   },
   "Record when and how the packaging is first supplied in Denmark, including samples.": {
     "group": "Tjekliste",
@@ -1049,10 +1049,10 @@
     "en": "Map the first commercial supply in each country from orders, dispatches, free samples and direct sales. Check whether unpacking without being the end user affects your producer role.",
     "da": "Kortlæg den første erhvervsmæssige tilgængeliggørelse i hvert land ud fra ordrer, forsendelser, gratis vareprøver og direkte salg. Undersøg, om udpakning uden at være slutbruger påvirker jeres producentrolle."
   },
-  "If you are the manufacturer, carry out or commission the conformity assessment and compile the technical documentation before placing the packaging on the EU market. Once compliance is demonstrated, draw up the EU declaration of conformity. Keep both documents for five years for single-use packaging and ten years for reusable packaging, from placing on the market.": {
+  "If you have the manufacturer’s duties under Article 15, assess conformity or have it assessed, and draw up the technical file before placing packaging on the EU market. Once conformity is demonstrated, issue the EU declaration. Keep both documents for five years for single-use packaging or ten years for reusable packaging, from first placement on the market. Paragraph 11 exempts certain custom-made transport packaging for configurable medical devices and medical systems from paragraphs 2 and 3.": {
     "group": "Tjekliste",
-    "en": "If you are the manufacturer, carry out or commission the conformity assessment and compile the technical documentation before placing the packaging on the EU market. Once compliance is demonstrated, draw up the EU declaration of conformity. Keep both documents for five years for single-use packaging and ten years for reusable packaging, from placing on the market.",
-    "da": "Er I fabrikant, skal I gennemføre eller få udført overensstemmelsesvurderingen og udarbejde teknisk dokumentation, før emballagen bringes i omsætning i EU. Når overensstemmelse er påvist, skal I udarbejde EU-overensstemmelseserklæringen. Gem begge dokumenter i fem år for engangsemballage og ti år for genbrugsemballage, regnet fra omsætningen."
+    "en": "If you have the manufacturer’s duties under Article 15, assess conformity or have it assessed, and draw up the technical file before placing packaging on the EU market. Once conformity is demonstrated, issue the EU declaration. Keep both documents for five years for single-use packaging or ten years for reusable packaging, from first placement on the market. Paragraph 11 exempts certain custom-made transport packaging for configurable medical devices and medical systems from paragraphs 2 and 3.",
+    "da": "Har I fabrikantpligterne efter artikel 15, skal I vurdere eller få vurderet overensstemmelsen og udarbejde teknisk dokumentation, før emballagen bringes i omsætning i EU. Udsted EU-overensstemmelseserklæringen, når overensstemmelsen er påvist. Opbevar begge dokumenter i fem år for engangsemballage og ti år for genbrugsemballage fra første omsætning. Stk. 11 undtager visse specialfremstillede transportemballager til konfigurerbart medicinsk udstyr og medicinske systemer fra stk. 2 og 3."
   },
   "PPWR, Article 38": {
     "group": "Tjekliste",
@@ -1074,10 +1074,10 @@
     "en": "PPWR, Annex VIII",
     "da": "PPWR, bilag VIII"
   },
-  "Before placing imported packaging on the EU market, verify that the manufacturer has carried out the assessment and compiled the technical file, that required documents and applicable labelling are in place, and that the manufacturer’s identification and contact requirements are met. Add your importer identification and contact details as required. Keep a copy of the EU declaration and ensure the technical file is available to the authorities.": {
+  "If you are the importer, check the manufacturer’s conformity assessment, technical documentation, required accompanying documents, applicable markings and identification before placing the packaging on the EU market. Add your importer details as required. Keep a copy of the EU declaration and make sure the technical file can be supplied to the authorities.": {
     "group": "Tjekliste",
-    "en": "Before placing imported packaging on the EU market, verify that the manufacturer has carried out the assessment and compiled the technical file, that required documents and applicable labelling are in place, and that the manufacturer’s identification and contact requirements are met. Add your importer identification and contact details as required. Keep a copy of the EU declaration and ensure the technical file is available to the authorities.",
-    "da": "Før I bringer importeret emballage i omsætning i EU, skal I kontrollere fabrikantens vurdering og tekniske dokumentation, de krævede dokumenter og den mærkning, der gælder, samt fabrikantens identifikation og kontaktoplysninger. Tilføj de krævede oplysninger om jer som importør. Gem en kopi af EU-overensstemmelseserklæringen, og sørg for, at myndighederne kan få den tekniske dokumentation."
+    "en": "If you are the importer, check the manufacturer’s conformity assessment, technical documentation, required accompanying documents, applicable markings and identification before placing the packaging on the EU market. Add your importer details as required. Keep a copy of the EU declaration and make sure the technical file can be supplied to the authorities.",
+    "da": "Er I importør, skal I kontrollere fabrikantens overensstemmelsesvurdering, tekniske dokumentation, krævede ledsagedokumenter, gældende mærkning og identifikation, før I bringer emballagen i omsætning i EU. Tilføj de krævede importøroplysninger. Opbevar en kopi af EU-overensstemmelseserklæringen, og sørg for, at myndighederne kan få den tekniske dokumentation."
   },
   "PPWR, Article 12": {
     "group": "Tjekliste",
@@ -1129,10 +1129,10 @@
     "en": "Identify the material and each component with the supplier.",
     "da": "Afklar materialet og de enkelte dele med leverandøren."
   },
-  "For packaging placed on the EU market, the design-for-recycling criteria apply from 1 January 2030 or 24 months after the delegated acts enter into force, whichever is later. The recycled-at-scale requirement applies from 1 January 2035 or five years after the implementing acts enter into force, whichever is later. Check the exemptions in Article 6(11).": {
+  "The general recyclability requirement applies to packaging placed on the EU market from 12 August 2026, subject to Article 6 exemptions. During the transition, use the Commission guidance on the earlier packaging rules and standards. Harmonised design criteria apply from 1 January 2030 or 24 months after the relevant delegated acts enter into force, whichever is later. Recycling at scale applies from 1 January 2035 or five years after the relevant implementing acts enter into force, whichever is later.": {
     "group": "Tjekliste",
-    "en": "For packaging placed on the EU market, the design-for-recycling criteria apply from 1 January 2030 or 24 months after the delegated acts enter into force, whichever is later. The recycled-at-scale requirement applies from 1 January 2035 or five years after the implementing acts enter into force, whichever is later. Check the exemptions in Article 6(11).",
-    "da": "For emballage, der bringes i omsætning i EU, gælder kriterierne for design til genanvendelse fra 1. januar 2030 eller 24 måneder efter de delegerede retsakters ikrafttræden, alt efter hvad der ligger senest. Kravet om genanvendelse i stor skala gælder fra 1. januar 2035 eller fem år efter gennemførelsesretsakternes ikrafttræden, alt efter hvad der ligger senest. Tjek undtagelserne i artikel 6, stk. 11."
+    "en": "The general recyclability requirement applies to packaging placed on the EU market from 12 August 2026, subject to Article 6 exemptions. During the transition, use the Commission guidance on the earlier packaging rules and standards. Harmonised design criteria apply from 1 January 2030 or 24 months after the relevant delegated acts enter into force, whichever is later. Recycling at scale applies from 1 January 2035 or five years after the relevant implementing acts enter into force, whichever is later.",
+    "da": "Emballage, der bringes i omsætning i EU fra 12. august 2026, skal som hovedregel kunne genanvendes. Tjek undtagelserne i artikel 6 og Kommissionens vejledning om de tidligere emballageregler og standarder i overgangsperioden. De harmoniserede designkriterier gælder fra 1. januar 2030 eller 24 måneder efter de relevante delegerede retsakters ikrafttræden, hvis det er senere. Kravet om genanvendelse i stor skala gælder fra 1. januar 2035 eller fem år efter de relevante gennemførelsesretsakters ikrafttræden, hvis det er senere."
   },
   "PPWR, Article 6": {
     "group": "Tjekliste",
@@ -1159,10 +1159,10 @@
     "en": "PPWR, Article 5(5)",
     "da": "PPWR, artikel 5(5)"
   },
-  "Confirm the intended use with the supplier. If the packaging is for food contact, check the PFAS limits and get evidence for the specific packaging.": {
+  "Clarify normal and foreseeable use with the supplier. If the packaging is for food contact, check the PFAS limits and the food-contact material rules, and request evidence for this pack.": {
     "group": "Tjekliste",
-    "en": "Confirm the intended use with the supplier. If the packaging is for food contact, check the PFAS limits and get evidence for the specific packaging.",
-    "da": "Afklar den tilsigtede brug med leverandøren. Ved fødevarekontakt skal I tjekke PFAS-grænserne og indhente dokumentation for den konkrete emballage."
+    "en": "Clarify normal and foreseeable use with the supplier. If the packaging is for food contact, check the PFAS limits and the food-contact material rules, and request evidence for this pack.",
+    "da": "Afklar normal og forudsigelig brug med leverandøren. Ved fødevarekontakt skal I tjekke PFAS-grænserne og reglerne for fødevarekontaktmaterialer og indhente dokumentation for emballagen."
   },
   "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Sales packs used as e-commerce packs and reusable packs in a reuse system are exempt from the 50% rule. Check Article 24(4) and (5) for the precise conditions.": {
     "group": "Tjekliste",
@@ -1219,10 +1219,10 @@
     "en": "Choose whether the packaging is for food contact.",
     "da": "Angiv, om emballagen er beregnet til fødevarekontakt."
   },
-  "You’ve completed the four work tasks. Follow up on open questions with their owners, then use the checklist for the next pack.": {
+  "You have marked all four tasks as done. Follow up on open questions with the person responsible.": {
     "group": "Testresultat",
-    "en": "You’ve completed the four work tasks. Follow up on open questions with their owners, then use the checklist for the next pack.",
-    "da": "I har gennemført de fire arbejdsopgaver. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage."
+    "en": "You have marked all four tasks as done. Follow up on open questions with the person responsible.",
+    "da": "I har markeret alle fire opgaver som løst. Følg op på åbne spørgsmål med den ansvarlige."
   },
   "We place packaging or packed products from a non-EU country on the EU market": {
     "group": "Testspørgsmål",
@@ -1233,5 +1233,35 @@
     "group": "Tjekliste",
     "en": "The harmonised material-composition label generally applies from 12 August 2028 or 24 months after the relevant implementing acts enter into force, whichever is later. Check Article 12 for exceptions and other labelling deadlines.",
     "da": "Det harmoniserede mærke om materialesammensætning gælder som hovedregel fra 12. august 2028 eller 24 måneder efter de relevante gennemførelsesretsakters ikrafttræden, alt efter hvad der ligger senest. Tjek artikel 12 for undtagelser og andre mærkningsfrister."
+  },
+  "The checklist suggests what to investigate. It does not verify your packaging or its documentation.": {
+    "group": "Testspørgsmål",
+    "en": "The checklist suggests what to investigate. It does not verify your packaging or its documentation.",
+    "da": "Tjeklisten viser, hvad I kan undersøge. Den kontrollerer ikke jeres emballage eller dokumentation."
+  },
+  "Sources reviewed on 18 November 2026.": {
+    "group": "Kilder",
+    "en": "Sources reviewed on 18 November 2026.",
+    "da": "Kilderne er gennemgået den 18. november 2026."
+  },
+  "EU rules on food-contact materials": {
+    "group": "Kilder",
+    "en": "EU rules on food-contact materials",
+    "da": "EU-regler om fødevarekontaktmaterialer"
+  },
+  "The combined amount of lead, cadmium, mercury and hexavalent chromium in packaging or its components is generally limited to 100 mg/kg. Under Article 5(6), compliance with the applicable limits must be shown in the technical documentation. Check whether a specific derogation applies.": {
+    "group": "Tjekliste",
+    "en": "The combined amount of lead, cadmium, mercury and hexavalent chromium in packaging or its components is generally limited to 100 mg/kg. Under Article 5(6), compliance with the applicable limits must be shown in the technical documentation. Check whether a specific derogation applies.",
+    "da": "Det samlede indhold af bly, cadmium, kviksølv og hexavalent chrom i emballage eller emballagekomponenter må som hovedregel højst være 100 mg/kg. Efter artikel 5, stk. 6, skal overholdelsen af de relevante grænser fremgå af den tekniske dokumentation. Tjek, om en særlig undtagelse gælder."
+  },
+  "Potential EU requirement pending confirmation of the market: ": {
+    "group": "Tjekliste",
+    "en": "Potential EU requirement pending confirmation of the market: ",
+    "da": "Muligt EU-krav, indtil markedet er afklaret: "
+  },
+  "These checkmarks were saved under earlier guidance. Review the updated tasks before relying on the marks.": {
+    "group": "Lagring",
+    "en": "These checkmarks were saved under earlier guidance. Review the updated tasks before relying on the marks.",
+    "da": "Afkrydsningerne er gemt med en tidligere vejledning. Gennemgå de opdaterede opgaver, før I bruger afkrydsningerne."
   }
 }
