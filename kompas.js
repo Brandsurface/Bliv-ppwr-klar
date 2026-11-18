@@ -56,23 +56,52 @@ const questions = [
     options: [['Roles and responsibilities','Roller og ansvar'],['Markets and reporting','Markeder og indberetning'],['Materials and pack design','Materialer og design'],['Supplier data and evidence','Leverandørdata og dokumentation']]
   }
 ];
-// The design discussion follows the team's priority. The sample follows the pack.
-const designHelp = [
-  ['Bring your current artwork. Brandsurface can help you agree who briefs, updates and approves the next design version.', 'Tag jeres nuværende artwork med. Brandsurface kan hjælpe jer med at aftale, hvem der briefer, retter og godkender næste designversion.'],
-  ['Bring the artwork used in two markets. Ask Brandsurface for a quote on a shared pack layout with space for local text.', 'Tag artwork fra to markeder med, hvis I har det. Bed Brandsurface om et tilbud på et fælles emballagelayout med plads til lokale tekster.'],
-  ['Show Brandsurface the pack and the part you want to change. Ask for design options and a price for taking one through to artwork.', 'Vis Brandsurface emballagen og den del, I vil ændre. Få sparring om designmulighederne og en pris på at gøre den valgte løsning trykklar.'],
-  ['Bring the supplier specifications you have. Brandsurface can turn dimensions, print requirements and open questions into a brief for the artwork.', 'Tag de specifikationer med, I har. Brandsurface kan samle mål, trykkrav og åbne spørgsmål i en brief til den, der skal lave artwork.']
+// Each task pairs an action with something the team can keep and an official reference.
+const guides = [
+  {
+    title: ['Map your role', 'Afklar jeres rolle'],
+    record: ['A sketch of the supply chain with the company and contact at each step.', 'En skitse af varekæden med virksomhed og kontaktperson ved hvert led.'],
+    source: ['PPWR · Chapter IV, roles and obligations', 'PPWR · kapitel IV, roller og pligter'], anchor: 'chp_IV'
+  },
+  {
+    title: ['Check your sales markets', 'Tjek jeres salgslande'],
+    record: ['A list of countries, the register or authority to consult and who will check local deadlines.', 'En landeliste med register eller myndighed og navnet på den, der undersøger de lokale frister.'],
+    source: ['PPWR · Article 44, producer registers', 'PPWR · artikel 44, producentregistre'], anchor: 'art_44'
+  },
+  {
+    title: ['Review the parts of your pack', 'Gennemgå emballagens dele'],
+    record: ['A photo or drawing with the parts labelled. Note any open material questions next to the relevant part.', 'Et foto eller en tegning med navn på hver del. Skriv åbne spørgsmål om materialet ud for den del, de vedrører.'],
+    source: ['PPWR · Article 6, recyclability and dates', 'PPWR · artikel 6, genanvendelighed og frister'], anchor: 'art_6'
+  },
+  {
+    title: ['Gather the evidence', 'Saml dokumentationen'],
+    record: ['An index of file names, dates and owners. Give each missing document a follow-up date.', 'En oversigt med filnavn, dato og ansvarlig. Sæt en opfølgningsdato ved de dokumenter, der mangler.'],
+    source: ['PPWR · Annex VII, technical documentation', 'PPWR · bilag VII, teknisk dokumentation'], anchor: 'anx_VII'
+  }
 ];
-const sampleHelp = [
-  ['Ask Exemplar for a 1:1 sample to compare shape, label placement or finish. Include the dimensions and how many versions you want to see.', 'Bed Exemplar om en 1:1-prøve, så I kan vurdere form, etiketplacering eller finish. Oplys mål og antal varianter.'],
-  ['Ask Exemplar to make a folding carton in two board weights. Compare the fold, closure and print in your hands before choosing.', 'Få eksempelvis en foldeæske i to kartonkvaliteter fra Exemplar. Mærk forskellen, prøv lukningen, og se trykket, før I vælger.'],
-  ['Ask Exemplar for a mockup of the assembled pack. Use it to review how the parts fit and how the customer separates them.', 'Bed Exemplar om en prøve af den samlede emballage. Se, hvordan delene passer sammen, og prøv, hvordan kunden skiller dem ad.'],
-  ['Send Exemplar the product dimensions and desired quantity. Ask for a sample of the shipping pack to review fit, insert and opening.', 'Send Exemplar varens mål og det ønskede antal prøver. Bed om en prøve af forsendelsesemballagen, så I kan vurdere pasform, indlæg og åbning.']
-];
+const savedPlanKey = 'ppwr-kompas.checklist.v1';
 let language = new URLSearchParams(location.search).get('lang') === 'da' ? 'da' : 'en';
 let step = 0;
 let answers = Array(questions.length).fill(null);
 let completed = false;
+let checkedTasks = new Set();
+try {
+  const saved = JSON.parse(localStorage.getItem(savedPlanKey));
+  if (Array.isArray(saved?.answers) && saved.answers.length === questions.length &&
+      saved.answers.every((a, i) => Number.isInteger(a) && a >= 0 && a < (i === 0 ? questions[i].tasks.length : questions[i].options.length)) &&
+      Array.isArray(saved.checked)) {
+    answers = saved.answers;
+    checkedTasks = new Set(saved.checked.filter(i => Number.isInteger(i) && i >= 0 && i < guides.length));
+    completed = true;
+    step = questions.length - 1;
+  }
+} catch { /* The checklist also works without browser storage. */ }
+function savePlan() {
+  try {
+    if (completed) localStorage.setItem(savedPlanKey, JSON.stringify({answers, checked: [...checkedTasks]}));
+    else localStorage.removeItem(savedPlanKey);
+  } catch { /* Keep progress in memory when storage is unavailable. */ }
+}
 const words = (en, da) => language === 'da' ? da : en;
 const localized = pair => pair[language === 'da' ? 1 : 0];
 const copyNodes = [...document.querySelectorAll('[data-da]')].map(node => ({node, en: node.textContent}));
@@ -80,7 +109,7 @@ const copyNodes = [...document.querySelectorAll('[data-da]')].map(node => ({node
 function renderQuiz(focus = false) {
   const question = questions[step];
   const showStep = completed ? 5 : step + 1;
-  el('step').textContent = completed ? words('YOUR ACTION PLAN','JERES HANDLINGSPLAN') : (step === 0 ? 'START' : words('STEP','TRIN')) + ' · ' + showStep + words(' OF 5',' AF 5');
+  el('step').textContent = completed ? words('TEST COMPLETE','TEST GENNEMFØRT') : (step === 0 ? 'START' : words('STEP','TRIN')) + ' · ' + showStep + words(' OF 5',' AF 5');
   document.querySelector('.quiz').style.setProperty('--progress', completed ? '100%' : (10 + step * 20) + '%');
   const dots = document.querySelector('.dots');
   dots.replaceChildren(...questions.map((_, n) => {
@@ -95,17 +124,10 @@ function renderQuiz(focus = false) {
   el('copied').textContent = '';
   el('brief-status').textContent = '';
   if (completed) {
-    const plan = tasks();
-    el('result-title').textContent = localized(questions[4].options[answers[4]]);
-    el('first-action').textContent = plan[0];
-    el('design-advice').textContent = localized(designHelp[answers[4]]);
-    el('sample-advice').textContent = localized(sampleHelp[answers[2]]);
     el('project-brief').value = projectBrief();
-    el('checklist').replaceChildren(...plan.map(task => {
-      const item = document.createElement('li');
-      item.textContent = task;
-      return item;
-    }));
+    el('checklist').replaceChildren(...taskOrder().map(taskRow));
+    updateProgress();
+    el('result-help-slot').append(el('optional-help'));
     if (focus) {
       el('result-title').focus({preventScroll: true});
       el('readiness').scrollIntoView({block: 'start', behavior: 'instant'});
@@ -132,10 +154,48 @@ function renderQuiz(focus = false) {
   }));
   if (focus) el('question').focus();
 }
-function tasks() {
+function taskOrder() {
   const priority = answers[4];
-  const order = [priority, ...[0,1,2,3].filter(i => i !== priority)];
-  return order.map(i => localized(questions[i].tasks[answers[i]]));
+  return [priority, ...guides.map((_, i) => i).filter(i => i !== priority)];
+}
+function taskText(index) {
+  return localized(questions[index].tasks[answers[index]]);
+}
+function sourceUrl(index) {
+  return 'https://eur-lex.europa.eu/eli/reg/2025/40/oj/' + words('eng','dan') + '#' + guides[index].anchor;
+}
+function updateProgress() {
+  const count = checkedTasks.size;
+  el('task-count').textContent = count + words(' of 4 tasks done', ' af 4 opgaver løst');
+  el('task-progress').value = count;
+  el('plan-finish').hidden = count !== guides.length;
+}
+function taskRow(index) {
+  const guide = guides[index];
+  const row = document.createElement('li');
+  const label = document.createElement('label');
+  const box = document.createElement('input');
+  box.type = 'checkbox';
+  box.checked = checkedTasks.has(index);
+  box.onchange = () => {
+    if (box.checked) checkedTasks.add(index);
+    else checkedTasks.delete(index);
+    updateProgress();
+    savePlan();
+  };
+  label.append(box, localized(guide.title));
+  const action = document.createElement('p');
+  action.textContent = taskText(index);
+  const record = document.createElement('p');
+  record.className = 'keep-record';
+  const prefix = document.createElement('strong');
+  prefix.textContent = words('Keep: ', 'Gem: ');
+  record.append(prefix, localized(guide.record));
+  const link = document.createElement('a');
+  link.href = sourceUrl(index);
+  link.textContent = localized(guide.source);
+  row.append(label, action, record, link);
+  return row;
 }
 function projectBrief() {
   const labels = [
@@ -147,15 +207,18 @@ function projectBrief() {
     return localized(labels[i]) + ': ' + localized(option);
   });
   return [
-    words('We would like help with a packaging project. Our starting point is', 'Vi vil gerne have hjælp til en emballageopgave. Her er vores udgangspunkt'),
+    words('PPWR review — working note', 'PPWR-gennemgang — arbejdsnotat'),
     ...summary,
     '',
-    words('Product, dimensions and desired timing: [add details]', 'Produkt, mål og ønsket tidspunkt: [udfyld]'),
-    words('Can you suggest a next step and quote for the work?', 'Vil I foreslå et næste skridt og give et tilbud på opgaven?')
+    words('First action: ', 'Første opgave: ') + taskText(answers[4]),
+    words('Product: ___   Owner: ___   Due date: ___', 'Produkt: ___   Ansvarlig: ___   Frist: ___')
   ].join('\n');
 }
 function advance() {
-  if (step === questions.length - 1) completed = true;
+  if (step === questions.length - 1) {
+    completed = true;
+    savePlan();
+  }
   else step++;
   renderQuiz(true);
 }
@@ -177,13 +240,19 @@ el('restart').onclick = () => {
   completed = false;
   step = 0;
   answers.fill(null);
-  el('plan-details').open = false;
+  checkedTasks.clear();
+  savePlan();
+  for (const detail of el('optional-help').querySelectorAll('details')) detail.open = false;
+  el('page-help-slot').append(el('optional-help'));
   el('brief-details').open = false;
   renderQuiz(true);
 };
 el('copy').onclick = async () => {
   try {
-    await navigator.clipboard.writeText('PPWR Kompas\n' + tasks().map((task, i) => (i + 1) + '. ' + task).join('\n'));
+    await navigator.clipboard.writeText('PPWR Kompas\n' + taskOrder().map(i => [
+      (checkedTasks.has(i) ? '[x] ' : '[ ] ') + localized(guides[i].title),
+      taskText(i), words('Keep: ', 'Gem: ') + localized(guides[i].record), sourceUrl(i)
+    ].join('\n')).join('\n\n'));
     el('copied').textContent = words('Checklist copied.', 'Tjeklisten er kopieret.');
   } catch {
     const range = document.createRange();

@@ -50,40 +50,24 @@
         <div class="controls"><button type="submit" class="primary"><span id="next-text">Map your readiness</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></button><button type="button" class="text-btn" id="back" hidden data-da="Tilbage">Back</button></div>
       </form>
       <div id="result" hidden>
-        <h2 tabindex="-1" id="result-title"></h2>
-        <p class="first-action"><strong data-da="Jeres første skridt">Your first step</strong> <span id="first-action"></span></p>
-        <section class="result-help" aria-labelledby="help-title">
-          <h3 id="help-title" data-da="Hvem kan hjælpe jer videre?">Who can help you take it further?</h3>
-          <div class="partner-options">
-            <article>
-              <h4>Brandsurface</h4>
-              <p id="design-advice"></p>
-              <a class="partner-cta" href="https://brandsurface.dk/kontakt/" target="_blank" rel="noopener noreferrer"><span data-da="Tal med Brandsurface om opgaven">Discuss your project with Brandsurface</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg></a>
-            </article>
-            <article>
-              <h4>Exemplar</h4>
-              <p id="sample-advice"></p>
-              <a class="partner-cta" href="https://exemplar.dk/formular/" target="_blank" rel="noopener noreferrer"><span data-da="Få tilbud på en emballageprøve">Request a packaging sample quote</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg></a>
-            </article>
-          </div>
-        </section>
+        <h2 tabindex="-1" id="result-title" data-da="Jeres PPWR-tjekliste">Your PPWR checklist</h2>
+        <p class="plan-intro" data-da="Tag én emballage frem. Begynd med det punkt, I valgte i testen, og sæt kryds, når opgaven er løst.">Pick one pack. Start with the priority you chose and tick each task as you finish it.</p>
+        <div class="plan-progress"><span id="task-count" role="status"></span><progress id="task-progress" max="4" value="0" aria-label="Checklist progress / Tjeklistens fremdrift"></progress></div>
+        <ol id="checklist"></ol>
+        <p id="plan-finish" hidden data-da="I har gennemgået den første emballage. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage.">You’ve reviewed your first pack. Follow up on open questions with their owners, then use the checklist for the next pack.</p>
+        <div class="plan-controls">
+          <button type="button" class="result-tool" id="copy" data-da="Kopiér tjeklisten">Copy checklist</button>
+          <button type="button" class="text-btn" id="restart" data-da="Start en ny test">Start a new test</button>
+        </div>
+        <span role="status" id="copied"></span>
         <details id="brief-details" class="result-detail">
-          <summary data-da="Jeres opgavebrief">Your project brief</summary>
-          <label for="project-brief" data-da="Brug teksten i en mail til Brandsurface eller i bemærkningsfeltet hos Exemplar.">Use this text in an email to Brandsurface or in the notes field on Exemplar’s quote form.</label>
-          <textarea id="project-brief" rows="7" readonly></textarea>
-          <button type="button" class="result-tool" id="copy-brief" data-da="Kopiér opgavebrief">Copy project brief</button>
+          <summary data-da="Tag jeres svar med på arbejde">Take your answers back to the team</summary>
+          <label for="project-brief" data-da="Kopiér arbejdsnotatet, og tilføj produkt, ansvarlig og frist i jeres eget dokument.">Copy the working note and add the product, owner and due date in your own document.</label>
+          <textarea id="project-brief" rows="6" readonly></textarea>
+          <button type="button" class="text-btn" id="copy-brief" data-da="Kopiér arbejdsnotat">Copy working note</button>
           <span role="status" id="brief-status"></span>
         </details>
-        <details id="plan-details" class="result-detail">
-          <summary data-da="Se hele jeres tjekliste">View your full checklist</summary>
-          <ol id="checklist"></ol>
-          <button type="button" class="result-tool" id="copy" data-da="Kopiér tjeklisten">Copy checklist</button>
-          <span role="status" id="copied"></span>
-        </details>
-        <div class="result-footer">
-          <a href="#resources" data-da="Find de officielle kilder">Find the official sources</a>
-          <button type="button" class="text-btn" id="restart" data-da="Start forfra">Start again</button>
-        </div>
+        <div id="result-help-slot"></div>
       </div>
       <noscript>Enable JavaScript to take the five-step readiness test, or read the guide below.</noscript>
     </section>
@@ -115,9 +99,21 @@
     <div><p class="kicker" data-da="Kilder">Resources</p><h2 id="source-title" data-da="Læs reglerne.">Read the rules.</h2><p data-da="PPWR finder generelt anvendelse fra 12. august 2026. Flere krav har deres egne frister. Tjek den relevante artikel for den konkrete emballage.">The PPWR generally applies from 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.</p></div>
     <div class="resource-links"><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" data-da="Forordning (EU) 2025/40 ↗">Regulation (EU) 2025/40 ↗</a><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en" data-da="Europa-Kommissionens overblik ↗">European Commission overview ↗</a><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage" data-da="Dansk producentansvar ↗">Danish producer responsibility ↗</a></div>
   </section>
-  <section class="partners spread" aria-label="Packaging partners"><div><p class="kicker">Brandsurface</p><h2 data-da="Giv designet retning.">Shape the design.</h2><p data-da="Omsæt svarene fra testen til en designbrief. Brandsurface hjælper med materialevalg, brandidentitet og emballagedesign.">Turn your checklist into a packaging brief. Work with Brandsurface on material choices, brand identity and packaging design.</p><a class="body-link" href="https://www.brandsurface.dk/" data-da="Tal med Brandsurface ↗">Talk to Brandsurface ↗</a></div>
-    <div><p class="kicker">Exemplar</p><h2 data-da="Få den i hånden.">Hold a prototype.</h2><p data-da="Sammenlign format, tryk og finish på en fysisk prøve, før du bestiller oplaget.">Compare format, print and finish on a physical packaging sample before committing to a production run.</p><a class="body-link" href="https://www.exemplar.dk/emballageproever/" data-da="Se emballageprøver ↗">Explore packaging samples ↗</a></div>
-  </section>
+  <div id="page-help-slot">
+    <aside id="optional-help" aria-labelledby="help-title">
+      <h3 id="help-title" data-da="Har I brug for praktisk hjælp?">Need practical help?</h3>
+      <details name="packaging-help">
+        <summary data-da="Emballagedesign · Brandsurface">Packaging design · Brandsurface</summary>
+        <p data-da="Vil I ændre emballagens udtryk eller layout? Tag jeres nuværende design og de ønskede ændringer med, og få et tilbud på design og trykklart artwork.">Looking to change the look or layout of your pack? Bring the current design and your proposed changes for a quote on design and print-ready artwork.</p>
+        <a href="https://brandsurface.dk/kontakt/" data-da="Tal med Brandsurface om design">Discuss your design with Brandsurface</a>
+      </details>
+      <details name="packaging-help">
+        <summary data-da="Visuelle emballageprøver · Exemplar">Visual packaging samples · Exemplar</summary>
+        <p data-da="Vil I se emballagen, før I bestiller et oplag? Sammenlign format, tryk og finish på en fysisk prøve. Oplys mål og antal varianter, når I beder om en pris.">Want to see the pack before a production run? Compare size, print and finish on a physical mockup. Include dimensions and the number of variants when asking for a quote.</p>
+        <a href="https://exemplar.dk/formular/" data-da="Få et tilbud på en visuel prøve">Request a visual sample quote</a>
+      </details>
+    </aside>
+  </div>
 </main>
 <footer><a class="brand" href="#overview">PPWR <strong>KOMPAS</strong></a><p data-da="Vejledende værktøj. Afklar konkrete krav i de officielle kilder.">Planning guidance. Confirm pack-specific requirements with official sources.</p></footer>
 <dialog id="study" aria-labelledby="study-title"><div class="study-head"><div><p class="kicker" data-da="Materialestudie">Material study</p><h2 id="study-title" data-da="Emballagens tre lag">Anatomy of a pack</h2></div><button type="button" id="close-study" aria-label="Close / Luk"><svg aria-hidden="true"><use href="assets/icons.svg#x"/></svg></button></div>
