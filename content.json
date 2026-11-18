@@ -1149,10 +1149,10 @@
     "en": "PPWR, Article 7",
     "da": "PPWR, artikel 7"
   },
-  "Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence covering your specific packaging.": {
+  "Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence for your packaging. Earlier manufacture gives no stock grace period. Packaging already placed on the EU market before that date may remain available.": {
     "group": "Tjekliste",
-    "en": "Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence covering your specific packaging.",
-    "da": "Siden 12. august 2026 skal fødevarekontaktemballage, der bringes i omsætning i EU, overholde PFAS-grænserne i artikel 5, stk. 5. Bed leverandøren om dokumentation for jeres konkrete emballage."
+    "en": "Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence for your packaging. Earlier manufacture gives no stock grace period. Packaging already placed on the EU market before that date may remain available.",
+    "da": "Siden 12. august 2026 skal fødevarekontaktemballage, der bringes i omsætning i EU, overholde PFAS-grænserne i artikel 5, stk. 5. Bed leverandøren om dokumentation for jeres emballage. Tidligere fremstilling giver ingen frist til at afvikle lageret. Emballage, der allerede var bragt i omsætning i EU før datoen, må fortsat være tilgængelig."
   },
   "PPWR, Article 5(5)": {
     "group": "Tjekliste",
@@ -1164,10 +1164,10 @@
     "en": "Confirm the intended use with the supplier. If the packaging is for food contact, check the PFAS limits and get evidence for the specific packaging.",
     "da": "Afklar den tilsigtede brug med leverandøren. Ved fødevarekontakt skal I tjekke PFAS-grænserne og indhente dokumentation for den konkrete emballage."
   },
-  "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Check Article 24(4) and (5) for special calculation rules and exemptions.": {
+  "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Sales packs used as e-commerce packs and reusable packs in a reuse system are exempt from the 50% rule. Check Article 24(4) and (5) for the precise conditions.": {
     "group": "Tjekliste",
-    "en": "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Check Article 24(4) and (5) for special calculation rules and exemptions.",
-    "da": "Fylder I salgsemballage, skal tomrummet senest 12. februar 2028 begrænses til det nødvendige for funktion og beskyttelse. Fylder I multipak-, transport- eller e-handelsemballage, er grænsen 50 % fra 1. januar 2030 eller tre år efter de relevante gennemførelsesretsakters ikrafttræden, alt efter hvad der ligger senest. Fyldmateriale tæller som tomrum. Tjek artikel 24, stk. 4 og 5, for særlige beregningsregler og undtagelser."
+    "en": "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Sales packs used as e-commerce packs and reusable packs in a reuse system are exempt from the 50% rule. Check Article 24(4) and (5) for the precise conditions.",
+    "da": "Fylder I salgsemballage, skal tomrummet senest 12. februar 2028 begrænses til det nødvendige for funktion og beskyttelse. Fylder I multipak-, transport- eller e-handelsemballage, er grænsen 50 % fra 1. januar 2030 eller tre år efter de relevante gennemførelsesretsakters ikrafttræden, alt efter hvad der ligger senest. Fyldmateriale tæller som tomrum. Salgsemballage brugt som e-handelsemballage og genbrugsemballage i et genbrugssystem er undtaget fra 50 %-reglen. Tjek artikel 24, stk. 4 og 5, for de præcise betingelser."
   },
   "Confirm that no relevant supply or unpacking takes place in the EU. Ask what packaging and documentation rules apply at the destination.": {
     "group": "Tjekliste",
