@@ -4,36 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#eee6da">
-  <meta name="description" content="Map your packaging, find the gaps in your supplier data and build a practical PPWR readiness checklist.">
-  <title>PPWR Kompas — Packaging, ready for what’s next.</title>
-  <link rel="preload" as="image" href="assets/hero.webp" imagesrcset="assets/hero-mobile.webp 760w, assets/hero.webp 1308w" imagesizes="100vw" fetchpriority="high">
-  <link rel="stylesheet" href="kompas.css">
-  <script src="kompas.js" defer></script>
+  <!-- SEO -->
+  <link rel="preload" as="image" href="/assets/hero.webp" imagesrcset="/assets/hero-mobile.webp 760w, /assets/hero.webp 1308w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="/kompas.css">
+  <script src="/kompas.js" defer></script>
 </head>
 <body>
 <a href="#readiness" class="skip" data-da="Gå til parathedstesten">Skip to readiness test</a>
 <header class="mast">
-  <a class="brand" href="#overview" aria-label="PPWR Kompas">PPWR <strong>KOMPAS</strong></a>
+  <a class="brand" href="#overview" aria-label="Bliv PPWR klar">Bliv <strong>PPWR</strong> klar</a>
   <nav id="navigation" aria-label="Navigation">
     <a href="#overview" data-da="Overblik">Overview</a>
     <a href="#how" data-da="Sådan gør du">How it works</a>
     <a href="#insights" data-da="PPWR i praksis">PPWR insights</a>
     <a href="#resources" data-da="Kilder">Resources</a>
   </nav>
-  <a class="primary nav-cta" href="#readiness"><span class="long-label" data-da="Tjek din parathed">Map your readiness</span><span class="short-label" data-da="Tag testen">Take the test</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a>
-  <select id="language" aria-label="Language / Sprog"><option value="en">EN</option><option value="da">DA</option></select>
-  <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="navigation"><svg aria-hidden="true"><use href="assets/icons.svg#menu"/></svg></button>
+  <a class="primary nav-cta" href="#readiness"><span class="long-label" data-da="Tjek din parathed">Map your readiness</span><span class="short-label" data-da="Tag testen">Take the test</span><svg aria-hidden="true"><use href="/assets/icons.svg#arrow-right"/></svg></a>
+  <div id="language" aria-label="Language / Sprog"><a href="/" lang="da" hreflang="da" data-current-language="da">DA</a><a href="/en/" lang="en" hreflang="en" data-current-language="en">EN</a></div>
+  <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="navigation"><svg aria-hidden="true"><use href="/assets/icons.svg#menu"/></svg></button>
 </header>
 <main id="overview">
   <section class="hero" aria-labelledby="headline">
     <div class="hero-scene">
-      <img class="hero-photo" src="assets/hero.webp" srcset="assets/hero-mobile.webp 760w, assets/hero.webp 1308w" sizes="100vw" width="1308" height="1203" fetchpriority="high" alt="Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film." data-alt-da="Klar folie, en formstøbt fiberindsats og en åben foldeæske svæver over et ark folie.">
+      <img class="hero-photo" src="/assets/hero.webp" srcset="/assets/hero-mobile.webp 760w, /assets/hero.webp 1308w" sizes="100vw" width="1308" height="1203" fetchpriority="high" alt="Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film." data-alt-da="Klar folie, en formstøbt fiberindsats og en åben foldeæske svæver over et ark folie.">
       <div class="notes" aria-hidden="true">
         <span class="note film" data-da="Klar folie">Clear film</span>
         <span class="note fibre" data-da="Formstøbt fiber">Moulded fibre</span>
         <span class="note board" data-da="Foldet karton">Folding carton</span>
       </div>
-      <button class="inspect" type="button" id="open-study" aria-haspopup="dialog"><svg aria-hidden="true"><use href="assets/icons.svg#rotate-3d"/></svg><span data-da="Drej emballagen i 3D">Rotate in 3D</span></button>
+      <button class="inspect" type="button" id="open-study" aria-haspopup="dialog"><svg aria-hidden="true"><use href="/assets/icons.svg#rotate-3d"/></svg><span data-da="Drej emballagen i 3D">Rotate in 3D</span></button>
     </div>
     <div class="intro">
       <p class="kicker" data-da="EU’S NYE EMBALLAGEREGLER">EU PACKAGING READINESS</p>
@@ -47,7 +46,7 @@
         <p id="hint">Choose the role that best describes your business.</p>
         <div class="options" role="group" aria-labelledby="question" id="answers"></div>
         <div class="feedback" id="feedback" role="status"></div>
-        <div class="controls"><button type="submit" class="primary"><span id="next-text">Map your readiness</span><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></button><button type="button" class="text-btn" id="back" hidden data-da="Tilbage">Back</button></div>
+        <div class="controls"><button type="submit" class="primary"><span id="next-text">Map your readiness</span><svg aria-hidden="true"><use href="/assets/icons.svg#arrow-right"/></svg></button><button type="button" class="text-btn" id="back" hidden data-da="Tilbage">Back</button></div>
       </form>
       <div id="result" hidden>
         <h2 tabindex="-1" id="result-title" data-da="Jeres PPWR-tjekliste">Your PPWR checklist</h2>
@@ -67,24 +66,25 @@
           <button type="button" class="text-btn" id="copy-brief" data-da="Kopiér arbejdsnotat">Copy working note</button>
           <span role="status" id="brief-status"></span>
         </details>
+        <p class="site-disclaimer"><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, Bliv PPWR klar accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button>
         <div id="result-help-slot"></div>
       </div>
       <noscript>Enable JavaScript to take the five-step readiness test, or read the guide below.</noscript>
     </section>
   </section>
   <section id="insights" aria-label="PPWR insights">
-    <article class="chapter material"><picture><source media="(max-width: 720px)" srcset="assets/material-mobile.webp"><img src="assets/material.webp" loading="lazy" decoding="async" width="1680" height="419" alt=""></picture><div class="chapter-copy">
+    <article class="chapter material"><picture><source media="(max-width: 720px)" srcset="/assets/material-mobile.webp"><img src="/assets/material.webp" loading="lazy" decoding="async" width="1680" height="419" alt=""></picture><div class="chapter-copy">
       <span class="number">01 /</span><h2 data-da="Materiale">Material</h2><em data-da="Design til genanvendelse.">Design for circularity.</em>
       <p data-da="Træf bedre emballagevalg med PPWR — fra det første materialevalg til sortering og genanvendelse.">Turn PPWR requirements into resilient packaging choices — from material selection to end-of-life.</p>
     </div></article>
-    <article class="chapter data"><picture><source media="(max-width: 720px)" srcset="assets/data-mobile.webp"><img src="assets/data.webp" loading="lazy" decoding="async" width="1680" height="369" alt=""></picture><div class="chapter-copy">
+    <article class="chapter data"><picture><source media="(max-width: 720px)" srcset="/assets/data-mobile.webp"><img src="/assets/data.webp" loading="lazy" decoding="async" width="1680" height="369" alt=""></picture><div class="chapter-copy">
       <span class="number">02 /</span><h2>Data</h2><em data-da="Fra regler til handling.">Turn rules into action.</em>
       <p data-da="Find ud af, hvilke spørgsmål der gælder din emballage, hvilke data du mangler, og hvem der kan hjælpe.">Get clarity on what applies to you, what to prepare, and where to focus next.</p>
     </div></article>
-    <article class="chapter responsibility"><picture><source media="(max-width: 720px)" srcset="assets/responsibility-mobile.webp"><img src="assets/responsibility.webp" loading="lazy" decoding="async" width="1680" height="490" alt=""></picture><div class="chapter-copy">
+    <article class="chapter responsibility"><picture><source media="(max-width: 720px)" srcset="/assets/responsibility-mobile.webp"><img src="/assets/responsibility.webp" loading="lazy" decoding="async" width="1680" height="490" alt=""></picture><div class="chapter-copy">
       <span class="number">03 /</span><h2 data-da="Ansvar">Responsibility</h2><em data-da="Gør en varig forskel.">Create lasting impact.</em>
       <p data-da="Begræns spild, hold materialer i brug, og udvikl emballage med blik for dagens krav og morgendagens behov.">Reduce waste, keep materials in use, and build packaging that meets today’s requirements — and tomorrow’s expectations.</p>
-      <a class="band-link" href="#how"><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg><span data-da="En praktisk guide til PPWR">A practical compass for PPWR readiness</span></a>
+      <a class="band-link" href="#how"><svg aria-hidden="true"><use href="/assets/icons.svg#arrow-right"/></svg><span data-da="En praktisk guide til PPWR">A practical compass for PPWR readiness</span></a>
     </div></article>
   </section>
   <section class="guide spread" id="how" aria-labelledby="guide-title">
@@ -99,6 +99,13 @@
     <div><p class="kicker" data-da="Kilder">Resources</p><h2 id="source-title" data-da="Læs reglerne.">Read the rules.</h2><p data-da="PPWR finder generelt anvendelse fra 12. august 2026. Flere krav har deres egne frister. Tjek den relevante artikel for den konkrete emballage.">The PPWR generally applies from 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.</p></div>
     <div class="resource-links"><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj" data-da="Forordning (EU) 2025/40 ↗">Regulation (EU) 2025/40 ↗</a><a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en" data-da="Europa-Kommissionens overblik ↗">European Commission overview ↗</a><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage" data-da="Dansk producentansvar ↗">Danish producer responsibility ↗</a></div>
   </section>
+
+  <section class="spread ppwr-questions" aria-labelledby="faq-title"><div><h2 id="faq-title">Questions about PPWR</h2></div><div>
+<article><h3>What is PPWR?</h3><p>PPWR stands for Packaging and Packaging Waste Regulation. Regulation (EU) 2025/40 sets rules for packaging placed on the EU market and covers topics such as packaging design, recyclability and producer responsibility.</p><a href="https://eur-lex.europa.eu/eli/reg/2025/40/oj"><span>Read Regulation (EU) 2025/40</span></a></article>
+<article><h3>When do the new packaging rules apply?</h3><p>The PPWR generally applies from 12 August 2026. Some provisions and specific requirements apply on other dates. Check the dates for the requirement and packaging in question.</p><a href="https://green-forum.ec.europa.eu/green-business/packaging-and-packaging-waste-regulation-implementation_en"><span>Read the European Commission implementation guidance</span></a></article>
+<article><h3>What is the difference between PPWR and Danish producer responsibility?</h3><p>PPWR is the EU regulation on packaging and packaging waste. Danish producer responsibility is the system under which responsible businesses contribute to the management of packaging waste in Denmark. Check both the requirements for your packaging and your obligations as a producer.</p><a href="https://mst.dk/erhverv/groen-produktion-og-affald/producentansvar/emballage/producentansvar-for-emballage"><span>Read about Danish producer responsibility</span></a></article>
+<article><h3>What do I get from the PPWR readiness test?</h3><p>Answer five questions about your business and packaging. You get a prioritised checklist with practical steps for roles, sales markets, packaging materials and documentation.</p><a href="#readiness"><span>Start the PPWR readiness test</span></a></article>
+</div></section>
   <div id="page-help-slot">
     <aside id="optional-help" aria-labelledby="help-title">
       <h3 id="help-title" data-da="Har I brug for praktisk hjælp?">Need practical help?</h3>
@@ -115,10 +122,12 @@
     </aside>
   </div>
 </main>
-<footer><a class="brand" href="#overview">PPWR <strong>KOMPAS</strong></a><p data-da="Vejledende værktøj. Afklar konkrete krav i de officielle kilder.">Planning guidance. Confirm pack-specific requirements with official sources.</p></footer>
-<dialog id="study" aria-labelledby="study-title"><div class="study-head"><div><p class="kicker" data-da="Materialestudie">Material study</p><h2 id="study-title" data-da="Emballagens tre lag">Anatomy of a pack</h2></div><button type="button" id="close-study" aria-label="Close / Luk"><svg aria-hidden="true"><use href="assets/icons.svg#x"/></svg></button></div>
+<footer><a class="brand" href="#overview">Bliv <strong>PPWR</strong> klar</a><p class="site-disclaimer"><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, Bliv PPWR klar accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button></footer>
+<p class="share-feedback" id="share-feedback" role="status"></p>
+
+<dialog id="study" aria-labelledby="study-title"><div class="study-head"><div><p class="kicker" data-da="Materialestudie">Material study</p><h2 id="study-title" data-da="Emballagens tre lag">Anatomy of a pack</h2></div><button type="button" id="close-study" aria-label="Close / Luk"><svg aria-hidden="true"><use href="/assets/icons.svg#x"/></svg></button></div>
   <canvas id="model" tabindex="0" aria-label="Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys."></canvas>
-  <div class="model-controls"><button id="turn-left" aria-label="Rotate left / Drej til venstre"><svg aria-hidden="true"><use href="assets/icons.svg#chevron-left"/></svg></button><label><span data-da="Afstand mellem lag">Layer separation</span><input id="separation" type="range" min="0" max="100" value="75"></label><button id="turn-right" aria-label="Rotate right / Drej til højre"><svg aria-hidden="true"><use href="assets/icons.svg#chevron-right"/></svg></button></div>
+  <div class="model-controls"><button id="turn-left" aria-label="Rotate left / Drej til venstre"><svg aria-hidden="true"><use href="/assets/icons.svg#chevron-left"/></svg></button><label><span data-da="Afstand mellem lag">Layer separation</span><input id="separation" type="range" min="0" max="100" value="75"></label><button id="turn-right" aria-label="Rotate right / Drej til højre"><svg aria-hidden="true"><use href="/assets/icons.svg#chevron-right"/></svg></button></div>
 </dialog>
 </body>
 </html>

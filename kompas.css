@@ -318,3 +318,18 @@ dialog::backdrop { background: #1720199e }
   .chapter picture { left: auto; width: 53%; mask-image: linear-gradient(to right, transparent, black 18%) }
   .chapter picture img { width: 100%; mask-image: none }
 }
+
+#language { display: flex; gap: .35rem; max-width: none }
+#language a { display: grid; align-items: center; padding: .45rem .15rem; text-decoration: none }
+#language a[aria-current], #language a:hover { text-decoration: underline; text-underline-offset: .24em }
+.ppwr-questions article { border-top: 1px solid var(--line); padding: 1.35rem 0 }
+.ppwr-questions article h3 { margin: 0 0 .45rem; font-size: clamp(1.1rem, 2.1vw, 1.5rem); letter-spacing: -.03em }
+.ppwr-questions article p { margin: 0 0 .55rem; max-width: 66ch }
+.ppwr-questions article a, .site-disclaimer a { text-decoration: underline; text-underline-offset: .2em }
+footer .site-disclaimer { max-width: 66ch; margin-inline: auto }
+.site-disclaimer strong { display: block; margin-bottom: .35rem }
+.quiz .site-disclaimer { margin: 1.25rem 0 .7rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .88rem; line-height: 1.55 }
+.share-button { border: 1px solid var(--line); padding: .55rem .85rem; min-height: 44px; color: inherit; white-space: nowrap; font-weight: 600 }
+.share-button:hover { border-color: currentColor }
+.share-feedback:not(:empty) { position: fixed; z-index: 20; bottom: 1rem; inset-inline-end: 1rem; margin: 0; padding: .65rem 1rem; background: var(--ink); color: white }
+@media (max-width: 720px) { footer .site-disclaimer { margin-inline: 0 } }
