@@ -26,8 +26,8 @@
   },
   "KOMPAS": {
     "group": "Forside og navigation",
-    "en": "KOMPAS",
-    "da": "bla"
+    "en": "PPWR",
+    "da": "PPWR"
   },
   "Navigation": {
     "group": "Billed- og hjælpetekster",
@@ -117,17 +117,17 @@
   "Packaging,": {
     "group": "Forside og navigation",
     "en": "Packaging,",
-    "da": "Emballage,"
+    "da": "PPWR."
   },
   "ready for": {
     "group": "Forside og navigation",
     "en": "ready for",
-    "da": "klar til"
+    "da": "Nye emballagekrav"
   },
   "what’s next.": {
     "group": "Forside og navigation",
     "en": "what’s next.",
-    "da": "det næste."
+    "da": "Få styr på nu"
   },
   "A clear path through EU packaging": {
     "group": "Forside og navigation",
