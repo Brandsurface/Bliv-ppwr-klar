@@ -30,7 +30,7 @@ const questions = [
   },
   {
     title: ['What is the packaging made of?', 'Hvad er emballagen lavet af?'],
-    hint: ['Choose the material and indicate whether the packaging is intended to come into contact with food.', 'Vælg materiale, og angiv, om emballagen er beregnet til at komme i kontakt med fødevarer.'],
+    hint: ['Choose the material. For food contact, consider intended use, actual contact in normal use, and foreseeable contact or transfer of constituents to food.', 'Vælg materiale. Ved fødevarekontakt skal I medregne tilsigtet og faktisk kontakt ved normal brug samt kontakt eller afgivelse af stoffer til fødevarer, som med rimelighed kan forventes.'],
     options: [
       ['Paper or board', 'Papir eller karton'],
       ['Plastic', 'Plast'],
@@ -57,11 +57,11 @@ const questions = [
     options: [['Roles and responsibilities','Roller og ansvar'],['Markets and reporting','Markeder og indberetning'],['Materials and pack design','Materialer og design'],['Supplier data and evidence','Leverandørdata og dokumentation']]
   }
 ];
-const foodQuestion = ['Is it intended for food contact?', 'Er emballagen beregnet til fødevarekontakt?'];
+const foodQuestion = ['Is the packaging intended for food contact, or can contact or transfer of substances to food reasonably be expected?', 'Er emballagen beregnet til fødevarekontakt, eller kan kontakt eller afgivelse af stoffer til fødevarer med rimelighed forventes?'];
 const foodOptions = [['Yes','Ja'],['No','Nej'],['Unsure','I tvivl']];
 const scopeNote = [
-  'Working note for one packaging item, based on your own answers. Assessing whether the packaging meets the requirements calls for a separate review of the packaging and its documentation.',
-  'Arbejdsnotat for én emballage, baseret på jeres egne svar. En vurdering af, om emballagen opfylder kravene, kræver en særskilt gennemgang af emballagen og dokumentationen.'
+  'This working note covers selected topics for one packaging item and uses only your answers. It is general information. An assessment of compliance requires a separate review of the pack, its use, the markets and the documentation.',
+  'Arbejdsnotatet dækker udvalgte emner for én emballage ud fra jeres egne svar. Det er generel information. En vurdering af, om emballagen overholder reglerne, kræver særskilt gennemgang af emballagen, dens anvendelse, markederne og dokumentationen.'
 ];
 const guides = [
   {
@@ -90,6 +90,10 @@ const guidance = {
   label: ['Commission guidance C/2026/3084', 'Kommissionens vejledning C/2026/3084'],
   url: 'https://eur-lex.europa.eu/eli/C/2026/3084/oj'
 };
+const foodContactLaw = {
+  label: ['EU rules on food-contact materials', 'EU-regler om fødevarekontaktmaterialer'],
+  url: 'https://eur-lex.europa.eu/eli/reg/2004/1935/oj'
+};
 const dkRegister = {
   label: ['Danish Packaging Order, sections 14–15 (Danish)', 'Emballagebekendtgørelsen, §§ 14–15'],
   url: 'https://www.retsinformation.dk/eli/lta/2026/851'
@@ -98,25 +102,25 @@ const advice = (text, ...sources) => ({text, sources, requirement:false});
 const rule = (text, ...sources) => ({text, sources, requirement:true});
 
 const roleActions = [
-  advice(['Identify who makes the packaging or packed product for the EU market. Agree who holds the technical file and signs the EU declaration of conformity.',
-    'Afklar, hvem der fremstiller emballagen eller den emballerede vare til EU-markedet. Aftal, hvem der har den tekniske dokumentation og underskriver EU-overensstemmelseserklæringen.'], eu(3), eu(15)),
-  advice(['If you commission packaging or a packed product under your own brand, you are normally the manufacturer. For a microenterprise using a packaging supplier in the same Member State, the supplier is the manufacturer under Article 3(1)(13)(b). Check producer responsibility separately.',
-    'Får I emballage eller en emballeret vare fremstillet under eget mærke, er I normalt fabrikant. For en mikrovirksomhed med en emballageleverandør i samme medlemsstat er leverandøren fabrikant efter artikel 3, stk. 1, nr. 13, litra b. Undersøg producentansvaret særskilt.'], eu(3), eu(21), guidance),
-  advice(['Record the supplier and where the packaging first entered the EU market. Buying from Sweden does not in itself make a Danish buyer a PPWR importer. If you resupply the packaging, assess distributor duties and whether you are the producer in Denmark.',
-    'Notér leverandøren, og hvor emballagen først kom på EU-markedet. Indkøb fra Sverige gør ikke i sig selv en dansk køber til importør efter PPWR. Hvis I leverer emballagen videre, skal I undersøge distributørpligterne og jeres eventuelle producentansvar i Danmark.'], eu(3), eu(19), guidance),
+  advice(['Identify the legal manufacturer under Article 3. Record who holds the technical file and who is authorised to sign the EU declaration on the manufacturer’s behalf. An agreement on who does the work does not transfer the manufacturer’s legal responsibility.',
+    'Afklar, hvem der er fabrikant efter artikel 3. Notér, hvem der har den tekniske dokumentation, og hvem der må underskrive EU-overensstemmelseserklæringen på fabrikantens vegne. En aftale om arbejdsfordeling overfører ikke fabrikantens retlige ansvar.'], eu(3), eu(15)),
+  advice(['If you have packaging or packed goods made under your own name or trademark, you are generally the manufacturer. For qualifying micro-enterprises, Article 3(1)(13)(b) refers to a supplier in the same Member State. Under Article 15(12), a qualifying micro-enterprise’s packaging supplier in the EU bears the manufacturer’s duties under that article, even across a Member State border. Identify the supplier and assess extended producer responsibility separately.',
+    'Får I emballage eller emballerede varer fremstillet under eget navn eller varemærke, er I som hovedregel fabrikant. For mikrovirksomheder, der opfylder betingelserne, henviser artikel 3, stk. 1, nr. 13, litra b, til en leverandør i samme medlemsstat. Efter artikel 15, stk. 12, påhviler pligterne i den artikel emballageleverandøren i EU, når betingelserne er opfyldt. Det gælder også ved levering fra et andet EU-land. Afklar, hvem leverandøren er, og vurdér producentansvaret for affald særskilt.'], eu(3), eu(15), eu(21), guidance),
+  advice(['Record where the packaging first entered the EU market. Buying in another EU country does not by itself make you an importer under PPWR. If you supply the packaging onward, check distributor duties and who has producer responsibility in each relevant country.',
+    'Notér, hvor emballagen først blev bragt i omsætning i EU. Køb i et andet EU-land gør jer ikke i sig selv til importør efter PPWR. Leverer I emballagen videre, så afklar distributørpligterne og producentansvaret i hvert relevant land.'], eu(3), eu(19), guidance),
   advice(['Identify who is established in the EU and first places the packaging from the non-EU country on the EU market. If you place packaging under your own name or modify it in a way that can affect compliance, check whether manufacturer duties also apply.',
     'Afklar, hvem der er etableret i EU og først bringer emballagen fra tredjelandet i omsætning i EU. Hvis I bringer emballagen i omsætning under eget navn eller ændrer den på en måde, der kan påvirke overensstemmelsen, skal I undersøge, om I også har fabrikantpligter.'], eu(3), eu(18), eu(21)),
   advice(['Record who supplies each packaging item and which business is the registered producer for each market. Check your distributor duties before making the packaging available.',
     'Registrér, hvem der leverer hver emballage, og hvem der er registreret som producent på hvert marked. Tjek distributørpligterne, før I gør emballagen tilgængelig.'], eu(19), eu(44)),
   advice(['List packaging you add, including labels, tape and fill. Clarify whether you are the manufacturer, who has producer responsibility, and which rules on empty space apply to the packaging you fill.',
     'Notér den emballage, I tilføjer, herunder etiketter, tape og fyld. Afklar, om I er fabrikant, hvem der har producentansvaret, og hvilke regler om tomrum der gælder for den emballage, I fylder.'], eu(3), eu(24), guidance),
-  advice(['Identify who makes, buys, imports, fills, supplies or unpacks this packaging. Check all relevant roles and the same-Member-State supplier rule for microenterprises using their own brand.',
-    'Afklar, hvem der fremstiller, køber, importerer, fylder, leverer eller udpakker emballagen. Undersøg alle relevante roller og særreglen for mikrovirksomheder med eget mærke og emballageleverandør i samme medlemsstat.'], eu(3), guidance)
+  advice(['Map who makes, buys, imports, fills, supplies or unpacks the packaging. If a micro-enterprise commissions own-brand packaging, check the supplier’s country against Articles 3 and 15(12).',
+    'Kortlæg, hvem der fremstiller, køber, importerer, fylder, leverer eller udpakker emballagen. Bestiller en mikrovirksomhed emballage under eget mærke, skal leverandørens land vurderes efter artikel 3 og artikel 15, stk. 12.'], eu(3), eu(15), guidance)
 ];
-const manufacturer = rule(['If you are the manufacturer, carry out or commission the conformity assessment and compile the technical documentation before placing the packaging on the EU market. Once compliance is demonstrated, draw up the EU declaration of conformity. Keep both documents for five years for single-use packaging and ten years for reusable packaging, from placing on the market.',
-  'Er I fabrikant, skal I gennemføre eller få udført overensstemmelsesvurderingen og udarbejde teknisk dokumentation, før emballagen bringes i omsætning i EU. Når overensstemmelse er påvist, skal I udarbejde EU-overensstemmelseserklæringen. Gem begge dokumenter i fem år for engangsemballage og ti år for genbrugsemballage, regnet fra omsætningen.'], eu(15), eu(38), eu(39), annex('VII'), annex('VIII'));
-const importer = rule(['Before placing imported packaging on the EU market, verify that the manufacturer has carried out the assessment and compiled the technical file, that required documents and applicable labelling are in place, and that the manufacturer’s identification and contact requirements are met. Add your importer identification and contact details as required. Keep a copy of the EU declaration and ensure the technical file is available to the authorities.',
-  'Før I bringer importeret emballage i omsætning i EU, skal I kontrollere fabrikantens vurdering og tekniske dokumentation, de krævede dokumenter og den mærkning, der gælder, samt fabrikantens identifikation og kontaktoplysninger. Tilføj de krævede oplysninger om jer som importør. Gem en kopi af EU-overensstemmelseserklæringen, og sørg for, at myndighederne kan få den tekniske dokumentation.'], eu(18), eu(12));
+const manufacturer = rule(['If you have the manufacturer’s duties under Article 15, assess conformity or have it assessed, and draw up the technical file before placing packaging on the EU market. Once conformity is demonstrated, issue the EU declaration. Keep both documents for five years for single-use packaging or ten years for reusable packaging, from first placement on the market. Paragraph 11 exempts certain custom-made transport packaging for configurable medical devices and medical systems from paragraphs 2 and 3.',
+  'Har I fabrikantpligterne efter artikel 15, skal I vurdere eller få vurderet overensstemmelsen og udarbejde teknisk dokumentation, før emballagen bringes i omsætning i EU. Udsted EU-overensstemmelseserklæringen, når overensstemmelsen er påvist. Opbevar begge dokumenter i fem år for engangsemballage og ti år for genbrugsemballage fra første omsætning. Stk. 11 undtager visse specialfremstillede transportemballager til konfigurerbart medicinsk udstyr og medicinske systemer fra stk. 2 og 3.'], eu(15), eu(38), eu(39), annex('VII'), annex('VIII'));
+const importer = rule(['If you are the importer, check the manufacturer’s conformity assessment, technical documentation, required accompanying documents, applicable markings and identification before placing the packaging on the EU market. Add your importer details as required. Keep a copy of the EU declaration and make sure the technical file can be supplied to the authorities.',
+  'Er I importør, skal I kontrollere fabrikantens overensstemmelsesvurdering, tekniske dokumentation, krævede ledsagedokumenter, gældende mærkning og identifikation, før I bringer emballagen i omsætning i EU. Tilføj de krævede importøroplysninger. Opbevar en kopi af EU-overensstemmelseserklæringen, og sørg for, at myndighederne kan få den tekniske dokumentation.'], eu(18), eu(12));
 const distributor = rule(['If you distribute the packaging, check producer registration, any applicable Article 12 labelling, and the manufacturer’s and importer’s required identification and contact details before making it available. Hold back packaging if you have reason to believe it fails the applicable requirements.',
   'Distribuerer I emballagen, skal I før tilgængeliggørelsen kontrollere producentregistrering, eventuel gældende mærkning efter artikel 12 og fabrikantens og importørens krævede identifikation og kontaktoplysninger. Hold emballagen tilbage, hvis I har grund til at tro, at den ikke opfylder de gældende krav.'], eu(19), eu(12), eu(44));
 const labelling = rule(['The harmonised material-composition label generally applies from 12 August 2028 or 24 months after the relevant implementing acts enter into force, whichever is later. Check Article 12 for exceptions and other labelling deadlines.',
@@ -143,14 +147,16 @@ const materialActions = [
   ['Record each layer or component, including any plastic, and note what can be separated.', 'Registrér hvert lag eller hver del, herunder eventuel plast, og notér, hvad der kan skilles ad.'],
   ['Identify the material and each component with the supplier.', 'Afklar materialet og de enkelte dele med leverandøren.']
 ];
-const recycling = rule(['For packaging placed on the EU market, the design-for-recycling criteria apply from 1 January 2030 or 24 months after the delegated acts enter into force, whichever is later. The recycled-at-scale requirement applies from 1 January 2035 or five years after the implementing acts enter into force, whichever is later. Check the exemptions in Article 6(11).',
-  'For emballage, der bringes i omsætning i EU, gælder kriterierne for design til genanvendelse fra 1. januar 2030 eller 24 måneder efter de delegerede retsakters ikrafttræden, alt efter hvad der ligger senest. Kravet om genanvendelse i stor skala gælder fra 1. januar 2035 eller fem år efter gennemførelsesretsakternes ikrafttræden, alt efter hvad der ligger senest. Tjek undtagelserne i artikel 6, stk. 11.'], eu(6));
+const metals = rule(['The combined amount of lead, cadmium, mercury and hexavalent chromium in packaging or its components is generally limited to 100 mg/kg. Under Article 5(6), compliance with the applicable limits must be shown in the technical documentation. Check whether a specific derogation applies.',
+  'Det samlede indhold af bly, cadmium, kviksølv og hexavalent chrom i emballage eller emballagekomponenter må som hovedregel højst være 100 mg/kg. Efter artikel 5, stk. 6, skal overholdelsen af de relevante grænser fremgå af den tekniske dokumentation. Tjek, om en særlig undtagelse gælder.'], eu(5));
+const recycling = rule(['The general recyclability requirement applies to packaging placed on the EU market from 12 August 2026, subject to Article 6 exemptions. During the transition, use the Commission guidance on the earlier packaging rules and standards. Harmonised design criteria apply from 1 January 2030 or 24 months after the relevant delegated acts enter into force, whichever is later. Recycling at scale applies from 1 January 2035 or five years after the relevant implementing acts enter into force, whichever is later.',
+  'Emballage, der bringes i omsætning i EU fra 12. august 2026, skal som hovedregel kunne genanvendes. Tjek undtagelserne i artikel 6 og Kommissionens vejledning om de tidligere emballageregler og standarder i overgangsperioden. De harmoniserede designkriterier gælder fra 1. januar 2030 eller 24 måneder efter de relevante delegerede retsakters ikrafttræden, hvis det er senere. Kravet om genanvendelse i stor skala gælder fra 1. januar 2035 eller fem år efter de relevante gennemførelsesretsakters ikrafttræden, hvis det er senere.'], eu(6), guidance);
 const recycledPlastic = rule(['For plastic parts covered by Article 7, check the minimum recycled content for the packaging category. The first targets apply from 1 January 2030 or three years after the implementing act under Article 7(8) enters into force, whichever is later. Check exemptions, including for a plastic part below 5% of the total packaging-unit weight.',
   'For plastdele omfattet af artikel 7 skal I undersøge minimumskravet til genanvendt indhold for emballagetypen. De første krav gælder fra 1. januar 2030 eller tre år efter ikrafttrædelsen af gennemførelsesretsakten efter artikel 7, stk. 8, alt efter hvad der ligger senest. Tjek undtagelserne, blandt andet for plastdele under 5 % af emballageenhedens samlede vægt.'], eu(7));
 const pfas = rule(['Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence for your packaging. Earlier manufacture gives no stock grace period. Packaging already placed on the EU market before that date may remain available.',
-  'Siden 12. august 2026 skal fødevarekontaktemballage, der bringes i omsætning i EU, overholde PFAS-grænserne i artikel 5, stk. 5. Bed leverandøren om dokumentation for jeres emballage. Tidligere fremstilling giver ingen frist til at afvikle lageret. Emballage, der allerede var bragt i omsætning i EU før datoen, må fortsat være tilgængelig.'], eu('5(5)','art_5'), guidance);
-const confirmFood = advice(['Confirm the intended use with the supplier. If the packaging is for food contact, check the PFAS limits and get evidence for the specific packaging.',
-  'Afklar den tilsigtede brug med leverandøren. Ved fødevarekontakt skal I tjekke PFAS-grænserne og indhente dokumentation for den konkrete emballage.'], eu('5(5)','art_5'));
+  'Siden 12. august 2026 skal fødevarekontaktemballage, der bringes i omsætning i EU, overholde PFAS-grænserne i artikel 5, stk. 5. Bed leverandøren om dokumentation for jeres emballage. Tidligere fremstilling giver ingen frist til at afvikle lageret. Emballage, der allerede var bragt i omsætning i EU før datoen, må fortsat være tilgængelig.'], eu('5(5)','art_5'), foodContactLaw, guidance);
+const confirmFood = advice(['Clarify normal and foreseeable use with the supplier. If the packaging is for food contact, check the PFAS limits and the food-contact material rules, and request evidence for this pack.',
+  'Afklar normal og forudsigelig brug med leverandøren. Ved fødevarekontakt skal I tjekke PFAS-grænserne og reglerne for fødevarekontaktmaterialer og indhente dokumentation for emballagen.'], eu('5(5)','art_5'), foodContactLaw);
 const emptySpace = rule(['If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Sales packs used as e-commerce packs and reusable packs in a reuse system are exempt from the 50% rule. Check Article 24(4) and (5) for the precise conditions.',
   'Fylder I salgsemballage, skal tomrummet senest 12. februar 2028 begrænses til det nødvendige for funktion og beskyttelse. Fylder I multipak-, transport- eller e-handelsemballage, er grænsen 50 % fra 1. januar 2030 eller tre år efter de relevante gennemførelsesretsakters ikrafttræden, alt efter hvad der ligger senest. Fyldmateriale tæller som tomrum. Salgsemballage brugt som e-handelsemballage og genbrugsemballage i et genbrugssystem er undtaget fra 50 %-reglen. Tjek artikel 24, stk. 4 og 5, for de præcise betingelser.'], eu(24));
 const outsideEU = advice(['Confirm that no relevant supply or unpacking takes place in the EU. Ask what packaging and documentation rules apply at the destination.',
@@ -158,6 +164,7 @@ const outsideEU = advice(['Confirm that no relevant supply or unpacking takes pl
 
 const savedPlanKey = 'ppwr-kompas.checklist.v2';
 const languageTransfer = 'ppwr-kompas.language.v2';
+const taskRevision = 1;
 const storageDuration = 30 * 24 * 60 * 60 * 1000;
 const language = document.documentElement.lang;
 const editorial = JSON.parse(el('editorial-data')?.textContent || '{}');
@@ -168,6 +175,7 @@ let answers = Array(questions.length).fill(null);
 let food = null;
 let completed = false;
 let checkedTasks = new Set();
+let hasEarlierMarks = false;
 let savedUntil = null;
 
 function validAnswers(state, complete) {
@@ -182,9 +190,11 @@ function restore(state) {
   completed = state.completed;
   step = completed ? questions.length - 1 : state.step;
   checkedTasks = new Set(state.checked);
+  hasEarlierMarks = checkedTasks.size > 0 && state.taskRevision !== taskRevision;
 }
 function currentState() {
-  return {answers, food, completed, step, checked:[...checkedTasks]};
+  return {answers, food, completed, step, checked:[...checkedTasks],
+    taskRevision: hasEarlierMarks ? 0 : taskRevision};
 }
 function validChecks(state) {
   return Array.isArray(state.checked) && state.checked.every(i => Number.isInteger(i) && i >= 0 && i < guides.length);
@@ -289,6 +299,7 @@ function renderQuiz(focus = false) {
   el('next-text').textContent = step === 0 ? words('Map your readiness','Tjek din parathed') : step === 4 ? words('Build my checklist','Vis min tjekliste') : words('Continue','Fortsæt');
   el('back').hidden = step === 0;
   renderChoices('answers', 'answer', question.options, answers[step], index => { answers[step] = index; });
+  el('quiz-scope').hidden = step !== 0;
   el('food-contact').hidden = step !== 2;
   if (step === 2) {
     el('food-question').textContent = localized(foodQuestion);
@@ -329,6 +340,7 @@ function taskActions(index) {
       return [
         advice(materialActions[material]),
         ...(euMarket ? [
+          metals,
           recycling,
           recycledPlastic,
           ...(foodAction ? [foodAction] : []),
@@ -343,11 +355,15 @@ function sourceUrl(source) {
   return source.url ?? 'https://eur-lex.europa.eu/eli/reg/2025/40/oj/' + (language === 'da' ? 'dan' : 'eng') + '#' + source.anchor;
 }
 function actionText(action) {
-  return (action.requirement ? words('Legal requirement: ', 'Lovkrav: ') : words('Practical advice: ', 'Praktisk råd: ')) +
-    localized(action.text);
+  if (!action.requirement) return words('Practical advice: ', 'Praktisk råd: ') + localized(action.text);
+  const label = answers[1] === 6
+    ? words('Potential EU requirement pending confirmation of the market: ', 'Muligt EU-krav, indtil markedet er afklaret: ')
+    : words('Legal requirement: ', 'Lovkrav: ');
+  return label + localized(action.text);
 }
 function updateProgress() {
   const count = checkedTasks.size;
+  el('revised-tasks').hidden = !hasEarlierMarks;
   el('task-count').textContent = count + words(' of 4 tasks done', ' af 4 opgaver løst');
   el('task-progress').value = count;
   el('plan-finish').hidden = count !== guides.length;
@@ -362,6 +378,7 @@ function taskRow(index) {
   box.onchange = () => {
     if (box.checked) checkedTasks.add(index);
     else checkedTasks.delete(index);
+    if (checkedTasks.size === 0) hasEarlierMarks = false;
     updateProgress();
     savePlan();
   };
@@ -390,9 +407,14 @@ function taskRow(index) {
   row.append(record);
   return row;
 }
+function checklistContext() {
+  return [localized(scopeNote), el('source-review').textContent,
+    document.querySelector('link[rel="canonical"]').href + '#resources'];
+}
 function checklistText() {
   return [
-    localized(scopeNote),
+    ...checklistContext(),
+    ...(hasEarlierMarks ? [el('revised-tasks').textContent] : []),
     ...taskOrder().map(index => [
       (checkedTasks.has(index) ? '[x] ' : '[ ] ') + localized(guides[index].title),
       ...taskActions(index).flatMap(action => [
@@ -408,15 +430,17 @@ function projectBrief() {
     ['Activity', 'Aktivitet'], ['Markets', 'Markeder'], ['Material', 'Materiale'],
     ['Available data', 'Datagrundlag'], ['Priority', 'Prioritet']
   ];
+  const firstAction = taskActions(answers[4])[0];
   const summary = questions.map((question, i) => localized(labels[i]) + ': ' + localized(question.options[answers[i]]));
   return [
     words('PPWR review — working note', 'PPWR-gennemgang — arbejdsnotat'),
-    localized(scopeNote),
+    ...checklistContext(),
     '',
     ...summary,
     words('Food contact: ', 'Fødevarekontakt: ') + localized(foodOptions[food]),
     '',
-    words('First action: ', 'Første opgave: ') + actionText(taskActions(answers[4])[0]),
+    words('First action: ', 'Første opgave: ') + actionText(firstAction),
+    ...firstAction.sources.map(source => localized(source.label) + ' ' + sourceUrl(source)),
     words('Product: ___   Owner: ___   Due date: ___', 'Produkt: ___   Ansvarlig: ___   Frist: ___')
   ].join('\n');
 }
@@ -448,6 +472,7 @@ el('restart').onclick = () => {
   answers.fill(null);
   food = null;
   checkedTasks.clear();
+  hasEarlierMarks = false;
   for (const detail of el('optional-help').querySelectorAll('details')) detail.open = false;
   el('page-help-slot').append(el('optional-help'));
   el('brief-details').open = false;
