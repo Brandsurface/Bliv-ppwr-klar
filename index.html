@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#eee6da">
   <!-- SEO -->
-  <link rel="preload" as="image" href="/assets/hero.webp" media="not all and (max-width: 720px)" fetchpriority="high">
-  <link rel="preload" as="image" href="/assets/hero-mobile.webp" media="(max-width: 720px)" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/hero.webp" imagesrcset="/assets/hero-mobile.webp 760w, /assets/hero.webp 1308w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="/kompas.css">
   <script src="/kompas.js" defer></script>
 </head>
@@ -27,16 +26,18 @@
 <main id="overview">
   <section class="hero" aria-labelledby="headline">
     <div class="hero-scene">
-      <picture class="hero-image">
-        <source media="(max-width: 720px)" srcset="/assets/hero-mobile.webp">
-        <img class="hero-photo" src="/assets/hero.webp" width="1308" height="1203" fetchpriority="high" alt="Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film.">
-      </picture>
+      <img class="hero-photo" src="/assets/hero.webp" srcset="/assets/hero-mobile.webp 760w, /assets/hero.webp 1308w" sizes="100vw" width="1308" height="1203" fetchpriority="high" alt="Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film." data-alt-da="Klar folie, en formstøbt fiberindsats og en åben foldeæske svæver over et ark folie.">
+      <div class="notes" aria-hidden="true">
+        <span class="note film" data-da="Klar folie">Clear film</span>
+        <span class="note fibre" data-da="Formstøbt fiber">Moulded fibre</span>
+        <span class="note board" data-da="Foldet karton">Folding carton</span>
+      </div>
       <button class="inspect" type="button" id="open-study" aria-haspopup="dialog"><svg aria-hidden="true"><use href="/assets/icons.svg#rotate-3d"/></svg><span data-da="Drej emballagen i 3D">Rotate in 3D</span></button>
     </div>
     <div class="intro">
       <p class="kicker" data-da="EU’S NYE EMBALLAGEREGLER">EU PACKAGING READINESS</p>
-      <h1 id="headline"><span data-da="Emballage,">Packaging,</span> <span data-da="klar til">ready for</span> <em data-da="det næste.">what’s next.</em></h1>
-      <p class="lead">Explore EU packaging rules. Get four tasks for one packaging item, based on your answers.</p>
+      <h1 id="headline"><span data-da="Emballage,">Packaging,</span><span data-da="klar til">ready for</span><em data-da="det næste.">what’s next.</em></h1>
+      <p class="lead"><span class="lead-line" data-da="Få overblik over EU’s emballagekrav.">Explore EU packaging rules.</span> <span class="lead-line" data-da="Få fire arbejdsopgaver for én emballage">Get four work tasks for one packaging item</span> <span class="lead-line" data-da="ud fra jeres svar og valgte prioritet.">based on your answers and chosen priority.</span></p>
     </div>
     <section class="quiz" id="readiness" aria-label="PPWR readiness test">
       <div class="quiz-status"><span id="step"></span><span class="dots" aria-hidden="true"></span></div>
