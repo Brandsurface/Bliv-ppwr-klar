@@ -305,15 +305,19 @@ document.addEventListener('keydown', event => {
     el('menu').focus();
   }
 });
-// Observe each spread once. Reading and quiz controls are available throughout.
+// Replay chapter entrances after they leave the viewport; guides enter once.
 if ('IntersectionObserver' in window) {
   const enter = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
-      entry.target.classList.add('in-view');
-      enter.unobserve(entry.target);
+      const section = entry.target;
+      if (!entry.isIntersecting) {
+        section.classList.remove('in-view');
+      } else if (entry.intersectionRatio >= .15) {
+        section.classList.add('in-view');
+        if (!section.classList.contains('chapter')) enter.unobserve(section);
+      }
     }
-  }, {threshold: 0.08});
+  }, {threshold: [0, .15]});
   for (const section of document.querySelectorAll('.chapter, .guide, .resources')) {
     enter.observe(section);
   }

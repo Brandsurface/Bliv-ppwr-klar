@@ -234,47 +234,82 @@ dialog::backdrop { background: #1720199e }
   .quiz.is-complete { width: auto }
 }
 
-/* The copy stays on the paper while each photographic detail moves behind it. */
+/* Photograph, type and paper move on separate layers. */
 @keyframes type-enter {
-  from { opacity: .18; translate: 0 .48em }
-  to { opacity: 1; translate: 0 0 }
+  from { opacity: 0; translate: 0 .85em; clip-path: inset(0 0 90% 0) }
+  to { opacity: 1; translate: 0 0; clip-path: inset(-18% -8% -48% -8%) }
 }
-@keyframes pack-settle { from { scale: 1.035 } to { scale: 1 } }
-@keyframes print-develop { from { opacity: .45 } to { opacity: 1 } }
+@keyframes pack-settle {
+  from { scale: 1.18; translate: 0 2.5% }
+  to { scale: 1; translate: 0 0 }
+}
+@keyframes hero-depth {
+  from { transform: scale(1) }
+  to { transform: translateY(5%) scale(1.12) }
+}
+@keyframes print-develop {
+  from { clip-path: inset(0 0 0 68%); opacity: .5 }
+  to { clip-path: inset(0); opacity: 1 }
+}
 @keyframes detail-pass {
-  from { transform: scale(1.13) translateY(4.5%) }
-  to { transform: scale(1.13) translateY(-4.5%) }
+  from { transform: translateY(14%) scale(1.36) }
+  to { transform: translateY(-14%) scale(1.36) }
 }
 @keyframes detail-cross {
-  from { transform: scale(1.1) translateX(-2.8%) }
-  to { transform: scale(1.1) translateX(2.8%) }
+  from { transform: translateX(-9%) scale(1.28) }
+  to { transform: translateX(9%) scale(1.28) }
+}
+@keyframes detail-pullback {
+  from { transform: translateY(-6%) scale(1.54) }
+  to { transform: translateY(0) scale(1.02) }
+}
+@keyframes ink-rule {
+  from { scale: 0 1 }
+  to { scale: 1 1 }
 }
 @media (prefers-reduced-motion: no-preference) {
   .intro h1 > *, .intro .lead, .notes .note {
-    animation: type-enter .68s cubic-bezier(.18,.72,.23,1) backwards;
+    animation: type-enter .95s cubic-bezier(.16,.72,.18,1) backwards;
   }
-  .intro h1 > :nth-child(2) { animation-delay: 65ms }
-  .intro h1 em { animation-delay: 120ms }
-  .intro .lead, .notes .film { animation-delay: 165ms }
-  .notes .fibre { animation-delay: 225ms }
-  .notes .board { animation-delay: 285ms }
-  .hero-photo { animation: pack-settle 1.15s cubic-bezier(.2,.65,.3,1) both }
+  .intro h1 > :nth-child(2) { animation-delay: 135ms }
+  .intro h1 em { animation-delay: 260ms }
+  .intro .lead, .notes .film { animation-delay: 330ms }
+  .notes .fibre { animation-delay: 460ms }
+  .notes .board { animation-delay: 590ms }
+  .hero-photo { animation: pack-settle 1.65s cubic-bezier(.17,.7,.24,1) backwards }
+  .chapter .number { display: inline-flex; align-items: center; gap: .7em }
+  .chapter .number::after {
+    content: ""; width: clamp(32px,4.3vw,74px); height: 1px;
+    background: currentColor; transform-origin: left;
+  }
+  .in-view .number::after { animation: ink-rule .8s ease-out backwards }
   .in-view .chapter-copy > :is(h2,em,p), .spread.in-view h2 {
-    animation: type-enter .65s cubic-bezier(.18,.72,.23,1) backwards;
+    animation: type-enter .95s cubic-bezier(.2,.67,.22,1) backwards;
   }
-  .in-view .chapter-copy em { animation-delay: 65ms }
-  .in-view .chapter-copy p { animation-delay: 115ms }
+  .in-view .chapter-copy em { animation-delay: 135ms }
+  .in-view .chapter-copy p { animation-delay: 220ms }
   .chapter.in-view picture:has(.image-ready) {
-    animation: print-develop .7s ease-out;
+    animation: print-develop 1.05s cubic-bezier(.2,.68,.22,1) backwards;
   }
+  .chapter { --detail-motion: detail-pass }
+  .chapter.data { --detail-motion: detail-cross }
+  .chapter.responsibility { --detail-motion: detail-pullback }
   @supports (animation-timeline: view()) {
+    .hero { view-timeline-name: --hero }
+    .hero-photo {
+      animation: pack-settle 1.65s cubic-bezier(.17,.7,.24,1) backwards, hero-depth 1s linear both;
+      animation-timeline: auto, --hero;
+      animation-range: normal, exit 0% exit 85%;
+    }
     .chapter { view-timeline-name: --chapter }
     .chapter img {
-      animation: detail-pass 1s linear both;
+      animation: var(--detail-motion) 1s linear both;
       animation-timeline: --chapter;
+      animation-range: entry 8% exit 85%;
     }
-    .chapter.data img { animation-name: detail-cross }
-    .chapter.responsibility img { animation-direction: reverse }
+  }
+  @supports not (animation-timeline: view()) {
+    .chapter.in-view img { animation: var(--detail-motion) 1.65s cubic-bezier(.25,.65,.25,1) both }
   }
 }
 .chapter picture { position: absolute; inset: 0; z-index: -1; overflow: hidden }
