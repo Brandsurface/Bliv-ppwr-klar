@@ -1,8 +1,8 @@
 {
   "Map your packaging, find the gaps in your supplier data and build a practical PPWR readiness checklist.": {
     "group": "Sidetitel og beskrivelse",
-    "en": "Map your packaging, find the gaps in your supplier data and build a practical PPWR readiness checklist.",
-    "da": "Kortlæg din emballage, find hullerne i dine leverandørdata, og lav en konkret tjekliste, så du bliver klar til PPWR."
+    "en": "Explore EU packaging rules and get four work tasks for one packaging item based on your answers and chosen priority.",
+    "da": "Få overblik over EU’s emballagekrav og fire arbejdsopgaver for én emballage, baseret på jeres svar og valgte prioritet."
   },
   "PPWR Kompas — Packaging, ready for what’s next.": {
     "group": "Sidetitel og beskrivelse",
@@ -14,17 +14,7 @@
     "en": "Skip to readiness test",
     "da": "Gå til parathedstesten"
   },
-  "PPWR Kompas": {
-    "group": "Billed- og hjælpetekster",
-    "en": "PPWR Kompas",
-    "da": "PPWR Kompas"
-  },
   "PPWR": {
-    "group": "Forside og navigation",
-    "en": "PPWR",
-    "da": "PPWR"
-  },
-  "KOMPAS": {
     "group": "Forside og navigation",
     "en": "PPWR",
     "da": "PPWR"
@@ -129,35 +119,10 @@
     "en": "Check your packaging.",
     "da": "Tjek emballagen."
   },
-  "A clear path through EU packaging": {
-    "group": "Forside og navigation",
-    "en": "A clear path through EU packaging",
-    "da": "Få overblik over EU’s emballagekrav."
-  },
-  "requirements — so you can make confident": {
-    "group": "Forside og navigation",
-    "en": "requirements — so you can make confident",
-    "da": "Se, hvad du skal afklare, og tag næste"
-  },
-  "decisions, adapt, and stay ahead with PPWR.": {
-    "group": "Forside og navigation",
-    "en": "decisions, adapt, and stay ahead with PPWR.",
-    "da": "skridt med din emballage."
-  },
   "PPWR readiness test": {
     "group": "Billed- og hjælpetekster",
     "en": "PPWR readiness test",
     "da": "PPWR readiness test"
-  },
-  "Where do you sit in the packaging chain?": {
-    "group": "Forside og navigation",
-    "en": "Where do you sit in the packaging chain?",
-    "da": "Hvilken rolle har I i emballagekæden?"
-  },
-  "Choose the role that best describes your business.": {
-    "group": "Forside og navigation",
-    "en": "Choose the role that best describes your business.",
-    "da": "Vælg den rolle, der passer bedst på jeres virksomhed."
   },
   "Back": {
     "group": "Forside og navigation",
@@ -169,20 +134,10 @@
     "en": "Your PPWR checklist",
     "da": "Jeres PPWR-tjekliste"
   },
-  "Pick one pack. Start with the priority you chose and tick each task as you finish it.": {
-    "group": "Testresultat",
-    "en": "Pick one pack. Start with the priority you chose and tick each task as you finish it.",
-    "da": "Tag én emballage frem. Begynd med det punkt, I valgte i testen, og sæt kryds, når opgaven er løst."
-  },
   "Checklist progress / Tjeklistens fremdrift": {
     "group": "Billed- og hjælpetekster",
     "en": "Checklist progress / Tjeklistens fremdrift",
     "da": "Checklist progress / Tjeklistens fremdrift"
-  },
-  "You’ve reviewed your first pack. Follow up on open questions with their owners, then use the checklist for the next pack.": {
-    "group": "Testresultat",
-    "en": "You’ve reviewed your first pack. Follow up on open questions with their owners, then use the checklist for the next pack.",
-    "da": "I har gennemgået den første emballage. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage."
   },
   "Copy checklist": {
     "group": "Testresultat",
@@ -324,11 +279,6 @@
     "en": "Who owns the next step?",
     "da": "Hvem har ansvaret?"
   },
-  "List who makes, imports and distributes the product in each market. Check the definitions in Article 3, your obligations in Chapter IV (Articles 15–23) and producer registration in Article 44. Until the harmonised registers under Article 44 are in place, national registers apply – in Denmark, Dansk Producentansvar. Give each open question an owner.": {
-    "group": "Vejledning",
-    "en": "List who makes, imports and distributes the product in each market. Check the definitions in Article 3, your obligations in Chapter IV (Articles 15–23) and producer registration in Article 44. Until the harmonised registers under Article 44 are in place, national registers apply – in Denmark, Dansk Producentansvar. Give each open question an owner.",
-    "da": "Notér, hvem der fremstiller, importerer og distribuerer produktet i hvert marked. Tjek definitionerne i artikel 3 og jeres forpligtelser i kapitel IV (artikel 15–23) samt producentregistrering i artikel 44. Indtil de harmoniserede registre efter artikel 44 er på plads, gælder de nationale registre, i Danmark Dansk Producentansvar. Giv hvert åbent spørgsmål en ansvarlig."
-  },
   "Read the rules.": {
     "group": "Kilder",
     "en": "Read the rules.",
@@ -389,11 +339,6 @@
     "en": "Request a visual sample quote",
     "da": "Få et tilbud på en visuel prøve"
   },
-  "Planning guidance. Confirm pack-specific requirements with official sources.": {
-    "group": "Partnerhjælp",
-    "en": "Planning guidance. Confirm pack-specific requirements with official sources.",
-    "da": "Vejledende værktøj. Afklar konkrete krav i de officielle kilder."
-  },
   "Material study": {
     "group": "3D-visning",
     "en": "Material study",
@@ -429,150 +374,10 @@
     "en": "Rotate right / Drej til højre",
     "da": "Rotate right / Drej til højre"
   },
-  "We sell products under our own brand": {
-    "group": "Parathedstest",
-    "en": "We sell products under our own brand",
-    "da": "Vi sælger under eget brand"
-  },
-  "We import products or packaging": {
-    "group": "Parathedstest",
-    "en": "We import products or packaging",
-    "da": "Vi importerer varer eller emballage"
-  },
-  "We sell or distribute others’ products": {
-    "group": "Parathedstest",
-    "en": "We sell or distribute others’ products",
-    "da": "Vi sælger andres produkter"
-  },
-  "We fill, pack or ship products": {
-    "group": "Parathedstest",
-    "en": "We fill, pack or ship products",
-    "da": "Vi fylder, pakker eller sender varer"
-  },
-  "List the packs sold under your brand and identify who holds their technical files.": {
-    "group": "Parathedstest",
-    "en": "List the packs sold under your brand and identify who holds their technical files.",
-    "da": "Registrér emballagerne under eget brand, og find ud af, hvem der har den tekniske dokumentation."
-  },
-  "Pick one imported SKU and ask the manufacturer for its packaging documentation and a named contact.": {
-    "group": "Parathedstest",
-    "en": "Pick one imported SKU and ask the manufacturer for its packaging documentation and a named contact.",
-    "da": "Vælg én importeret vare, og bed fabrikanten om emballagedokumentation og en kontaktperson."
-  },
-  "Record the supplier and market for each pack you distribute so questions can be traced to the right business.": {
-    "group": "Parathedstest",
-    "en": "Record the supplier and market for each pack you distribute so questions can be traced to the right business.",
-    "da": "Registrér leverandør og marked for hver emballage, så spørgsmål kan følges tilbage til rette virksomhed."
-  },
-  "List the packaging you add when filling or shipping, including liners, tape and void fill.": {
-    "group": "Parathedstest",
-    "en": "List the packaging you add when filling or shipping, including liners, tape and void fill.",
-    "da": "Registrér den emballage, I tilføjer ved pakning og forsendelse, herunder tape, indlæg og fyld."
-  },
-  "Map who manufactures, imports, fills and sells one SKU before assigning responsibilities.": {
-    "group": "Parathedstest",
-    "en": "Map who manufactures, imports, fills and sells one SKU before assigning responsibilities.",
-    "da": "Kortlæg, hvem der fremstiller, importerer, fylder og sælger én vare, før I fordeler ansvaret."
-  },
-  "Where do your packs go?": {
-    "group": "Parathedstest",
-    "en": "Where do your packs go?",
-    "da": "Hvor sælger I varerne?"
-  },
-  "Think about where the packaged product is first sold.": {
-    "group": "Parathedstest",
-    "en": "Think about where the packaged product is first sold.",
-    "da": "Tænk på, hvor den emballerede vare først sælges."
-  },
-  "One EU country": {
-    "group": "Parathedstest",
-    "en": "One EU country",
-    "da": "Ét EU-land"
-  },
-  "Several EU countries": {
-    "group": "Parathedstest",
-    "en": "Several EU countries",
-    "da": "Flere EU-lande"
-  },
-  "EU and non-EU markets": {
-    "group": "Parathedstest",
-    "en": "EU and non-EU markets",
-    "da": "Både i og uden for EU"
-  },
   "We need to map this": {
     "group": "Parathedstest",
     "en": "We need to map this",
     "da": "Vi mangler overblikket"
-  },
-  "Name your sales country and check its producer register for the packaging you place there.": {
-    "group": "Parathedstest",
-    "en": "Name your sales country and check its producer register for the packaging you place there.",
-    "da": "Navngiv salgslandet, og tjek producentregistret for den emballage, I bringer på markedet dér."
-  },
-  "Create one row per EU market, with the local register, reporting contact and responsible company.": {
-    "group": "Parathedstest",
-    "en": "Create one row per EU market, with the local register, reporting contact and responsible company.",
-    "da": "Opret en række pr. EU-marked med register, kontakt og ansvarlig virksomhed."
-  },
-  "Separate EU destinations from other markets and record the rules and contacts for each.": {
-    "group": "Parathedstest",
-    "en": "Separate EU destinations from other markets and record the rules and contacts for each.",
-    "da": "Opdel destinationer i EU og uden for EU, og registrér regler og kontaktpersoner for hvert marked."
-  },
-  "Use orders and shipping records to list the destination countries for one product line.": {
-    "group": "Parathedstest",
-    "en": "Use orders and shipping records to list the destination countries for one product line.",
-    "da": "Brug ordrer og fragtdata til at kortlægge landene for én produktserie."
-  },
-  "Which pack will you start with?": {
-    "group": "Parathedstest",
-    "en": "Which pack will you start with?",
-    "da": "Hvilken emballage starter I med?"
-  },
-  "Choose one format for your first review.": {
-    "group": "Parathedstest",
-    "en": "Choose one format for your first review.",
-    "da": "Vælg ét format til jeres første gennemgang."
-  },
-  "Plastic or food-contact pack": {
-    "group": "Parathedstest",
-    "en": "Plastic or food-contact pack",
-    "da": "Plast eller fødevarekontakt"
-  },
-  "Paper, board or fibre": {
-    "group": "Parathedstest",
-    "en": "Paper, board or fibre",
-    "da": "Papir, karton eller fiber"
-  },
-  "Mixed-material pack": {
-    "group": "Parathedstest",
-    "en": "Mixed-material pack",
-    "da": "Flere materialer i én emballage"
-  },
-  "Transport or shipping pack": {
-    "group": "Parathedstest",
-    "en": "Transport or shipping pack",
-    "da": "Transport- eller forsendelsesemballage"
-  },
-  "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).": {
-    "group": "Parathedstest",
-    "en": "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).",
-    "da": "Bed om polymertyper, dokumentation for genanvendt indhold og eventuelle relevante fødevarekontaktdata. Bed leverandøren om dokumentation for, at emballage til fødevarekontakt overholder PFAS-grænserne i artikel 5, stk. 5 (gælder fra 12. august 2026)."
-  },
-  "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).": {
-    "group": "Parathedstest",
-    "en": "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream. Ask the supplier for evidence that food-contact packaging meets the PFAS limits in Article 5(5) (applies from 12 August 2026).",
-    "da": "Registrér fibre, belægning, trykfarve og lim. Spørg leverandøren, hvordan de påvirker genanvendelsen. Bed leverandøren om dokumentation for, at emballage til fødevarekontakt overholder PFAS-grænserne i artikel 5, stk. 5 (gælder fra 12. august 2026)."
-  },
-  "Separate each layer and closure on paper. Ask suppliers which components users can separate in practice.": {
-    "group": "Parathedstest",
-    "en": "Separate each layer and closure on paper. Ask suppliers which components users can separate in practice.",
-    "da": "Opdel emballagen i lag og lukninger på papir. Spørg, hvilke dele brugerne faktisk kan skille ad."
-  },
-  "Measure the packed product, outer dimensions and void fill. Document the protection the shipping pack provides.": {
-    "group": "Parathedstest",
-    "en": "Measure the packed product, outer dimensions and void fill. Document the protection the shipping pack provides.",
-    "da": "Mål varen, ydermål og fyld. Dokumentér den beskyttelse, transportemballagen skal levere."
   },
   "How complete is your data?": {
     "group": "Parathedstest",
@@ -664,26 +469,6 @@
     "en": "A sketch of the supply chain with the company and contact at each step.",
     "da": "En skitse af varekæden med virksomhed og kontaktperson ved hvert led."
   },
-  "PPWR · Article 3 and Chapter IV, roles and obligations": {
-    "group": "Tjekliste og funktioner",
-    "en": "PPWR · Article 3 and Chapter IV, roles and obligations",
-    "da": "PPWR · artikel 3 og kapitel IV, roller og forpligtelser"
-  },
-  "Check your sales markets": {
-    "group": "Tjekliste og funktioner",
-    "en": "Check your sales markets",
-    "da": "Tjek jeres salgslande"
-  },
-  "A list of countries, the register or authority to consult and who will check local deadlines.": {
-    "group": "Tjekliste og funktioner",
-    "en": "A list of countries, the register or authority to consult and who will check local deadlines.",
-    "da": "En landeliste med register eller myndighed og navnet på den, der undersøger de lokale frister."
-  },
-  "PPWR · Article 44, producer registers": {
-    "group": "Tjekliste og funktioner",
-    "en": "PPWR · Article 44, producer registers",
-    "da": "PPWR · artikel 44, producentregistre"
-  },
   "Review the parts of your pack": {
     "group": "Tjekliste og funktioner",
     "en": "Review the parts of your pack",
@@ -694,11 +479,6 @@
     "en": "A photo or drawing with the parts labelled. Note any open material questions next to the relevant part.",
     "da": "Et foto eller en tegning med navn på hver del. Skriv åbne spørgsmål om materialet ud for den del, de vedrører."
   },
-  "PPWR · Article 6, recyclability and dates": {
-    "group": "Tjekliste og funktioner",
-    "en": "PPWR · Article 6, recyclability and dates",
-    "da": "PPWR · artikel 6, genanvendelighed og frister"
-  },
   "Gather the evidence": {
     "group": "Tjekliste og funktioner",
     "en": "Gather the evidence",
@@ -708,11 +488,6 @@
     "group": "Tjekliste og funktioner",
     "en": "An index of file names, dates and owners. Give each missing document a follow-up date.",
     "da": "En oversigt med filnavn, dato og ansvarlig. Sæt en opfølgningsdato ved de dokumenter, der mangler."
-  },
-  "PPWR · Article 15 and Annex VII, conformity assessment and technical documentation": {
-    "group": "Tjekliste og funktioner",
-    "en": "PPWR · Article 15 and Annex VII, conformity assessment and technical documentation",
-    "da": "PPWR · artikel 15 og bilag VII, overensstemmelsesvurdering og teknisk dokumentation"
   },
   "TEST COMPLETE": {
     "group": "Tjekliste og funktioner",
@@ -774,11 +549,6 @@
     "en": "Priority",
     "da": "Prioritet"
   },
-  "Role to clarify": {
-    "group": "Tjekliste og funktioner",
-    "en": "Role to clarify",
-    "da": "Rolle skal afklares"
-  },
   "PPWR review — working note": {
     "group": "Tjekliste og funktioner",
     "en": "PPWR review — working note",
@@ -799,11 +569,6 @@
     "en": "Choose an answer to continue. ",
     "da": "Vælg et svar for at gå videre. "
   },
-  "Unsure of your role?": {
-    "group": "Tjekliste og funktioner",
-    "en": "Unsure of your role?",
-    "da": "I tvivl om jeres rolle?"
-  },
   "Checklist copied.": {
     "group": "Tjekliste og funktioner",
     "en": "Checklist copied.",
@@ -817,12 +582,12 @@
   "Project brief copied.": {
     "group": "Tjekliste og funktioner",
     "en": "Project brief copied.",
-    "da": "Opgavebriefen er kopieret."
+    "da": "Arbejdsnotatet er kopieret."
   },
   "Brief selected. Use your device’s copy command.": {
     "group": "Tjekliste og funktioner",
     "en": "Brief selected. Use your device’s copy command.",
-    "da": "Briefen er markeret. Brug enhedens kopifunktion."
+    "da": "Arbejdsnotatet er markeret. Brug enhedens kopifunktion."
   },
   "Packaging material study": {
     "group": "Tjekliste og funktioner",
@@ -853,11 +618,6 @@
     "group": "Ansvarsfraskrivelse",
     "en": "Disclaimer",
     "da": "Ansvarsfraskrivelse"
-  },
-  "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS (Exemplar) accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.": {
-    "group": "Ansvarsfraskrivelse",
-    "en": "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS (Exemplar) accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.",
-    "da": "Siden og testresultatet er vejledende. De udgør ikke juridisk rådgivning eller dokumentation for, at emballagen overholder reglerne. I det omfang loven tillader det, fraskriver BRAND SURFACE ApS (Exemplar) sig ansvar for ukorrekte, ufuldstændige eller forældede oplysninger samt for beslutninger eller tab, der følger af brugen. Kontrollér de gældende krav i de officielle kilder."
   },
   "See the official sources.": {
     "group": "Ansvarsfraskrivelse",
@@ -909,11 +669,6 @@
     "en": "What is the difference between PPWR and Danish producer responsibility?",
     "da": "Hvad er forskellen på PPWR og dansk producentansvar?"
   },
-  "PPWR is the EU regulation on packaging and packaging waste. Under Danish producer responsibility, the business that first makes packaging or a packaged product available in Denmark generally has to register with Dansk Producentansvar and pay for the management of packaging waste. Check both the requirements for your packaging and your obligations as a producer.": {
-    "group": "PPWR-spørgsmål og svar",
-    "en": "PPWR is the EU regulation on packaging and packaging waste. Under Danish producer responsibility, the business that first makes packaging or a packaged product available in Denmark generally has to register with Dansk Producentansvar and pay for the management of packaging waste. Check both the requirements for your packaging and your obligations as a producer.",
-    "da": "PPWR er EU's forordning om emballage og emballageaffald. Dansk producentansvar er den ordning, hvor den virksomhed, der først gør en emballage eller et emballeret produkt tilgængeligt i Danmark, som hovedregel registrerer sig hos Dansk Producentansvar og betaler for håndteringen af emballageaffaldet. Undersøg både kravene til emballagen og jeres forpligtelser som producent."
-  },
   "Read about Danish producer responsibility": {
     "group": "PPWR-spørgsmål og svar",
     "en": "Read about Danish producer responsibility",
@@ -923,11 +678,6 @@
     "group": "PPWR-spørgsmål og svar",
     "en": "What do I get from the PPWR readiness test?",
     "da": "Hvad får jeg ud af PPWR-testen?"
-  },
-  "Answer five questions about your business and packaging. You get a prioritised checklist with practical steps for roles, sales markets, packaging materials and documentation.": {
-    "group": "PPWR-spørgsmål og svar",
-    "en": "Answer five questions about your business and packaging. You get a prioritised checklist with practical steps for roles, sales markets, packaging materials and documentation.",
-    "da": "Svar på fem spørgsmål om jeres virksomhed og emballage. I får en prioriteret tjekliste med konkrete opgaver om roller, salgslande, materialer og dokumentation."
   },
   "Start the PPWR readiness test": {
     "group": "PPWR-spørgsmål og svar",
@@ -949,14 +699,539 @@
     "da": "Bliv PPWR klar",
     "en": "Bliv PPWR klar"
   },
-  "Bliv PPWR klar is operated by BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · ja@brandsurface.dk": {
-    "group": "Ansvarsfraskrivelse",
-    "en": "Bliv PPWR klar is operated by BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · ja@brandsurface.dk",
-    "da": "Bliv PPWR klar drives af BRAND SURFACE ApS (Exemplar), Carl Jacobsens Vej 20, 1., 2500 Valby · CVR 32442277 · ls@brandsurface.dk"
+  "Explore EU packaging rules.": {
+    "group": "Forside og navigation",
+    "en": "Explore EU packaging rules.",
+    "da": "Få overblik over EU’s emballagekrav."
   },
-  "Exemplar is part of BRAND SURFACE ApS, which operates this site.": {
+  "Get four work tasks for one packaging item": {
+    "group": "Forside og navigation",
+    "en": "Get four work tasks for one packaging item",
+    "da": "Få fire arbejdsopgaver for én emballage"
+  },
+  "based on your answers and chosen priority.": {
+    "group": "Forside og navigation",
+    "en": "based on your answers and chosen priority.",
+    "da": "ud fra jeres svar og valgte prioritet."
+  },
+  "Answer five questions about one packaging item. You get four work tasks based on your own answers, with your chosen priority first. The test helps you identify what to investigate.": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "Answer five questions about one packaging item. You get four work tasks based on your own answers, with your chosen priority first. The test helps you identify what to investigate.",
+    "da": "Svar på fem spørgsmål om én emballage. I får fire arbejdsopgaver baseret på jeres egne svar, med jeres valgte prioritet først. Testen hjælper jer med at afklare, hvad I skal undersøge."
+  },
+  "PPWR is the EU regulation on packaging and packaging waste. In Denmark, the responsible producer generally first makes the packaging available on the Danish market. Rules vary with packaging type and role, including certain cases of unpacking. Check who must register with Dansk Producentansvar and finance waste management.": {
+    "group": "PPWR-spørgsmål og svar",
+    "en": "PPWR is the EU regulation on packaging and packaging waste. In Denmark, the responsible producer generally first makes the packaging available on the Danish market. Rules vary with packaging type and role, including certain cases of unpacking. Check who must register with Dansk Producentansvar and finance waste management.",
+    "da": "PPWR er EU’s forordning om emballage og emballageaffald. I Danmark er den ansvarlige producent som hovedregel den, der først gør emballagen tilgængelig på det danske marked. Reglerne afhænger af emballagetype og rolle, herunder visse tilfælde af udpakning. Afklar, hvem der skal registreres hos Dansk Producentansvar og finansiere affaldshåndteringen."
+  },
+  "Map who makes, imports, distributes or unpacks the packaging in each market. Use Article 3 and Chapter IV (Articles 15–23) for roles and duties. Check producer registration under Article 44 and the national rules, including the Danish Packaging Order for Denmark.": {
+    "group": "Vejledning",
+    "en": "Map who makes, imports, distributes or unpacks the packaging in each market. Use Article 3 and Chapter IV (Articles 15–23) for roles and duties. Check producer registration under Article 44 and the national rules, including the Danish Packaging Order for Denmark.",
+    "da": "Kortlæg, hvem der fremstiller, importerer, distribuerer eller udpakker emballagen på hvert marked. Brug artikel 3 og kapitel IV (artikel 15–23) til at afklare roller og pligter. Tjek producentregistrering efter artikel 44 og de nationale regler, herunder emballagebekendtgørelsen i Danmark."
+  },
+  "BRAND SURFACE ApS operates this site. The links below are commercial offers for design from Brandsurface and packaging samples from Exemplar.": {
     "group": "Partnerhjælp",
-    "en": "Exemplar is part of BRAND SURFACE ApS, which operates this site.",
-    "da": "Exemplar er en del af BRAND SURFACE ApS, som driver sitet."
+    "en": "BRAND SURFACE ApS operates this site. The links below are commercial offers for design from Brandsurface and packaging samples from Exemplar.",
+    "da": "BRAND SURFACE ApS driver sitet. Linkene nedenfor er kommercielle tilbud om design fra Brandsurface og emballageprøver fra Exemplar."
+  },
+  "Bliv PPWR klar is operated by BRAND SURFACE ApS, Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · info@brandsurface.dk": {
+    "group": "Ansvarsfraskrivelse",
+    "en": "Bliv PPWR klar is operated by BRAND SURFACE ApS, Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · info@brandsurface.dk",
+    "da": "Bliv PPWR klar drives af BRAND SURFACE ApS, Carl Jacobsens Vej 20, 1., 2500 Valby · CVR 32442277 · info@brandsurface.dk"
+  },
+  "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.": {
+    "group": "Ansvarsfraskrivelse",
+    "en": "This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources.",
+    "da": "Siden og testresultatet er vejledende. De udgør ikke juridisk rådgivning eller dokumentation for, at emballagen overholder reglerne. I det omfang loven tillader det, fraskriver BRAND SURFACE ApS sig ansvar for ukorrekte, ufuldstændige eller forældede oplysninger samt for beslutninger eller tab, der følger af brugen. Kontrollér de gældende krav i de officielle kilder."
+  },
+  "An older saved checklist was removed because this version uses different questions.": {
+    "group": "Lagring",
+    "en": "An older saved checklist was removed because this version uses different questions.",
+    "da": "En tidligere gemt tjekliste er fjernet, fordi denne version bruger andre spørgsmål."
+  },
+  "Here are four work tasks for one packaging item. Your chosen priority comes first. Tick each task as you finish it.": {
+    "group": "Testresultat",
+    "en": "Here are four work tasks for one packaging item. Your chosen priority comes first. Tick each task as you finish it.",
+    "da": "Her er fire arbejdsopgaver for én emballage. Jeres valgte prioritet står først. Sæt kryds, når I har gennemført en opgave."
+  },
+  "Working note for one packaging item, based on your own answers. Assessing whether the packaging meets the requirements calls for a separate review of the packaging and its documentation.": {
+    "group": "Testresultat",
+    "en": "Working note for one packaging item, based on your own answers. Assessing whether the packaging meets the requirements calls for a separate review of the packaging and its documentation.",
+    "da": "Arbejdsnotat for én emballage, baseret på jeres egne svar. En vurdering af, om emballagen opfylder kravene, kræver en særskilt gennemgang af emballagen og dokumentationen."
+  },
+  "You can use the test without saving a checklist. If you opt in, your answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them whenever you like. Expired results are removed the next time you open the site.": {
+    "group": "Lagring",
+    "en": "You can use the test without saving a checklist. If you opt in, your answers and checkmarks can be restored in this browser for 30 days from saving. You can delete them whenever you like. Expired results are removed the next time you open the site.",
+    "da": "I kan bruge testen uden at gemme en tjekliste. Vælger I at gemme, kan jeres svar og afkrydsninger gendannes i denne browser i 30 dage fra lagringen. I kan slette dem, når I vil. Udløbne resultater fjernes, næste gang I åbner sitet."
+  },
+  "Save on this device": {
+    "group": "Lagring",
+    "en": "Save on this device",
+    "da": "Gem på denne enhed"
+  },
+  "Delete saved checklist": {
+    "group": "Lagring",
+    "en": "Delete saved checklist",
+    "da": "Slet gemt tjekliste"
+  },
+  "European Commission guidance C/2026/3084": {
+    "group": "Kilder",
+    "en": "European Commission guidance C/2026/3084",
+    "da": "Europa-Kommissionens vejledning C/2026/3084"
+  },
+  "Danish Packaging Order (Danish)": {
+    "group": "Kilder",
+    "en": "Danish Packaging Order (Danish)",
+    "da": "Den gældende emballagebekendtgørelse"
+  },
+  "What do you do with this packaging?": {
+    "group": "Testspørgsmål",
+    "en": "What do you do with this packaging?",
+    "da": "Hvad gør I med denne emballage?"
+  },
+  "Choose one activity to investigate first. You may have several roles. Assess manufacturer duties and extended producer responsibility for packaging waste separately.": {
+    "group": "Testspørgsmål",
+    "en": "Choose one activity to investigate first. You may have several roles. Assess manufacturer duties and extended producer responsibility for packaging waste separately.",
+    "da": "Vælg én aktivitet at undersøge først. I kan have flere roller. Vurdér fabrikantens pligter og producentansvaret for emballageaffald hver for sig."
+  },
+  "We make packaging": {
+    "group": "Testspørgsmål",
+    "en": "We make packaging",
+    "da": "Vi fremstiller emballage"
+  },
+  "We have packaging or packed products made under our own brand": {
+    "group": "Testspørgsmål",
+    "en": "We have packaging or packed products made under our own brand",
+    "da": "Vi får emballage eller emballerede varer fremstillet under eget mærke"
+  },
+  "We buy packaging or packed products within the EU": {
+    "group": "Testspørgsmål",
+    "en": "We buy packaging or packed products within the EU",
+    "da": "Vi køber emballage eller emballerede varer inden for EU"
+  },
+  "We distribute packaging or packed products": {
+    "group": "Testspørgsmål",
+    "en": "We distribute packaging or packed products",
+    "da": "Vi distribuerer emballage eller emballerede varer"
+  },
+  "We pack or ship goods": {
+    "group": "Testspørgsmål",
+    "en": "We pack or ship goods",
+    "da": "Vi pakker eller sender varer"
+  },
+  "We are unsure": {
+    "group": "Testspørgsmål",
+    "en": "We are unsure",
+    "da": "Vi er i tvivl"
+  },
+  "Where is this packaging or packed product first made available in the course of business?": {
+    "group": "Testspørgsmål",
+    "en": "Where is this packaging or packed product first made available in the course of business?",
+    "da": "Hvor gøres denne emballage eller emballerede vare første gang tilgængelig som led i erhverv?"
+  },
+  "Consider each country. Include free samples and cross-border deliveries. If you unpack goods without being the end user, check whether that gives you producer responsibility.": {
+    "group": "Testspørgsmål",
+    "en": "Consider each country. Include free samples and cross-border deliveries. If you unpack goods without being the end user, check whether that gives you producer responsibility.",
+    "da": "Se på hvert land for sig. Medregn gratis vareprøver og leverancer på tværs af grænser. Hvis I pakker varer ud uden selv at være slutbruger, skal I undersøge, om det giver jer producentansvar."
+  },
+  "Denmark only": {
+    "group": "Testspørgsmål",
+    "en": "Denmark only",
+    "da": "Kun Danmark"
+  },
+  "Denmark and other EU countries": {
+    "group": "Testspørgsmål",
+    "en": "Denmark and other EU countries",
+    "da": "Danmark og andre EU-lande"
+  },
+  "EU countries other than Denmark": {
+    "group": "Testspørgsmål",
+    "en": "EU countries other than Denmark",
+    "da": "EU-lande uden Danmark"
+  },
+  "Inside and outside the EU, including Denmark": {
+    "group": "Testspørgsmål",
+    "en": "Inside and outside the EU, including Denmark",
+    "da": "I og uden for EU, herunder Danmark"
+  },
+  "Inside and outside the EU, excluding Denmark": {
+    "group": "Testspørgsmål",
+    "en": "Inside and outside the EU, excluding Denmark",
+    "da": "I og uden for EU, uden Danmark"
+  },
+  "Outside the EU only": {
+    "group": "Testspørgsmål",
+    "en": "Outside the EU only",
+    "da": "Kun uden for EU"
+  },
+  "What is the packaging made of?": {
+    "group": "Testspørgsmål",
+    "en": "What is the packaging made of?",
+    "da": "Hvad er emballagen lavet af?"
+  },
+  "Choose the material and indicate whether the packaging is intended to come into contact with food.": {
+    "group": "Testspørgsmål",
+    "en": "Choose the material and indicate whether the packaging is intended to come into contact with food.",
+    "da": "Vælg materiale, og angiv, om emballagen er beregnet til at komme i kontakt med fødevarer."
+  },
+  "Paper or board": {
+    "group": "Testspørgsmål",
+    "en": "Paper or board",
+    "da": "Papir eller karton"
+  },
+  "Plastic": {
+    "group": "Testspørgsmål",
+    "en": "Plastic",
+    "da": "Plast"
+  },
+  "Glass": {
+    "group": "Testspørgsmål",
+    "en": "Glass",
+    "da": "Glas"
+  },
+  "Metal": {
+    "group": "Testspørgsmål",
+    "en": "Metal",
+    "da": "Metal"
+  },
+  "Several materials": {
+    "group": "Testspørgsmål",
+    "en": "Several materials",
+    "da": "Flere materialer"
+  },
+  "Other material": {
+    "group": "Testspørgsmål",
+    "en": "Other material",
+    "da": "Andet materiale"
+  },
+  "Is it intended for food contact?": {
+    "group": "Testspørgsmål",
+    "en": "Is it intended for food contact?",
+    "da": "Er emballagen beregnet til fødevarekontakt?"
+  },
+  "Yes": {
+    "group": "Testspørgsmål",
+    "en": "Yes",
+    "da": "Ja"
+  },
+  "No": {
+    "group": "Testspørgsmål",
+    "en": "No",
+    "da": "Nej"
+  },
+  "Unsure": {
+    "group": "Testspørgsmål",
+    "en": "Unsure",
+    "da": "I tvivl"
+  },
+  "Check the markets": {
+    "group": "Tjekliste",
+    "en": "Check the markets",
+    "da": "Tjek markederne"
+  },
+  "A country list with the first supply, the responsible business and any registration deadline.": {
+    "group": "Tjekliste",
+    "en": "A country list with the first supply, the responsible business and any registration deadline.",
+    "da": "En landeliste med første tilgængeliggørelse, ansvarlig virksomhed og eventuel registreringsfrist."
+  },
+  "Identify who makes the packaging or packed product for the EU market. Agree who holds the technical file and signs the EU declaration of conformity.": {
+    "group": "Tjekliste",
+    "en": "Identify who makes the packaging or packed product for the EU market. Agree who holds the technical file and signs the EU declaration of conformity.",
+    "da": "Afklar, hvem der fremstiller emballagen eller den emballerede vare til EU-markedet. Aftal, hvem der har den tekniske dokumentation og underskriver EU-overensstemmelseserklæringen."
+  },
+  "PPWR, Article 3": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 3",
+    "da": "PPWR, artikel 3"
+  },
+  "PPWR, Article 15": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 15",
+    "da": "PPWR, artikel 15"
+  },
+  "If you commission packaging or a packed product under your own brand, you are normally the manufacturer. For a microenterprise using a packaging supplier in the same Member State, the supplier is the manufacturer under Article 3(1)(13)(b). Check producer responsibility separately.": {
+    "group": "Tjekliste",
+    "en": "If you commission packaging or a packed product under your own brand, you are normally the manufacturer. For a microenterprise using a packaging supplier in the same Member State, the supplier is the manufacturer under Article 3(1)(13)(b). Check producer responsibility separately.",
+    "da": "Får I emballage eller en emballeret vare fremstillet under eget mærke, er I normalt fabrikant. For en mikrovirksomhed med en emballageleverandør i samme medlemsstat er leverandøren fabrikant efter artikel 3, stk. 1, nr. 13, litra b. Undersøg producentansvaret særskilt."
+  },
+  "PPWR, Article 21": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 21",
+    "da": "PPWR, artikel 21"
+  },
+  "Commission guidance C/2026/3084": {
+    "group": "Tjekliste",
+    "en": "Commission guidance C/2026/3084",
+    "da": "Kommissionens vejledning C/2026/3084"
+  },
+  "Record the supplier and where the packaging first entered the EU market. Buying from Sweden does not in itself make a Danish buyer a PPWR importer. If you resupply the packaging, assess distributor duties and whether you are the producer in Denmark.": {
+    "group": "Tjekliste",
+    "en": "Record the supplier and where the packaging first entered the EU market. Buying from Sweden does not in itself make a Danish buyer a PPWR importer. If you resupply the packaging, assess distributor duties and whether you are the producer in Denmark.",
+    "da": "Notér leverandøren, og hvor emballagen først kom på EU-markedet. Indkøb fra Sverige gør ikke i sig selv en dansk køber til importør efter PPWR. Hvis I leverer emballagen videre, skal I undersøge distributørpligterne og jeres eventuelle producentansvar i Danmark."
+  },
+  "PPWR, Article 19": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 19",
+    "da": "PPWR, artikel 19"
+  },
+  "Identify who is established in the EU and first places the packaging from the non-EU country on the EU market. If you place packaging under your own name or modify it in a way that can affect compliance, check whether manufacturer duties also apply.": {
+    "group": "Tjekliste",
+    "en": "Identify who is established in the EU and first places the packaging from the non-EU country on the EU market. If you place packaging under your own name or modify it in a way that can affect compliance, check whether manufacturer duties also apply.",
+    "da": "Afklar, hvem der er etableret i EU og først bringer emballagen fra tredjelandet i omsætning i EU. Hvis I bringer emballagen i omsætning under eget navn eller ændrer den på en måde, der kan påvirke overensstemmelsen, skal I undersøge, om I også har fabrikantpligter."
+  },
+  "PPWR, Article 18": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 18",
+    "da": "PPWR, artikel 18"
+  },
+  "Record who supplies each packaging item and which business is the registered producer for each market. Check your distributor duties before making the packaging available.": {
+    "group": "Tjekliste",
+    "en": "Record who supplies each packaging item and which business is the registered producer for each market. Check your distributor duties before making the packaging available.",
+    "da": "Registrér, hvem der leverer hver emballage, og hvem der er registreret som producent på hvert marked. Tjek distributørpligterne, før I gør emballagen tilgængelig."
+  },
+  "PPWR, Article 44": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 44",
+    "da": "PPWR, artikel 44"
+  },
+  "List packaging you add, including labels, tape and fill. Clarify whether you are the manufacturer, who has producer responsibility, and which rules on empty space apply to the packaging you fill.": {
+    "group": "Tjekliste",
+    "en": "List packaging you add, including labels, tape and fill. Clarify whether you are the manufacturer, who has producer responsibility, and which rules on empty space apply to the packaging you fill.",
+    "da": "Notér den emballage, I tilføjer, herunder etiketter, tape og fyld. Afklar, om I er fabrikant, hvem der har producentansvaret, og hvilke regler om tomrum der gælder for den emballage, I fylder."
+  },
+  "PPWR, Article 24": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 24",
+    "da": "PPWR, artikel 24"
+  },
+  "Identify who makes, buys, imports, fills, supplies or unpacks this packaging. Check all relevant roles and the same-Member-State supplier rule for microenterprises using their own brand.": {
+    "group": "Tjekliste",
+    "en": "Identify who makes, buys, imports, fills, supplies or unpacks this packaging. Check all relevant roles and the same-Member-State supplier rule for microenterprises using their own brand.",
+    "da": "Afklar, hvem der fremstiller, køber, importerer, fylder, leverer eller udpakker emballagen. Undersøg alle relevante roller og særreglen for mikrovirksomheder med eget mærke og emballageleverandør i samme medlemsstat."
+  },
+  "Record when and how the packaging is first supplied in Denmark, including samples.": {
+    "group": "Tjekliste",
+    "en": "Record when and how the packaging is first supplied in Denmark, including samples.",
+    "da": "Notér, hvornår og hvordan emballagen første gang leveres i Danmark, inklusive vareprøver."
+  },
+  "List Denmark and each other EU country separately, with the first supply and the responsible producer.": {
+    "group": "Tjekliste",
+    "en": "List Denmark and each other EU country separately, with the first supply and the responsible producer.",
+    "da": "Notér Danmark og hvert andet EU-land for sig med første tilgængeliggørelse og ansvarlig producent."
+  },
+  "List each EU country separately and check its producer register. Direct deliveries to end users in another Member State can trigger producer responsibility there.": {
+    "group": "Tjekliste",
+    "en": "List each EU country separately and check its producer register. Direct deliveries to end users in another Member State can trigger producer responsibility there.",
+    "da": "Notér hvert EU-land for sig, og tjek dets producentregister. Direkte leverancer til slutbrugere i en anden medlemsstat kan udløse producentansvar dér."
+  },
+  "Separate EU and non-EU destinations. List Denmark and each other EU country separately. Check the rules in each non-EU destination.": {
+    "group": "Tjekliste",
+    "en": "Separate EU and non-EU destinations. List Denmark and each other EU country separately. Check the rules in each non-EU destination.",
+    "da": "Adskil markeder i og uden for EU. Notér Danmark og hvert andet EU-land for sig. Tjek reglerne på hvert marked uden for EU."
+  },
+  "Separate EU and non-EU destinations. Check the producer register in each relevant EU country and the rules in each non-EU destination.": {
+    "group": "Tjekliste",
+    "en": "Separate EU and non-EU destinations. Check the producer register in each relevant EU country and the rules in each non-EU destination.",
+    "da": "Adskil markeder i og uden for EU. Tjek producentregistret i hvert relevant EU-land og reglerne på hvert marked uden for EU."
+  },
+  "Check the destination’s rules. If this packaging is only supplied outside the EU, it is outside the EU market requirements described here. Verify whether the packaging is first supplied or relevant unpacking occurs in the EU before export. If so, reassess your EU and national obligations.": {
+    "group": "Tjekliste",
+    "en": "Check the destination’s rules. If this packaging is only supplied outside the EU, it is outside the EU market requirements described here. Verify whether the packaging is first supplied or relevant unpacking occurs in the EU before export. If so, reassess your EU and national obligations.",
+    "da": "Tjek reglerne på destinationsmarkedet. Hvis emballagen kun tilgængeliggøres uden for EU, falder den uden for de EU-markedskrav, der beskrives her. Undersøg, om emballagen først leveres, eller om relevant udpakning sker i EU før eksport. Hvis ja, skal I vurdere EU-krav og nationale pligter igen."
+  },
+  "PPWR, Article 2": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 2",
+    "da": "PPWR, artikel 2"
+  },
+  "Map the first commercial supply in each country from orders, dispatches, free samples and direct sales. Check whether unpacking without being the end user affects your producer role.": {
+    "group": "Tjekliste",
+    "en": "Map the first commercial supply in each country from orders, dispatches, free samples and direct sales. Check whether unpacking without being the end user affects your producer role.",
+    "da": "Kortlæg den første erhvervsmæssige tilgængeliggørelse i hvert land ud fra ordrer, forsendelser, gratis vareprøver og direkte salg. Undersøg, om udpakning uden at være slutbruger påvirker jeres producentrolle."
+  },
+  "If you are the manufacturer, carry out or commission the conformity assessment and compile the technical documentation before placing the packaging on the EU market. Once compliance is demonstrated, draw up the EU declaration of conformity. Keep both documents for five years for single-use packaging and ten years for reusable packaging, from placing on the market.": {
+    "group": "Tjekliste",
+    "en": "If you are the manufacturer, carry out or commission the conformity assessment and compile the technical documentation before placing the packaging on the EU market. Once compliance is demonstrated, draw up the EU declaration of conformity. Keep both documents for five years for single-use packaging and ten years for reusable packaging, from placing on the market.",
+    "da": "Er I fabrikant, skal I gennemføre eller få udført overensstemmelsesvurderingen og udarbejde teknisk dokumentation, før emballagen bringes i omsætning i EU. Når overensstemmelse er påvist, skal I udarbejde EU-overensstemmelseserklæringen. Gem begge dokumenter i fem år for engangsemballage og ti år for genbrugsemballage, regnet fra omsætningen."
+  },
+  "PPWR, Article 38": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 38",
+    "da": "PPWR, artikel 38"
+  },
+  "PPWR, Article 39": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 39",
+    "da": "PPWR, artikel 39"
+  },
+  "PPWR, Annex VII": {
+    "group": "Tjekliste",
+    "en": "PPWR, Annex VII",
+    "da": "PPWR, bilag VII"
+  },
+  "PPWR, Annex VIII": {
+    "group": "Tjekliste",
+    "en": "PPWR, Annex VIII",
+    "da": "PPWR, bilag VIII"
+  },
+  "Before placing imported packaging on the EU market, verify that the manufacturer has carried out the assessment and compiled the technical file, that required documents and applicable labelling are in place, and that the manufacturer’s identification and contact requirements are met. Add your importer identification and contact details as required. Keep a copy of the EU declaration and ensure the technical file is available to the authorities.": {
+    "group": "Tjekliste",
+    "en": "Before placing imported packaging on the EU market, verify that the manufacturer has carried out the assessment and compiled the technical file, that required documents and applicable labelling are in place, and that the manufacturer’s identification and contact requirements are met. Add your importer identification and contact details as required. Keep a copy of the EU declaration and ensure the technical file is available to the authorities.",
+    "da": "Før I bringer importeret emballage i omsætning i EU, skal I kontrollere fabrikantens vurdering og tekniske dokumentation, de krævede dokumenter og den mærkning, der gælder, samt fabrikantens identifikation og kontaktoplysninger. Tilføj de krævede oplysninger om jer som importør. Gem en kopi af EU-overensstemmelseserklæringen, og sørg for, at myndighederne kan få den tekniske dokumentation."
+  },
+  "PPWR, Article 12": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 12",
+    "da": "PPWR, artikel 12"
+  },
+  "If you distribute the packaging, check producer registration, any applicable Article 12 labelling, and the manufacturer’s and importer’s required identification and contact details before making it available. Hold back packaging if you have reason to believe it fails the applicable requirements.": {
+    "group": "Tjekliste",
+    "en": "If you distribute the packaging, check producer registration, any applicable Article 12 labelling, and the manufacturer’s and importer’s required identification and contact details before making it available. Hold back packaging if you have reason to believe it fails the applicable requirements.",
+    "da": "Distribuerer I emballagen, skal I før tilgængeliggørelsen kontrollere producentregistrering, eventuel gældende mærkning efter artikel 12 og fabrikantens og importørens krævede identifikation og kontaktoplysninger. Hold emballagen tilbage, hvis I har grund til at tro, at den ikke opfylder de gældende krav."
+  },
+  "A producer covered by section 15 must register with Dansk Producentansvar at least 14 days before first making the packaging available on the Danish market.": {
+    "group": "Tjekliste",
+    "en": "A producer covered by section 15 must register with Dansk Producentansvar at least 14 days before first making the packaging available on the Danish market.",
+    "da": "En producent omfattet af emballagebekendtgørelsens § 15 skal registreres hos Dansk Producentansvar senest 14 dage før første tilgængeliggørelse på det danske marked."
+  },
+  "Danish Packaging Order, sections 14–15 (Danish)": {
+    "group": "Tjekliste",
+    "en": "Danish Packaging Order, sections 14–15 (Danish)",
+    "da": "Emballagebekendtgørelsen, §§ 14–15"
+  },
+  "List fibres, coatings, inks and adhesives.": {
+    "group": "Tjekliste",
+    "en": "List fibres, coatings, inks and adhesives.",
+    "da": "Registrér fibre, belægninger, trykfarver og lim."
+  },
+  "Record the polymers and identify which parts contain plastic.": {
+    "group": "Tjekliste",
+    "en": "Record the polymers and identify which parts contain plastic.",
+    "da": "Notér polymertyperne, og registrér, hvilke dele der indeholder plast."
+  },
+  "Record the glass type and separate closures, labels and coatings in your list.": {
+    "group": "Tjekliste",
+    "en": "Record the glass type and separate closures, labels and coatings in your list.",
+    "da": "Notér glastypen, og registrér lukninger, etiketter og belægninger særskilt."
+  },
+  "Record the metal type and separate linings, closures and labels in your list.": {
+    "group": "Tjekliste",
+    "en": "Record the metal type and separate linings, closures and labels in your list.",
+    "da": "Notér metaltypen, og registrér indvendige belægninger, lukninger og etiketter særskilt."
+  },
+  "Record each layer or component, including any plastic, and note what can be separated.": {
+    "group": "Tjekliste",
+    "en": "Record each layer or component, including any plastic, and note what can be separated.",
+    "da": "Registrér hvert lag eller hver del, herunder eventuel plast, og notér, hvad der kan skilles ad."
+  },
+  "Identify the material and each component with the supplier.": {
+    "group": "Tjekliste",
+    "en": "Identify the material and each component with the supplier.",
+    "da": "Afklar materialet og de enkelte dele med leverandøren."
+  },
+  "For packaging placed on the EU market, the design-for-recycling criteria apply from 1 January 2030 or 24 months after the delegated acts enter into force, whichever is later. The recycled-at-scale requirement applies from 1 January 2035 or five years after the implementing acts enter into force, whichever is later. Check the exemptions in Article 6(11).": {
+    "group": "Tjekliste",
+    "en": "For packaging placed on the EU market, the design-for-recycling criteria apply from 1 January 2030 or 24 months after the delegated acts enter into force, whichever is later. The recycled-at-scale requirement applies from 1 January 2035 or five years after the implementing acts enter into force, whichever is later. Check the exemptions in Article 6(11).",
+    "da": "For emballage, der bringes i omsætning i EU, gælder kriterierne for design til genanvendelse fra 1. januar 2030 eller 24 måneder efter de delegerede retsakters ikrafttræden, alt efter hvad der ligger senest. Kravet om genanvendelse i stor skala gælder fra 1. januar 2035 eller fem år efter gennemførelsesretsakternes ikrafttræden, alt efter hvad der ligger senest. Tjek undtagelserne i artikel 6, stk. 11."
+  },
+  "PPWR, Article 6": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 6",
+    "da": "PPWR, artikel 6"
+  },
+  "For plastic parts covered by Article 7, check the minimum recycled content for the packaging category. The first targets apply from 1 January 2030 or three years after the implementing act under Article 7(8) enters into force, whichever is later. Check exemptions, including for a plastic part below 5% of the total packaging-unit weight.": {
+    "group": "Tjekliste",
+    "en": "For plastic parts covered by Article 7, check the minimum recycled content for the packaging category. The first targets apply from 1 January 2030 or three years after the implementing act under Article 7(8) enters into force, whichever is later. Check exemptions, including for a plastic part below 5% of the total packaging-unit weight.",
+    "da": "For plastdele omfattet af artikel 7 skal I undersøge minimumskravet til genanvendt indhold for emballagetypen. De første krav gælder fra 1. januar 2030 eller tre år efter ikrafttrædelsen af gennemførelsesretsakten efter artikel 7, stk. 8, alt efter hvad der ligger senest. Tjek undtagelserne, blandt andet for plastdele under 5 % af emballageenhedens samlede vægt."
+  },
+  "PPWR, Article 7": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 7",
+    "da": "PPWR, artikel 7"
+  },
+  "Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence for your packaging. Earlier manufacture gives no stock grace period. Packaging already placed on the EU market before that date may remain available.": {
+    "group": "Tjekliste",
+    "en": "Since 12 August 2026, food-contact packaging placed on the EU market must meet the PFAS limits in Article 5(5). Ask the supplier for evidence for your packaging. Earlier manufacture gives no stock grace period. Packaging already placed on the EU market before that date may remain available.",
+    "da": "Siden 12. august 2026 skal fødevarekontaktemballage, der bringes i omsætning i EU, overholde PFAS-grænserne i artikel 5, stk. 5. Bed leverandøren om dokumentation for jeres emballage. Tidligere fremstilling giver ingen frist til at afvikle lageret. Emballage, der allerede var bragt i omsætning i EU før datoen, må fortsat være tilgængelig."
+  },
+  "PPWR, Article 5(5)": {
+    "group": "Tjekliste",
+    "en": "PPWR, Article 5(5)",
+    "da": "PPWR, artikel 5(5)"
+  },
+  "Confirm the intended use with the supplier. If the packaging is for food contact, check the PFAS limits and get evidence for the specific packaging.": {
+    "group": "Tjekliste",
+    "en": "Confirm the intended use with the supplier. If the packaging is for food contact, check the PFAS limits and get evidence for the specific packaging.",
+    "da": "Afklar den tilsigtede brug med leverandøren. Ved fødevarekontakt skal I tjekke PFAS-grænserne og indhente dokumentation for den konkrete emballage."
+  },
+  "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Sales packs used as e-commerce packs and reusable packs in a reuse system are exempt from the 50% rule. Check Article 24(4) and (5) for the precise conditions.": {
+    "group": "Tjekliste",
+    "en": "If you fill sales packaging, reduce empty space to what is needed for function and protection by 12 February 2028. If you fill grouped, transport or e-commerce packaging, the maximum is 50% from 1 January 2030 or three years after the relevant implementing acts enter into force, whichever is later. Fill material counts as empty space. Sales packs used as e-commerce packs and reusable packs in a reuse system are exempt from the 50% rule. Check Article 24(4) and (5) for the precise conditions.",
+    "da": "Fylder I salgsemballage, skal tomrummet senest 12. februar 2028 begrænses til det nødvendige for funktion og beskyttelse. Fylder I multipak-, transport- eller e-handelsemballage, er grænsen 50 % fra 1. januar 2030 eller tre år efter de relevante gennemførelsesretsakters ikrafttræden, alt efter hvad der ligger senest. Fyldmateriale tæller som tomrum. Salgsemballage brugt som e-handelsemballage og genbrugsemballage i et genbrugssystem er undtaget fra 50 %-reglen. Tjek artikel 24, stk. 4 og 5, for de præcise betingelser."
+  },
+  "Confirm that no relevant supply or unpacking takes place in the EU. Ask what packaging and documentation rules apply at the destination.": {
+    "group": "Tjekliste",
+    "en": "Confirm that no relevant supply or unpacking takes place in the EU. Ask what packaging and documentation rules apply at the destination.",
+    "da": "Afklar, om der er relevant tilgængeliggørelse eller udpakning i EU. Undersøg emballage- og dokumentationskravene på destinationsmarkedet."
+  },
+  "This checklist is no longer saved.": {
+    "group": "Testresultat",
+    "en": "This checklist is no longer saved.",
+    "da": "Tjeklisten er ikke længere gemt."
+  },
+  "Checklist saved on this device.": {
+    "group": "Testresultat",
+    "en": "Checklist saved on this device.",
+    "da": "Tjeklisten er gemt på denne enhed."
+  },
+  "The browser could not save the checklist.": {
+    "group": "Testresultat",
+    "en": "The browser could not save the checklist.",
+    "da": "Browseren kunne ikke gemme tjeklisten."
+  },
+  "Saved checklist deleted from this device.": {
+    "group": "Testresultat",
+    "en": "Saved checklist deleted from this device.",
+    "da": "Den gemte tjekliste er slettet på denne enhed."
+  },
+  "The browser could not delete the saved checklist.": {
+    "group": "Testresultat",
+    "en": "The browser could not delete the saved checklist.",
+    "da": "Browseren kunne ikke slette den gemte tjekliste."
+  },
+  "Legal requirement: ": {
+    "group": "Testresultat",
+    "en": "Legal requirement: ",
+    "da": "Lovkrav: "
+  },
+  "Practical advice: ": {
+    "group": "Testresultat",
+    "en": "Practical advice: ",
+    "da": "Praktisk råd: "
+  },
+  "Food contact: ": {
+    "group": "Testresultat",
+    "en": "Food contact: ",
+    "da": "Fødevarekontakt: "
+  },
+  "Choose whether the packaging is for food contact.": {
+    "group": "Testresultat",
+    "en": "Choose whether the packaging is for food contact.",
+    "da": "Angiv, om emballagen er beregnet til fødevarekontakt."
+  },
+  "You’ve completed the four work tasks. Follow up on open questions with their owners, then use the checklist for the next pack.": {
+    "group": "Testresultat",
+    "en": "You’ve completed the four work tasks. Follow up on open questions with their owners, then use the checklist for the next pack.",
+    "da": "I har gennemført de fire arbejdsopgaver. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage."
+  },
+  "We place packaging or packed products from a non-EU country on the EU market": {
+    "group": "Testspørgsmål",
+    "en": "We place packaging or packed products from a non-EU country on the EU market",
+    "da": "Vi bringer emballage eller emballerede varer fra et tredjeland i omsætning i EU"
+  },
+  "The harmonised material-composition label generally applies from 12 August 2028 or 24 months after the relevant implementing acts enter into force, whichever is later. Check Article 12 for exceptions and other labelling deadlines.": {
+    "group": "Tjekliste",
+    "en": "The harmonised material-composition label generally applies from 12 August 2028 or 24 months after the relevant implementing acts enter into force, whichever is later. Check Article 12 for exceptions and other labelling deadlines.",
+    "da": "Det harmoniserede mærke om materialesammensætning gælder som hovedregel fra 12. august 2028 eller 24 måneder efter de relevante gennemførelsesretsakters ikrafttræden, alt efter hvad der ligger senest. Tjek artikel 12 for undtagelser og andre mærkningsfrister."
   }
 }
