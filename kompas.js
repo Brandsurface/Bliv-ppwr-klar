@@ -102,14 +102,27 @@ function savePlan() {
     else localStorage.removeItem(savedPlanKey);
   } catch { /* Keep progress in memory when storage is unavailable. */ }
 }
-const words = (en, da) => language === 'da' ? da : en;
-const localized = pair => pair[language === 'da' ? 1 : 0];
+let editorial = {};
+const words = (en, da) => editorial[en]?.[language] ?? (language === 'da' ? da : en);
+const plainText = [];
+const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
+while (walker.nextNode()) {
+  const node = walker.currentNode;
+  if (node.data.trim() && !node.parentElement.closest('[data-da], script, style')) {
+    plainText.push({node, original: node.data});
+  }
+}
+const attributes = [...document.querySelectorAll('[aria-label], meta[name="description"]')].map(node => {
+  const attr = node.hasAttribute('aria-label') ? 'aria-label' : 'content';
+  return {node, attr, original: node.getAttribute(attr)};
+});
+const localized = pair => words(...pair);
 const copyNodes = [...document.querySelectorAll('[data-da]')].map(node => ({node, en: node.textContent}));
 
 function renderQuiz(focus = false) {
   const question = questions[step];
   const showStep = completed ? 5 : step + 1;
-  el('step').textContent = completed ? words('TEST COMPLETE','TEST GENNEMFØRT') : (step === 0 ? 'START' : words('STEP','TRIN')) + ' · ' + showStep + words(' OF 5',' AF 5');
+  el('step').textContent = completed ? words('TEST COMPLETE','TEST GENNEMFØRT') : (step === 0 ? words('START','START') : words('STEP','TRIN')) + ' · ' + showStep + words(' OF 5',' AF 5');
   document.querySelector('.quiz').style.setProperty('--progress', completed ? '100%' : (10 + step * 20) + '%');
   const dots = document.querySelector('.dots');
   dots.replaceChildren(...questions.map((_, n) => {
@@ -162,7 +175,7 @@ function taskText(index) {
   return localized(questions[index].tasks[answers[index]]);
 }
 function sourceUrl(index) {
-  return 'https://eur-lex.europa.eu/eli/reg/2025/40/oj/' + words('eng','dan') + '#' + guides[index].anchor;
+  return 'https://eur-lex.europa.eu/eli/reg/2025/40/oj/' + (language === 'da' ? 'dan' : 'eng') + '#' + guides[index].anchor;
 }
 function updateProgress() {
   const count = checkedTasks.size;
@@ -249,7 +262,7 @@ el('restart').onclick = () => {
 };
 el('copy').onclick = async () => {
   try {
-    await navigator.clipboard.writeText('PPWR Kompas\n' + taskOrder().map(i => [
+    await navigator.clipboard.writeText(words('PPWR Kompas','PPWR Kompas') + '\n' + taskOrder().map(i => [
       (checkedTasks.has(i) ? '[x] ' : '[ ] ') + localized(guides[i].title),
       taskText(i), words('Keep: ', 'Gem: ') + localized(guides[i].record), sourceUrl(i)
     ].join('\n')).join('\n\n'));
@@ -281,6 +294,11 @@ function applyLanguage() {
   const photo = document.querySelector('.hero-photo');
   photo.dataset.altEn ??= photo.alt;
   photo.alt = words(photo.dataset.altEn, photo.dataset.altDa);
+  for (const {node, original} of plainText) {
+    const key = original.trim();
+    if (node.isConnected && editorial[key]) node.data = original.replace(key, () => words(key, key));
+  }
+  for (const {node, attr, original} of attributes) node.setAttribute(attr, words(original, original));
   renderQuiz();
 }
 el('language').addEventListener('change', event => {
@@ -292,6 +310,12 @@ el('language').addEventListener('change', event => {
   applyLanguage();
 });
 applyLanguage();
+fetch('content.json').then(response => {
+  if (!response.ok) throw new Error('Content unavailable');
+  return response.json();
+}).then(content => { editorial = content; applyLanguage(); }).catch(() => {
+  // Bundled copy keeps the quiz usable if the content file is unavailable.
+});
 
 function setMenu(open) {
   el('navigation').classList.toggle('open', open);

@@ -1,0 +1,837 @@
+{
+  "Map your packaging, find the gaps in your supplier data and build a practical PPWR readiness checklist.": {
+    "group": "Sidetitel og beskrivelse",
+    "en": "Map your packaging, find the gaps in your supplier data and build a practical PPWR readiness checklist.",
+    "da": "Map your packaging, find the gaps in your supplier data and build a practical PPWR readiness checklist."
+  },
+  "PPWR Kompas — Packaging, ready for what’s next.": {
+    "group": "Forside og navigation",
+    "en": "PPWR Kompas — Packaging, ready for what’s next.",
+    "da": "PPWR Kompas — Packaging, ready for what’s next."
+  },
+  "Skip to readiness test": {
+    "group": "Forside og navigation",
+    "en": "Skip to readiness test",
+    "da": "Gå til parathedstesten"
+  },
+  "PPWR Kompas": {
+    "group": "Billed- og hjælpetekster",
+    "en": "PPWR Kompas",
+    "da": "PPWR Kompas"
+  },
+  "PPWR": {
+    "group": "Forside og navigation",
+    "en": "PPWR",
+    "da": "PPWR"
+  },
+  "KOMPAS": {
+    "group": "Forside og navigation",
+    "en": "KOMPAS",
+    "da": "KOMPAS"
+  },
+  "Navigation": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Navigation",
+    "da": "Navigation"
+  },
+  "Overview": {
+    "group": "Forside og navigation",
+    "en": "Overview",
+    "da": "Overblik"
+  },
+  "How it works": {
+    "group": "Forside og navigation",
+    "en": "How it works",
+    "da": "Sådan gør du"
+  },
+  "PPWR insights": {
+    "group": "Forside og navigation",
+    "en": "PPWR insights",
+    "da": "PPWR i praksis"
+  },
+  "Resources": {
+    "group": "Forside og navigation",
+    "en": "Resources",
+    "da": "Kilder"
+  },
+  "Map your readiness": {
+    "group": "Forside og navigation",
+    "en": "Map your readiness",
+    "da": "Tjek din parathed"
+  },
+  "Take the test": {
+    "group": "Forside og navigation",
+    "en": "Take the test",
+    "da": "Tag testen"
+  },
+  "Language / Sprog": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Language / Sprog",
+    "da": "Language / Sprog"
+  },
+  "EN": {
+    "group": "Forside og navigation",
+    "en": "EN",
+    "da": "EN"
+  },
+  "DA": {
+    "group": "Forside og navigation",
+    "en": "DA",
+    "da": "DA"
+  },
+  "Menu": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Menu",
+    "da": "Menu"
+  },
+  "Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film.": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Clear film, a moulded fibre insert and an open folding carton suspended above a sheet of film.",
+    "da": "Klar folie, en formstøbt fiberindsats og en åben foldeæske svæver over et ark folie."
+  },
+  "Clear film": {
+    "group": "Forside og navigation",
+    "en": "Clear film",
+    "da": "Klar folie"
+  },
+  "Moulded fibre": {
+    "group": "Forside og navigation",
+    "en": "Moulded fibre",
+    "da": "Formstøbt fiber"
+  },
+  "Folding carton": {
+    "group": "Forside og navigation",
+    "en": "Folding carton",
+    "da": "Foldet karton"
+  },
+  "Rotate in 3D": {
+    "group": "Forside og navigation",
+    "en": "Rotate in 3D",
+    "da": "Drej emballagen i 3D"
+  },
+  "EU PACKAGING READINESS": {
+    "group": "Forside og navigation",
+    "en": "EU PACKAGING READINESS",
+    "da": "EU’S NYE EMBALLAGEREGLER"
+  },
+  "Packaging,": {
+    "group": "Forside og navigation",
+    "en": "Packaging,",
+    "da": "Emballage,"
+  },
+  "ready for": {
+    "group": "Forside og navigation",
+    "en": "ready for",
+    "da": "klar til"
+  },
+  "what’s next.": {
+    "group": "Forside og navigation",
+    "en": "what’s next.",
+    "da": "det næste."
+  },
+  "A clear path through EU packaging": {
+    "group": "Forside og navigation",
+    "en": "A clear path through EU packaging",
+    "da": "Få overblik over EU’s emballagekrav."
+  },
+  "requirements — so you can make confident": {
+    "group": "Forside og navigation",
+    "en": "requirements — so you can make confident",
+    "da": "Se, hvad du skal afklare, og tag næste"
+  },
+  "decisions, adapt, and stay ahead with PPWR.": {
+    "group": "Forside og navigation",
+    "en": "decisions, adapt, and stay ahead with PPWR.",
+    "da": "skridt med din emballage."
+  },
+  "PPWR readiness test": {
+    "group": "Billed- og hjælpetekster",
+    "en": "PPWR readiness test",
+    "da": "PPWR readiness test"
+  },
+  "Where do you sit in the packaging chain?": {
+    "group": "Forside og navigation",
+    "en": "Where do you sit in the packaging chain?",
+    "da": "Hvilken rolle har I i emballagekæden?"
+  },
+  "Choose the role that best describes your business.": {
+    "group": "Forside og navigation",
+    "en": "Choose the role that best describes your business.",
+    "da": "Vælg den rolle, der passer bedst på jeres virksomhed."
+  },
+  "Back": {
+    "group": "Forside og navigation",
+    "en": "Back",
+    "da": "Tilbage"
+  },
+  "Your PPWR checklist": {
+    "group": "Testresultat",
+    "en": "Your PPWR checklist",
+    "da": "Jeres PPWR-tjekliste"
+  },
+  "Pick one pack. Start with the priority you chose and tick each task as you finish it.": {
+    "group": "Testresultat",
+    "en": "Pick one pack. Start with the priority you chose and tick each task as you finish it.",
+    "da": "Tag én emballage frem. Begynd med det punkt, I valgte i testen, og sæt kryds, når opgaven er løst."
+  },
+  "Checklist progress / Tjeklistens fremdrift": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Checklist progress / Tjeklistens fremdrift",
+    "da": "Checklist progress / Tjeklistens fremdrift"
+  },
+  "You’ve reviewed your first pack. Follow up on open questions with their owners, then use the checklist for the next pack.": {
+    "group": "Testresultat",
+    "en": "You’ve reviewed your first pack. Follow up on open questions with their owners, then use the checklist for the next pack.",
+    "da": "I har gennemgået den første emballage. Gennemgå åbne spørgsmål med den ansvarlige, og brug listen igen til den næste emballage."
+  },
+  "Copy checklist": {
+    "group": "Testresultat",
+    "en": "Copy checklist",
+    "da": "Kopiér tjeklisten"
+  },
+  "Start a new test": {
+    "group": "Testresultat",
+    "en": "Start a new test",
+    "da": "Start en ny test"
+  },
+  "Take your answers back to the team": {
+    "group": "Testresultat",
+    "en": "Take your answers back to the team",
+    "da": "Tag jeres svar med på arbejde"
+  },
+  "Copy the working note and add the product, owner and due date in your own document.": {
+    "group": "Testresultat",
+    "en": "Copy the working note and add the product, owner and due date in your own document.",
+    "da": "Kopiér arbejdsnotatet, og tilføj produkt, ansvarlig og frist i jeres eget dokument."
+  },
+  "Copy working note": {
+    "group": "Testresultat",
+    "en": "Copy working note",
+    "da": "Kopiér arbejdsnotat"
+  },
+  "Enable JavaScript to take the five-step readiness test, or read the guide below.": {
+    "group": "Testresultat",
+    "en": "Enable JavaScript to take the five-step readiness test, or read the guide below.",
+    "da": "Enable JavaScript to take the five-step readiness test, or read the guide below."
+  },
+  "01 /": {
+    "group": "Billedkapitler",
+    "en": "01 /",
+    "da": "01 /"
+  },
+  "Material": {
+    "group": "Billedkapitler",
+    "en": "Material",
+    "da": "Materiale"
+  },
+  "Design for circularity.": {
+    "group": "Billedkapitler",
+    "en": "Design for circularity.",
+    "da": "Design til genanvendelse."
+  },
+  "Turn PPWR requirements into resilient packaging choices — from material selection to end-of-life.": {
+    "group": "Billedkapitler",
+    "en": "Turn PPWR requirements into resilient packaging choices — from material selection to end-of-life.",
+    "da": "Træf bedre emballagevalg med PPWR — fra det første materialevalg til sortering og genanvendelse."
+  },
+  "02 /": {
+    "group": "Billedkapitler",
+    "en": "02 /",
+    "da": "02 /"
+  },
+  "Data": {
+    "group": "Billedkapitler",
+    "en": "Data",
+    "da": "Data"
+  },
+  "Turn rules into action.": {
+    "group": "Billedkapitler",
+    "en": "Turn rules into action.",
+    "da": "Fra regler til handling."
+  },
+  "Get clarity on what applies to you, what to prepare, and where to focus next.": {
+    "group": "Billedkapitler",
+    "en": "Get clarity on what applies to you, what to prepare, and where to focus next.",
+    "da": "Find ud af, hvilke spørgsmål der gælder din emballage, hvilke data du mangler, og hvem der kan hjælpe."
+  },
+  "03 /": {
+    "group": "Billedkapitler",
+    "en": "03 /",
+    "da": "03 /"
+  },
+  "Responsibility": {
+    "group": "Billedkapitler",
+    "en": "Responsibility",
+    "da": "Ansvar"
+  },
+  "Create lasting impact.": {
+    "group": "Billedkapitler",
+    "en": "Create lasting impact.",
+    "da": "Gør en varig forskel."
+  },
+  "Reduce waste, keep materials in use, and build packaging that meets today’s requirements — and tomorrow’s expectations.": {
+    "group": "Billedkapitler",
+    "en": "Reduce waste, keep materials in use, and build packaging that meets today’s requirements — and tomorrow’s expectations.",
+    "da": "Begræns spild, hold materialer i brug, og udvikl emballage med blik for dagens krav og morgendagens behov."
+  },
+  "A practical compass for PPWR readiness": {
+    "group": "Billedkapitler",
+    "en": "A practical compass for PPWR readiness",
+    "da": "En praktisk guide til PPWR"
+  },
+  "Start with": {
+    "group": "Vejledning",
+    "en": "Start with",
+    "da": "Start med"
+  },
+  "one pack.": {
+    "group": "Vejledning",
+    "en": "one pack.",
+    "da": "én emballage."
+  },
+  "Pick one product from your shelf. Work through these three questions with purchasing, design and your supplier.": {
+    "group": "Vejledning",
+    "en": "Pick one product from your shelf. Work through these three questions with purchasing, design and your supplier.",
+    "da": "Tag et produkt ned fra hylden. Brug det til at afklare tre spørgsmål sammen med indkøb, design og jeres leverandør."
+  },
+  "Take the readiness test →": {
+    "group": "Vejledning",
+    "en": "Take the readiness test →",
+    "da": "Tag parathedstesten →"
+  },
+  "What is it made of?": {
+    "group": "Vejledning",
+    "en": "What is it made of?",
+    "da": "Hvad består den af?"
+  },
+  "Take the pack apart. Record the weight, material and function of each part, including labels, coatings and closures. Start with Article 6 when reviewing recyclability.": {
+    "group": "Vejledning",
+    "en": "Take the pack apart. Record the weight, material and function of each part, including labels, coatings and closures. Start with Article 6 when reviewing recyclability.",
+    "da": "Skil emballagen ad. Notér vægt, materiale og funktion for hver del, også etiketter, belægninger og lukninger. Brug artikel 6 som udgangspunkt, når I undersøger genanvendelighed."
+  },
+  "What can you document?": {
+    "group": "Vejledning",
+    "en": "What can you document?",
+    "da": "Hvad kan I dokumentere?"
+  },
+  "Request current specifications and drawings. Record the date and supplier for each file. Article 15 and Annex VII describe the manufacturer’s technical documentation.": {
+    "group": "Vejledning",
+    "en": "Request current specifications and drawings. Record the date and supplier for each file. Article 15 and Annex VII describe the manufacturer’s technical documentation.",
+    "da": "Bed om gældende specifikationer og tegninger. Notér dato og leverandør for hver fil. Artikel 15 og bilag VII beskriver fabrikantens tekniske dokumentation."
+  },
+  "Who owns the next step?": {
+    "group": "Vejledning",
+    "en": "Who owns the next step?",
+    "da": "Hvem har ansvaret?"
+  },
+  "List who makes, imports and distributes the product in each market. Check your role in Chapter IV and producer registration in Article 44. Give each open question an owner.": {
+    "group": "Vejledning",
+    "en": "List who makes, imports and distributes the product in each market. Check your role in Chapter IV and producer registration in Article 44. Give each open question an owner.",
+    "da": "Notér, hvem der fremstiller, importerer og distribuerer produktet i hvert marked. Tjek jeres rolle i kapitel IV og producentregistrering i artikel 44, og giv hvert åbent spørgsmål en ansvarlig."
+  },
+  "Read the rules.": {
+    "group": "Kilder",
+    "en": "Read the rules.",
+    "da": "Læs reglerne."
+  },
+  "The PPWR generally applies from 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.": {
+    "group": "Kilder",
+    "en": "The PPWR generally applies from 12 August 2026. Individual requirements have their own timelines. Check the relevant article for the pack you are reviewing.",
+    "da": "PPWR finder generelt anvendelse fra 12. august 2026. Flere krav har deres egne frister. Tjek den relevante artikel for den konkrete emballage."
+  },
+  "Regulation (EU) 2025/40 ↗": {
+    "group": "Kilder",
+    "en": "Regulation (EU) 2025/40 ↗",
+    "da": "Forordning (EU) 2025/40 ↗"
+  },
+  "European Commission overview ↗": {
+    "group": "Kilder",
+    "en": "European Commission overview ↗",
+    "da": "Europa-Kommissionens overblik ↗"
+  },
+  "Danish producer responsibility ↗": {
+    "group": "Kilder",
+    "en": "Danish producer responsibility ↗",
+    "da": "Dansk producentansvar ↗"
+  },
+  "Need practical help?": {
+    "group": "Partnerhjælp",
+    "en": "Need practical help?",
+    "da": "Har I brug for praktisk hjælp?"
+  },
+  "Packaging design · Brandsurface": {
+    "group": "Partnerhjælp",
+    "en": "Packaging design · Brandsurface",
+    "da": "Emballagedesign · Brandsurface"
+  },
+  "Looking to change the look or layout of your pack? Bring the current design and your proposed changes for a quote on design and print-ready artwork.": {
+    "group": "Partnerhjælp",
+    "en": "Looking to change the look or layout of your pack? Bring the current design and your proposed changes for a quote on design and print-ready artwork.",
+    "da": "Vil I ændre emballagens udtryk eller layout? Tag jeres nuværende design og de ønskede ændringer med, og få et tilbud på design og trykklart artwork."
+  },
+  "Discuss your design with Brandsurface": {
+    "group": "Partnerhjælp",
+    "en": "Discuss your design with Brandsurface",
+    "da": "Tal med Brandsurface om design"
+  },
+  "Visual packaging samples · Exemplar": {
+    "group": "Partnerhjælp",
+    "en": "Visual packaging samples · Exemplar",
+    "da": "Visuelle emballageprøver · Exemplar"
+  },
+  "Want to see the pack before a production run? Compare size, print and finish on a physical mockup. Include dimensions and the number of variants when asking for a quote.": {
+    "group": "Partnerhjælp",
+    "en": "Want to see the pack before a production run? Compare size, print and finish on a physical mockup. Include dimensions and the number of variants when asking for a quote.",
+    "da": "Vil I se emballagen, før I bestiller et oplag? Sammenlign format, tryk og finish på en fysisk prøve. Oplys mål og antal varianter, når I beder om en pris."
+  },
+  "Request a visual sample quote": {
+    "group": "Partnerhjælp",
+    "en": "Request a visual sample quote",
+    "da": "Få et tilbud på en visuel prøve"
+  },
+  "Planning guidance. Confirm pack-specific requirements with official sources.": {
+    "group": "Partnerhjælp",
+    "en": "Planning guidance. Confirm pack-specific requirements with official sources.",
+    "da": "Vejledende værktøj. Afklar konkrete krav i de officielle kilder."
+  },
+  "Material study": {
+    "group": "3D-visning",
+    "en": "Material study",
+    "da": "Materialestudie"
+  },
+  "Anatomy of a pack": {
+    "group": "3D-visning",
+    "en": "Anatomy of a pack",
+    "da": "Emballagens tre lag"
+  },
+  "Close / Luk": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Close / Luk",
+    "da": "Close / Luk"
+  },
+  "Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys.": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys.",
+    "da": "Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys."
+  },
+  "Rotate left / Drej til venstre": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Rotate left / Drej til venstre",
+    "da": "Rotate left / Drej til venstre"
+  },
+  "Layer separation": {
+    "group": "3D-visning",
+    "en": "Layer separation",
+    "da": "Afstand mellem lag"
+  },
+  "Rotate right / Drej til højre": {
+    "group": "Billed- og hjælpetekster",
+    "en": "Rotate right / Drej til højre",
+    "da": "Rotate right / Drej til højre"
+  },
+  "We sell products under our own brand": {
+    "group": "Parathedstest",
+    "en": "We sell products under our own brand",
+    "da": "Vi sælger under eget brand"
+  },
+  "We import products or packaging": {
+    "group": "Parathedstest",
+    "en": "We import products or packaging",
+    "da": "Vi importerer varer eller emballage"
+  },
+  "We sell or distribute others’ products": {
+    "group": "Parathedstest",
+    "en": "We sell or distribute others’ products",
+    "da": "Vi sælger andres produkter"
+  },
+  "We fill, pack or ship products": {
+    "group": "Parathedstest",
+    "en": "We fill, pack or ship products",
+    "da": "Vi fylder, pakker eller sender varer"
+  },
+  "List the packs sold under your brand and identify who holds their technical files.": {
+    "group": "Parathedstest",
+    "en": "List the packs sold under your brand and identify who holds their technical files.",
+    "da": "Registrér emballagerne under eget brand, og find ud af, hvem der har den tekniske dokumentation."
+  },
+  "Pick one imported SKU and ask the manufacturer for its packaging documentation and a named contact.": {
+    "group": "Parathedstest",
+    "en": "Pick one imported SKU and ask the manufacturer for its packaging documentation and a named contact.",
+    "da": "Vælg én importeret vare, og bed fabrikanten om emballagedokumentation og en kontaktperson."
+  },
+  "Record the supplier and market for each pack you distribute so questions can be traced to the right business.": {
+    "group": "Parathedstest",
+    "en": "Record the supplier and market for each pack you distribute so questions can be traced to the right business.",
+    "da": "Registrér leverandør og marked for hver emballage, så spørgsmål kan følges tilbage til rette virksomhed."
+  },
+  "List the packaging you add when filling or shipping, including liners, tape and void fill.": {
+    "group": "Parathedstest",
+    "en": "List the packaging you add when filling or shipping, including liners, tape and void fill.",
+    "da": "Registrér den emballage, I tilføjer ved pakning og forsendelse, herunder tape, indlæg og fyld."
+  },
+  "Map who manufactures, imports, fills and sells one SKU before assigning responsibilities.": {
+    "group": "Parathedstest",
+    "en": "Map who manufactures, imports, fills and sells one SKU before assigning responsibilities.",
+    "da": "Kortlæg, hvem der fremstiller, importerer, fylder og sælger én vare, før I fordeler ansvaret."
+  },
+  "Where do your packs go?": {
+    "group": "Parathedstest",
+    "en": "Where do your packs go?",
+    "da": "Hvor sælger I varerne?"
+  },
+  "Think about where the packaged product is first sold.": {
+    "group": "Parathedstest",
+    "en": "Think about where the packaged product is first sold.",
+    "da": "Tænk på, hvor den emballerede vare først sælges."
+  },
+  "One EU country": {
+    "group": "Parathedstest",
+    "en": "One EU country",
+    "da": "Ét EU-land"
+  },
+  "Several EU countries": {
+    "group": "Parathedstest",
+    "en": "Several EU countries",
+    "da": "Flere EU-lande"
+  },
+  "EU and non-EU markets": {
+    "group": "Parathedstest",
+    "en": "EU and non-EU markets",
+    "da": "Både i og uden for EU"
+  },
+  "We need to map this": {
+    "group": "Parathedstest",
+    "en": "We need to map this",
+    "da": "Vi mangler overblikket"
+  },
+  "Name your sales country and check its producer register for the packaging you place there.": {
+    "group": "Parathedstest",
+    "en": "Name your sales country and check its producer register for the packaging you place there.",
+    "da": "Navngiv salgslandet, og tjek producentregistret for den emballage, I bringer på markedet dér."
+  },
+  "Create one row per EU market, with the local register, reporting contact and responsible company.": {
+    "group": "Parathedstest",
+    "en": "Create one row per EU market, with the local register, reporting contact and responsible company.",
+    "da": "Opret en række pr. EU-marked med register, kontakt og ansvarlig virksomhed."
+  },
+  "Separate EU destinations from other markets and record the rules and contacts for each.": {
+    "group": "Parathedstest",
+    "en": "Separate EU destinations from other markets and record the rules and contacts for each.",
+    "da": "Opdel destinationer i EU og uden for EU, og registrér regler og kontaktpersoner for hvert marked."
+  },
+  "Use orders and shipping records to list the destination countries for one product line.": {
+    "group": "Parathedstest",
+    "en": "Use orders and shipping records to list the destination countries for one product line.",
+    "da": "Brug ordrer og fragtdata til at kortlægge landene for én produktserie."
+  },
+  "Which pack will you start with?": {
+    "group": "Parathedstest",
+    "en": "Which pack will you start with?",
+    "da": "Hvilken emballage starter I med?"
+  },
+  "Choose one format for your first review.": {
+    "group": "Parathedstest",
+    "en": "Choose one format for your first review.",
+    "da": "Vælg ét format til jeres første gennemgang."
+  },
+  "Plastic or food-contact pack": {
+    "group": "Parathedstest",
+    "en": "Plastic or food-contact pack",
+    "da": "Plast eller fødevarekontakt"
+  },
+  "Paper, board or fibre": {
+    "group": "Parathedstest",
+    "en": "Paper, board or fibre",
+    "da": "Papir, karton eller fiber"
+  },
+  "Mixed-material pack": {
+    "group": "Parathedstest",
+    "en": "Mixed-material pack",
+    "da": "Flere materialer i én emballage"
+  },
+  "Transport or shipping pack": {
+    "group": "Parathedstest",
+    "en": "Transport or shipping pack",
+    "da": "Transport- eller forsendelsesemballage"
+  },
+  "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use.": {
+    "group": "Parathedstest",
+    "en": "Ask for polymer types, recycled-content evidence and any food-contact documentation relevant to the intended use.",
+    "da": "Bed om polymertyper, dokumentation for genanvendt indhold og eventuelle relevante fødevarekontaktdata."
+  },
+  "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream.": {
+    "group": "Parathedstest",
+    "en": "List the fibre base, coatings, inks and adhesives. Ask the converter how these affect the intended recycling stream.",
+    "da": "Registrér fibre, belægning, trykfarve og lim. Spørg leverandøren, hvordan de påvirker genanvendelsen."
+  },
+  "Separate each layer and closure on paper. Ask suppliers which components users can separate in practice.": {
+    "group": "Parathedstest",
+    "en": "Separate each layer and closure on paper. Ask suppliers which components users can separate in practice.",
+    "da": "Opdel emballagen i lag og lukninger på papir. Spørg, hvilke dele brugerne faktisk kan skille ad."
+  },
+  "Measure the packed product, outer dimensions and void fill. Document the protection the shipping pack provides.": {
+    "group": "Parathedstest",
+    "en": "Measure the packed product, outer dimensions and void fill. Document the protection the shipping pack provides.",
+    "da": "Mål varen, ydermål og fyld. Dokumentér den beskyttelse, transportemballagen skal levere."
+  },
+  "How complete is your data?": {
+    "group": "Parathedstest",
+    "en": "How complete is your data?",
+    "da": "Hvor gode er jeres data?"
+  },
+  "Think about weights, material specifications and supplier files.": {
+    "group": "Parathedstest",
+    "en": "Think about weights, material specifications and supplier files.",
+    "da": "Tænk på vægt, materialespecifikationer og leverandørdokumenter."
+  },
+  "We have current specifications": {
+    "group": "Parathedstest",
+    "en": "We have current specifications",
+    "da": "Vi har aktuelle specifikationer"
+  },
+  "We have some information": {
+    "group": "Parathedstest",
+    "en": "We have some information",
+    "da": "Vi har nogle oplysninger"
+  },
+  "We need to ask suppliers": {
+    "group": "Parathedstest",
+    "en": "We need to ask suppliers",
+    "da": "Vi skal spørge leverandørerne"
+  },
+  "We need an internal review": {
+    "group": "Parathedstest",
+    "en": "We need an internal review",
+    "da": "Vi skal gennemgå det internt"
+  },
+  "Date and version the specifications you have, then check they describe the pack currently in production.": {
+    "group": "Parathedstest",
+    "en": "Date and version the specifications you have, then check they describe the pack currently in production.",
+    "da": "Datér og versionsmærk jeres specifikationer. Tjek, at de beskriver emballagen i produktion."
+  },
+  "Create a gap list. For each missing specification, give one supplier or colleague a due date.": {
+    "group": "Parathedstest",
+    "en": "Create a gap list. For each missing specification, give one supplier or colleague a due date.",
+    "da": "Opret en mangelliste. Giv én person og én frist til hver manglende specifikation."
+  },
+  "Send the supplier a component list and request material, weight, construction and dated evidence for each part.": {
+    "group": "Parathedstest",
+    "en": "Send the supplier a component list and request material, weight, construction and dated evidence for each part.",
+    "da": "Send leverandøren en komponentliste, og bed om materiale, vægt, konstruktion og dateret dokumentation for hver del."
+  },
+  "Bring purchasing, design and quality together to locate specifications and agree who maintains them.": {
+    "group": "Parathedstest",
+    "en": "Bring purchasing, design and quality together to locate specifications and agree who maintains them.",
+    "da": "Saml indkøb, design og kvalitet for at finde specifikationer og aftale, hvem der vedligeholder dem."
+  },
+  "What comes first for your team?": {
+    "group": "Parathedstest",
+    "en": "What comes first for your team?",
+    "da": "Hvad vil I afklare først?"
+  },
+  "We’ll put that task at the top of your checklist.": {
+    "group": "Parathedstest",
+    "en": "We’ll put that task at the top of your checklist.",
+    "da": "Vi placerer den opgave øverst på jeres tjekliste."
+  },
+  "Roles and responsibilities": {
+    "group": "Parathedstest",
+    "en": "Roles and responsibilities",
+    "da": "Roller og ansvar"
+  },
+  "Markets and reporting": {
+    "group": "Parathedstest",
+    "en": "Markets and reporting",
+    "da": "Markeder og indberetning"
+  },
+  "Materials and pack design": {
+    "group": "Parathedstest",
+    "en": "Materials and pack design",
+    "da": "Materialer og design"
+  },
+  "Supplier data and evidence": {
+    "group": "Parathedstest",
+    "en": "Supplier data and evidence",
+    "da": "Leverandørdata og dokumentation"
+  },
+  "Map your role": {
+    "group": "Tjekliste og funktioner",
+    "en": "Map your role",
+    "da": "Afklar jeres rolle"
+  },
+  "A sketch of the supply chain with the company and contact at each step.": {
+    "group": "Tjekliste og funktioner",
+    "en": "A sketch of the supply chain with the company and contact at each step.",
+    "da": "En skitse af varekæden med virksomhed og kontaktperson ved hvert led."
+  },
+  "PPWR · Chapter IV, roles and obligations": {
+    "group": "Tjekliste og funktioner",
+    "en": "PPWR · Chapter IV, roles and obligations",
+    "da": "PPWR · kapitel IV, roller og pligter"
+  },
+  "Check your sales markets": {
+    "group": "Tjekliste og funktioner",
+    "en": "Check your sales markets",
+    "da": "Tjek jeres salgslande"
+  },
+  "A list of countries, the register or authority to consult and who will check local deadlines.": {
+    "group": "Tjekliste og funktioner",
+    "en": "A list of countries, the register or authority to consult and who will check local deadlines.",
+    "da": "En landeliste med register eller myndighed og navnet på den, der undersøger de lokale frister."
+  },
+  "PPWR · Article 44, producer registers": {
+    "group": "Tjekliste og funktioner",
+    "en": "PPWR · Article 44, producer registers",
+    "da": "PPWR · artikel 44, producentregistre"
+  },
+  "Review the parts of your pack": {
+    "group": "Tjekliste og funktioner",
+    "en": "Review the parts of your pack",
+    "da": "Gennemgå emballagens dele"
+  },
+  "A photo or drawing with the parts labelled. Note any open material questions next to the relevant part.": {
+    "group": "Tjekliste og funktioner",
+    "en": "A photo or drawing with the parts labelled. Note any open material questions next to the relevant part.",
+    "da": "Et foto eller en tegning med navn på hver del. Skriv åbne spørgsmål om materialet ud for den del, de vedrører."
+  },
+  "PPWR · Article 6, recyclability and dates": {
+    "group": "Tjekliste og funktioner",
+    "en": "PPWR · Article 6, recyclability and dates",
+    "da": "PPWR · artikel 6, genanvendelighed og frister"
+  },
+  "Gather the evidence": {
+    "group": "Tjekliste og funktioner",
+    "en": "Gather the evidence",
+    "da": "Saml dokumentationen"
+  },
+  "An index of file names, dates and owners. Give each missing document a follow-up date.": {
+    "group": "Tjekliste og funktioner",
+    "en": "An index of file names, dates and owners. Give each missing document a follow-up date.",
+    "da": "En oversigt med filnavn, dato og ansvarlig. Sæt en opfølgningsdato ved de dokumenter, der mangler."
+  },
+  "PPWR · Annex VII, technical documentation": {
+    "group": "Tjekliste og funktioner",
+    "en": "PPWR · Annex VII, technical documentation",
+    "da": "PPWR · bilag VII, teknisk dokumentation"
+  },
+  "TEST COMPLETE": {
+    "group": "Tjekliste og funktioner",
+    "en": "TEST COMPLETE",
+    "da": "TEST GENNEMFØRT"
+  },
+  "STEP": {
+    "group": "Tjekliste og funktioner",
+    "en": "STEP",
+    "da": "TRIN"
+  },
+  " OF 5": {
+    "group": "Tjekliste og funktioner",
+    "en": " OF 5",
+    "da": " AF 5"
+  },
+  "Build my checklist": {
+    "group": "Tjekliste og funktioner",
+    "en": "Build my checklist",
+    "da": "Vis min tjekliste"
+  },
+  "Continue": {
+    "group": "Tjekliste og funktioner",
+    "en": "Continue",
+    "da": "Fortsæt"
+  },
+  " of 4 tasks done": {
+    "group": "Tjekliste og funktioner",
+    "en": " of 4 tasks done",
+    "da": " af 4 opgaver løst"
+  },
+  "Keep: ": {
+    "group": "Tjekliste og funktioner",
+    "en": "Keep: ",
+    "da": "Gem: "
+  },
+  "Role": {
+    "group": "Tjekliste og funktioner",
+    "en": "Role",
+    "da": "Rolle"
+  },
+  "Markets": {
+    "group": "Tjekliste og funktioner",
+    "en": "Markets",
+    "da": "Markeder"
+  },
+  "Pack": {
+    "group": "Tjekliste og funktioner",
+    "en": "Pack",
+    "da": "Emballage"
+  },
+  "Available data": {
+    "group": "Tjekliste og funktioner",
+    "en": "Available data",
+    "da": "Datagrundlag"
+  },
+  "Priority": {
+    "group": "Tjekliste og funktioner",
+    "en": "Priority",
+    "da": "Prioritet"
+  },
+  "Role to clarify": {
+    "group": "Tjekliste og funktioner",
+    "en": "Role to clarify",
+    "da": "Rolle skal afklares"
+  },
+  "PPWR review — working note": {
+    "group": "Tjekliste og funktioner",
+    "en": "PPWR review — working note",
+    "da": "PPWR-gennemgang — arbejdsnotat"
+  },
+  "First action: ": {
+    "group": "Tjekliste og funktioner",
+    "en": "First action: ",
+    "da": "Første opgave: "
+  },
+  "Product: ___   Owner: ___   Due date: ___": {
+    "group": "Tjekliste og funktioner",
+    "en": "Product: ___   Owner: ___   Due date: ___",
+    "da": "Produkt: ___   Ansvarlig: ___   Frist: ___"
+  },
+  "Choose an answer to continue. ": {
+    "group": "Tjekliste og funktioner",
+    "en": "Choose an answer to continue. ",
+    "da": "Vælg et svar for at gå videre. "
+  },
+  "Unsure of your role?": {
+    "group": "Tjekliste og funktioner",
+    "en": "Unsure of your role?",
+    "da": "I tvivl om jeres rolle?"
+  },
+  "Checklist copied.": {
+    "group": "Tjekliste og funktioner",
+    "en": "Checklist copied.",
+    "da": "Tjeklisten er kopieret."
+  },
+  "The checklist is selected. Use your device’s copy command.": {
+    "group": "Tjekliste og funktioner",
+    "en": "The checklist is selected. Use your device’s copy command.",
+    "da": "Tjeklisten er markeret. Brug enhedens kopifunktion."
+  },
+  "Project brief copied.": {
+    "group": "Tjekliste og funktioner",
+    "en": "Project brief copied.",
+    "da": "Opgavebriefen er kopieret."
+  },
+  "Brief selected. Use your device’s copy command.": {
+    "group": "Tjekliste og funktioner",
+    "en": "Brief selected. Use your device’s copy command.",
+    "da": "Briefen er markeret. Brug enhedens kopifunktion."
+  },
+  "Packaging material study": {
+    "group": "Tjekliste og funktioner",
+    "en": "Packaging material study",
+    "da": "Emballagens materialer"
+  },
+  "START": {
+    "group": "Parathedstest",
+    "en": "START",
+    "da": "START"
+  }
+}
