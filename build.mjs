@@ -1,7 +1,6 @@
 import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 
-const defaultOrigin = 'https://ppwr-two.vercel.app';
-const origin = new URL(process.env.PPWR_SITE_URL || defaultOrigin).origin;
+const origin = 'https://www.blivppwrklar.dk';
 const template = await readFile('index.html', 'utf8');
 const copy = JSON.parse(await readFile('content.json', 'utf8'));
 const paths = { da: '/', en: '/en/' };
