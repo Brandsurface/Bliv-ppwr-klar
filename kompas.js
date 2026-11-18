@@ -305,29 +305,24 @@ document.addEventListener('keydown', event => {
     el('menu').focus();
   }
 });
-const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-const chapters = [...document.querySelectorAll('.chapter')];
-let scheduled = false;
-function updateScroll() {
-  scheduled = false;
-  const hero = document.querySelector('.hero');
-  const bounds = hero.getBoundingClientRect();
-  hero.style.setProperty('--drift', reduced.matches ? '0px' : Math.min(26,Math.max(0,-bounds.top * .055)) + 'px');
-  for (const section of chapters) {
-    const box = section.getBoundingClientRect();
-    const offset = Math.min(1, Math.max(-1, (box.top + box.height / 2 - innerHeight / 2) / innerHeight));
-    section.style.setProperty('--drift', (reduced.matches ? 0 : -offset * box.height * .024) + 'px');
-    section.style.setProperty('--lift', (reduced.matches ? 0 : offset * 10) + 'px');
+// Observe each spread once. Reading and quiz controls are available throughout.
+if ('IntersectionObserver' in window) {
+  const enter = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add('in-view');
+      enter.unobserve(entry.target);
+    }
+  }, {threshold: 0.08});
+  for (const section of document.querySelectorAll('.chapter, .guide, .resources')) {
+    enter.observe(section);
+  }
+  for (const photo of document.querySelectorAll('.chapter img')) {
+    const ready = () => photo.classList.add('image-ready');
+    if (photo.complete && photo.naturalWidth) ready();
+    else photo.addEventListener('load', ready, {once: true});
   }
 }
-function scheduleScroll() {
-  if (scheduled) return;
-  scheduled = true;
-  requestAnimationFrame(updateScroll);
-}
-addEventListener('scroll', scheduleScroll, {passive:true});
-addEventListener('resize',scheduleScroll);
-reduced.addEventListener('change',scheduleScroll);
 
 const dialog = el('study');
 let studyModule;
