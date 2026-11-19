@@ -94,10 +94,10 @@
     "en": "Folding carton",
     "da": "Foldet karton"
   },
-  "Rotate in 3D": {
+  "Take the pack apart": {
     "group": "Forside og navigation",
-    "en": "Rotate in 3D",
-    "da": "Drej emballagen i 3D"
+    "en": "Take the pack apart",
+    "da": "Skil emballagen ad"
   },
   "EU PACKAGING READINESS": {
     "group": "Forside og navigation",
@@ -339,40 +339,125 @@
     "en": "Request a visual sample quote",
     "da": "Få et tilbud på en visuel prøve"
   },
-  "Material study": {
+  "Packaging minimisation": {
     "group": "3D-visning",
-    "en": "Material study",
-    "da": "Materialestudie"
+    "en": "Packaging minimisation",
+    "da": "Minimering af emballage"
   },
-  "Anatomy of a pack": {
+  "What does each part do?": {
     "group": "3D-visning",
-    "en": "Anatomy of a pack",
-    "da": "Emballagens tre lag"
+    "en": "What does each part do?",
+    "da": "Hvad gør hver del?"
   },
-  "Close / Luk": {
+  "Close material study": {
     "group": "Billed- og hjælpetekster",
-    "en": "Close / Luk",
-    "da": "Close / Luk"
+    "en": "Close material study",
+    "da": "Luk materialestudiet"
   },
-  "Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys.": {
+  "Interactive 3D packaging model. Use the left and right arrow keys to rotate.": {
     "group": "Billed- og hjælpetekster",
-    "en": "Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys.",
-    "da": "Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys."
+    "en": "Interactive 3D packaging model. Use the left and right arrow keys to rotate.",
+    "da": "Interaktiv 3D-model af emballagen. Brug venstre og højre piletast til at dreje."
   },
-  "Rotate left / Drej til venstre": {
+  "Rotate left": {
     "group": "Billed- og hjælpetekster",
-    "en": "Rotate left / Drej til venstre",
-    "da": "Rotate left / Drej til venstre"
+    "en": "Rotate left",
+    "da": "Drej til venstre"
   },
   "Layer separation": {
     "group": "3D-visning",
     "en": "Layer separation",
     "da": "Afstand mellem lag"
   },
-  "Rotate right / Drej til højre": {
+  "Rotate right": {
     "group": "Billed- og hjælpetekster",
-    "en": "Rotate right / Drej til højre",
-    "da": "Rotate right / Drej til højre"
+    "en": "Rotate right",
+    "da": "Drej til højre"
+  },
+  "Drag to rotate. Tap or click a part to explore it.": {
+    "group": "3D-visning",
+    "en": "Drag to rotate. Tap or click a part to explore it.",
+    "da": "Træk for at dreje. Tryk på en del for at se, hvad den gør."
+  },
+  "Packaging parts": {
+    "group": "3D-visning",
+    "en": "Packaging parts",
+    "da": "Emballagens dele"
+  },
+  "Film": {
+    "group": "3D-visning",
+    "en": "Film",
+    "da": "Folie"
+  },
+  "Fibre insert": {
+    "group": "3D-visning",
+    "en": "Fibre insert",
+    "da": "Fiberindsats"
+  },
+  "Carton": {
+    "group": "3D-visning",
+    "en": "Carton",
+    "da": "Kartonæske"
+  },
+  "What does the film protect against?": {
+    "group": "3D-visning",
+    "en": "What does the film protect against?",
+    "da": "Hvad beskytter folien imod?"
+  },
+  "The film can protect the product from moisture or dirt, depending on the material and how it is sealed.": {
+    "group": "3D-visning",
+    "en": "The film can protect the product from moisture or dirt, depending on the material and how it is sealed.",
+    "da": "Folien kan beskytte produktet mod fugt eller snavs, afhængigt af materialet og hvordan folien lukkes."
+  },
+  "Could a lighter insert protect the product just as well?": {
+    "group": "3D-visning",
+    "en": "Could a lighter insert protect the product just as well?",
+    "da": "Kan en lettere indsats beskytte produktet lige så godt?"
+  },
+  "The insert holds the product in place. Compare the current insert with a lighter one in a transport test.": {
+    "group": "3D-visning",
+    "en": "The insert holds the product in place. Compare the current insert with a lighter one in a transport test.",
+    "da": "Indsatsen holder produktet på plads. Sammenlign den nuværende indsats med en lettere i en transporttest."
+  },
+  "Could the carton be smaller and still do its job?": {
+    "group": "3D-visning",
+    "en": "Could the carton be smaller and still do its job?",
+    "da": "Kan kartonæsken være mindre og stadig fungere?"
+  },
+  "Measure the product, insert and carton. Check how much space you need for protection and packing.": {
+    "group": "3D-visning",
+    "en": "Measure the product, insert and carton. Check how much space you need for protection and packing.",
+    "da": "Mål produkt, indsats og æske. Undersøg, hvor meget plads I har brug for til beskyttelse og pakning."
+  },
+  "By 1 January 2030, manufacturers or importers must ensure that packaging placed on the market is designed with the minimum weight and volume needed for it to function.": {
+    "group": "3D-visning",
+    "en": "By 1 January 2030, manufacturers or importers must ensure that packaging placed on the market is designed with the minimum weight and volume needed for it to function.",
+    "da": "Senest 1. januar 2030 skal fabrikanter eller importører sikre, at emballage, der bringes i omsætning, er designet med den mindst mulige vægt og volumen, der stadig sikrer dens funktion."
+  },
+  "PPWR Article 10 and Annex IV ↗": {
+    "group": "3D-visning",
+    "en": "PPWR Article 10 and Annex IV ↗",
+    "da": "PPWR artikel 10 og bilag IV ↗"
+  },
+  "Copy questions for your supplier": {
+    "group": "3D-visning",
+    "en": "Copy questions for your supplier",
+    "da": "Kopiér spørgsmålene til din leverandør"
+  },
+  "Supplier questions": {
+    "group": "3D-visning",
+    "en": "Supplier questions",
+    "da": "Spørgsmål til leverandøren"
+  },
+  "Questions copied.": {
+    "group": "3D-visning",
+    "en": "Questions copied.",
+    "da": "Spørgsmålene er kopieret."
+  },
+  "Questions selected. Use your device’s copy command.": {
+    "group": "3D-visning",
+    "en": "Questions selected. Use your device’s copy command.",
+    "da": "Spørgsmålene er markeret. Brug enhedens kopifunktion."
   },
   "We need to map this": {
     "group": "Parathedstest",
@@ -588,11 +673,6 @@
     "group": "Tjekliste og funktioner",
     "en": "Brief selected. Use your device’s copy command.",
     "da": "Arbejdsnotatet er markeret. Brug enhedens kopifunktion."
-  },
-  "Packaging material study": {
-    "group": "Tjekliste og funktioner",
-    "en": "Packaging material study",
-    "da": "Emballagens materialer"
   },
   "START": {
     "group": "Parathedstest",

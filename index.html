@@ -32,7 +32,7 @@
         <span class="note fibre" data-da="Formstøbt fiber">Moulded fibre</span>
         <span class="note board" data-da="Foldet karton">Folding carton</span>
       </div>
-      <button class="inspect" type="button" id="open-study" aria-haspopup="dialog"><svg aria-hidden="true"><use href="/assets/icons.svg#rotate-3d"/></svg><span data-da="Drej emballagen i 3D">Rotate in 3D</span></button>
+      <button class="inspect" type="button" id="open-study" aria-haspopup="dialog"><svg aria-hidden="true"><use href="/assets/icons.svg#rotate-3d"/></svg><span>Take the pack apart</span></button>
     </div>
     <div class="intro">
       <p class="kicker" data-da="EU’S NYE EMBALLAGEREGLER">EU PACKAGING READINESS</p>
@@ -144,9 +144,50 @@
 <footer><a class="brand" href="#overview">Bliv <strong>PPWR</strong> klar</a><p class="site-disclaimer"><span>Bliv PPWR klar is operated by BRAND SURFACE ApS, Carl Jacobsens Vej 20, 1., DK-2500 Valby, Denmark · CVR 32442277 · info@brandsurface.dk</span><br><br><strong>Disclaimer</strong> This site and the test results provide general guidance. They do not constitute legal advice or confirm compliance. To the extent permitted by law, BRAND SURFACE ApS accepts no liability for incorrect, incomplete or outdated information, or for decisions or losses arising from its use. Verify the applicable requirements with the official sources. <a href="#resources"><span>See the official sources.</span></a></p><button class="share-button" type="button" data-share hidden><span>Share the site</span></button></footer>
 <p class="share-feedback" id="share-feedback" role="status"></p>
 
-<dialog id="study" aria-labelledby="study-title"><div class="study-head"><div><p class="kicker" data-da="Materialestudie">Material study</p><h2 id="study-title" data-da="Emballagens tre lag">Anatomy of a pack</h2></div><button type="button" id="close-study" aria-label="Close / Luk"><svg aria-hidden="true"><use href="/assets/icons.svg#x"/></svg></button></div>
-  <canvas id="model" tabindex="0" aria-label="Interactive 3D packaging model. Drag horizontally or use the left and right arrow keys."></canvas>
-  <div class="model-controls"><button id="turn-left" aria-label="Rotate left / Drej til venstre"><svg aria-hidden="true"><use href="/assets/icons.svg#chevron-left"/></svg></button><label><span data-da="Afstand mellem lag">Layer separation</span><input id="separation" type="range" min="0" max="100" value="75"></label><button id="turn-right" aria-label="Rotate right / Drej til højre"><svg aria-hidden="true"><use href="/assets/icons.svg#chevron-right"/></svg></button></div>
+<dialog id="study" aria-labelledby="study-title">
+  <div class="study-head">
+    <div><p class="kicker">Packaging minimisation</p><h2 id="study-title">What does each part do?</h2></div>
+    <button type="button" id="close-study" aria-label="Close material study"><svg aria-hidden="true"><use href="/assets/icons.svg#x"/></svg></button>
+  </div>
+  <div class="study-layout">
+    <div class="study-visual">
+      <p class="study-hint" id="model-hint">Drag to rotate. Tap or click a part to explore it.</p>
+      <canvas id="model" tabindex="0" aria-label="Interactive 3D packaging model. Use the left and right arrow keys to rotate." aria-describedby="model-hint"></canvas>
+      <div class="model-controls" id="model-controls">
+        <button type="button" id="turn-left" aria-label="Rotate left"><svg aria-hidden="true"><use href="/assets/icons.svg#chevron-left"/></svg></button>
+        <label><span>Layer separation</span><input id="separation" type="range" min="0" max="100" value="75"></label>
+        <button type="button" id="turn-right" aria-label="Rotate right"><svg aria-hidden="true"><use href="/assets/icons.svg#chevron-right"/></svg></button>
+      </div>
+    </div>
+    <div class="study-info">
+      <div class="study-parts" role="group" aria-label="Packaging parts">
+        <button type="button" data-layer="2" aria-pressed="true">Film</button>
+        <button type="button" data-layer="1" aria-pressed="false">Fibre insert</button>
+        <button type="button" data-layer="0" aria-pressed="false">Carton</button>
+      </div>
+      <div class="study-questions" aria-live="polite">
+        <div data-layer="2">
+          <h3>What does the film protect against?</h3>
+          <p>The film can protect the product from moisture or dirt, depending on the material and how it is sealed.</p>
+        </div>
+        <div data-layer="1" hidden>
+          <h3>Could a lighter insert protect the product just as well?</h3>
+          <p>The insert holds the product in place. Compare the current insert with a lighter one in a transport test.</p>
+        </div>
+        <div data-layer="0" hidden>
+          <h3>Could the carton be smaller and still do its job?</h3>
+          <p>Measure the product, insert and carton. Check how much space you need for protection and packing.</p>
+        </div>
+      </div>
+      <div class="study-rule">
+        <p>By 1 January 2030, manufacturers or importers must ensure that packaging placed on the market is designed with the minimum weight and volume needed for it to function.</p>
+        <a class="result-source" href="https://eur-lex.europa.eu/eli/reg/2025/40/oj#art_10">PPWR Article 10 and Annex IV ↗</a>
+      </div>
+      <button class="study-copy" type="button" id="copy-study">Copy questions for your supplier</button>
+      <p id="study-copy-status" class="feedback" role="status"></p>
+      <textarea id="study-copy-field" class="feedback" rows="4" aria-label="Supplier questions" readonly hidden></textarea>
+    </div>
+  </div>
 </dialog>
 </body>
 </html>
