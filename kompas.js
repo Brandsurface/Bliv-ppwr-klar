@@ -576,16 +576,51 @@ if ('IntersectionObserver' in window) {
 }
 
 const dialog = el('study');
+const studyCanvas = el('model');
+const studyButtons = [...dialog.querySelectorAll('.study-parts button')];
+const studyQuestions = [...dialog.querySelectorAll('.study-questions > div')];
+let studyLayer = 2;
 let studyModule;
+function selectStudyLayer(layer) {
+  studyLayer = layer;
+  for (const button of studyButtons) {
+    button.setAttribute('aria-pressed', String(Number(button.dataset.layer) === layer));
+  }
+  for (const question of studyQuestions) question.hidden = Number(question.dataset.layer) !== layer;
+  studyModule?.selectLayer(layer);
+}
+for (const button of studyButtons) button.onclick = () => selectStudyLayer(Number(button.dataset.layer));
+studyCanvas.addEventListener('layerselect', event => selectStudyLayer(event.detail));
+el('copy-study').onclick = async () => {
+  const text = studyQuestions.map(question => '• ' + question.querySelector('h3').textContent).join('\n');
+  const field = el('study-copy-field');
+  const status = el('study-copy-status');
+  try {
+    await navigator.clipboard.writeText(text);
+    field.hidden = true;
+    status.textContent = words('Questions copied.', 'Spørgsmålene er kopieret.');
+  } catch {
+    field.hidden = false;
+    field.value = text;
+    field.focus();
+    field.select();
+    status.textContent = words('Questions selected. Use your device’s copy command.', 'Spørgsmålene er markeret. Brug enhedens kopifunktion.');
+  }
+};
 el('open-study').onclick = async () => {
   dialog.showModal();
   try {
     studyModule ??= await import('./study.js');
-    studyModule.showModel();
+    studyModule.selectLayer(studyLayer);
+    studyCanvas.style.background = '';
+    studyCanvas.tabIndex = 0;
+    el('model-controls').hidden = false;
+    el('model-hint').hidden = false;
   } catch {
-    const canvas = el('model');
-    canvas.style.background = 'url(/assets/hero.webp) 95% 40% / 155% auto';
-    el('study-title').textContent = words('Packaging material study','Emballagens materialer');
+    studyCanvas.style.background = 'url(/assets/hero.webp) center / cover';
+    studyCanvas.tabIndex = -1;
+    el('model-controls').hidden = true;
+    el('model-hint').hidden = true;
   }
 };
 el('close-study').onclick = () => dialog.close();

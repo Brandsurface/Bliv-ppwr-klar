@@ -2,11 +2,15 @@
 // Keep the model off the page's initial rendering path and draw only on input.
 const canvas = document.getElementById('model');
 const ctx = canvas.getContext('2d');
+if (!ctx) throw new Error('Canvas 2D is unavailable');
 const separation = document.getElementById('separation');
 const faces = [];
 let yaw = -.61;
 let pitch = .40;
 let drag = null;
+let selectedLayer = 2;
+let polygons = [];
+let ratio = 1;
 
 function addFace(layer, points, base, edge = false) {
   faces.push({layer, points, base, edge});
@@ -61,10 +65,20 @@ function normal(points) {
   return [x/length,y/length,z/length];
 }
 for (const face of faces) face.normal = normal(face.points);
+
+function trace(points) {
+  ctx.beginPath();
+  ctx.moveTo(points[0][0], points[0][1]);
+  for (let index = 1; index < points.length; index++) {
+    ctx.lineTo(points[index][0], points[index][1]);
+  }
+  ctx.closePath();
+}
+
 function draw() {
-  if (!canvas.closest('dialog').open || !ctx) return;
+  if (!canvas.closest('dialog').open) return;
   const {width,height}=canvas.getBoundingClientRect();
-  const ratio=Math.min(devicePixelRatio || 1,2);
+  ratio=Math.min(devicePixelRatio || 1,2);
   if (canvas.width!==Math.round(width*ratio) || canvas.height!==Math.round(height*ratio)) {
     canvas.width=Math.round(width*ratio);
     canvas.height=Math.round(height*ratio);
@@ -89,7 +103,7 @@ function draw() {
   ctx.fillStyle=shadow;
   ctx.fillRect(0,0,width,height*4);
   ctx.restore();
-  const polygons = faces.map(face => {
+  polygons = faces.map(face => {
     const points=face.points.map(p => project(p,face.layer));
     const depth=points.reduce((sum,p)=>sum+p[2],0)/points.length;
     return {face,points,depth};
@@ -98,16 +112,18 @@ function draw() {
   for (const {face,points} of polygons) {
     const [nx,ny,nz]=face.normal;
     const light=.73+.24*Math.abs(ny*.86 - (nx*cy+nz*sy)*.38 + (-nx*sy+nz*cy)*.34);
-    const rgb=face.base.map(value=>Math.min(255,Math.round(value*light)));
     const sheen=Math.abs(ny*.86+(nx*sy-nz*cy)*.52);
-    ctx.fillStyle = face.layer===2
-      ? 'rgba('+[197+Math.round(sheen*55),207+Math.round(sheen*43),195+Math.round(sheen*53),.33+sheen*.34].join(',')+')'
-      : 'rgb('+rgb.join(',')+')';
-    ctx.beginPath();
-    points.forEach(([x,y],index)=>index ? ctx.lineTo(x,y) : ctx.moveTo(x,y));
-    ctx.closePath();
+    const isFilm = face.layer === 2;
+    const isSelected = face.layer === selectedLayer;
+    const base = isSelected ? [155, 177, 94] : face.base;
+    const rgb = isFilm && !isSelected
+      ? [197 + sheen * 55, 207 + sheen * 43, 195 + sheen * 53]
+      : base.map(value => Math.round(value * light));
+    const alpha = isFilm ? (isSelected ? .53 : .33) + sheen * .34 : 1;
+    ctx.fillStyle = 'rgba(' + [...rgb, alpha].join(',') + ')';
+    trace(points);
     ctx.fill();
-    ctx.strokeStyle=face.edge?'rgba(82,68,47,.54)':ctx.fillStyle;
+    ctx.strokeStyle = face.edge ? 'rgba(82,68,47,.54)' : ctx.fillStyle;
     ctx.lineWidth=face.edge?1:.55;
     ctx.stroke();
   }
@@ -122,21 +138,44 @@ document.getElementById('turn-left').onclick=()=>turn(-1);
 document.getElementById('turn-right').onclick=()=>turn(1);
 separation.oninput=schedule;
 canvas.onpointerdown=event=>{
-  drag={x:event.clientX,y:event.clientY};
+  if (event.button !== 0 || drag) return;
+  drag = {id: event.pointerId, x: event.clientX, y: event.clientY, moved: false};
   canvas.setPointerCapture(event.pointerId);
 };
 canvas.onpointermove=event=>{
-  if (!drag) return;
-  yaw+=(event.clientX-drag.x)*.013;
-  pitch=Math.min(.83,Math.max(.1,pitch+(event.clientY-drag.y)*.005));
-  drag={x:event.clientX,y:event.clientY};
+  if (drag?.id !== event.pointerId) return;
+  const dx = event.clientX - drag.x;
+  const dy = event.clientY - drag.y;
+  if (!drag.moved && Math.hypot(dx, dy) < 5) return;
+  yaw += dx * .013;
+  pitch = Math.min(.83, Math.max(.1, pitch + dy * .005));
+  Object.assign(drag, {x: event.clientX, y: event.clientY, moved: true});
   schedule();
 };
-canvas.onlostpointercapture=()=>{drag=null;};
+canvas.onpointerup = event => {
+  if (drag?.id !== event.pointerId || drag.moved) return;
+  const {left, top} = canvas.getBoundingClientRect();
+  const x = (event.clientX - left) * ratio;
+  const y = (event.clientY - top) * ratio;
+  // Polygons are painted back to front, so test the visible surface first.
+  for (let index = polygons.length - 1; index >= 0; index--) {
+    const {face, points} = polygons[index];
+    trace(points);
+    if (!ctx.isPointInPath(x, y)) continue;
+    canvas.dispatchEvent(new CustomEvent('layerselect', {detail: face.layer}));
+    break;
+  }
+};
+canvas.onlostpointercapture = event => {
+  if (drag?.id === event.pointerId) drag = null;
+};
 canvas.onkeydown=event=>{
   if (!['ArrowLeft','ArrowRight'].includes(event.key)) return;
   event.preventDefault();
   turn(event.key==='ArrowRight'?1:-1);
 };
 new ResizeObserver(schedule).observe(canvas);
-export function showModel() { schedule(); }
+export function selectLayer(layer) {
+  selectedLayer = layer;
+  schedule();
+}
